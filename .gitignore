@@ -12,6 +12,7 @@
 
 .idea/
 .vscode/
+/scrapper/.venv/
 
 __pycache__/
 *.pyc
