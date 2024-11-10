@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 import json
 import requests
 import os
+from selenium.webdriver.chrome.service import Service
 
 def download_image(image_url, product_id, suffix=""):
     try:
@@ -129,7 +130,15 @@ def main(url= ""):
     # DRIVER CONFIGURATION
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
-    driver = webdriver.Chrome(options=options)
+    options.add_argument('--disable-gpu')
+    options.add_argument('--no-sandbox')
+
+    # Specify the chromedriver path using the Service object
+    service = Service(executable_path='/usr/bin/chromedriver')
+
+    # Pass the service to the webdriver constructor
+    driver = webdriver.Chrome(service=service, options=options)
+
     driver.get(url)
 
     # CREATE FOLDER FOR IMAGES
