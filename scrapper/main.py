@@ -84,7 +84,8 @@ def download_data(driver, product):
     out_of_stock_element = product_soup.find("li", class_="product-flag out_of_stock")
     out_of_stock = out_of_stock_element.get_text(strip=True) if out_of_stock_element else "No out of stock"
     tax_element = product_soup.find("div", class_="tax-shipping-delivery-label")
-    tax = tax_element.get_text(strip=True) if tax_element else "No tax"
+    tax = str(tax_element.contents[0]).strip() if tax_element else "No tax"
+
     delivery_element = product_soup.find("span", class_="delivery-information")
     delivery = delivery_element.get_text(strip=True) if delivery_element else "No delivery"
     review_stars = product_soup.find("div", class_="product-comments-additional-info").find("div", class_="star-content star-full clearfix")
@@ -174,12 +175,12 @@ def generate(url= ""):
             break
 
     # SAVE TO JSON FILE
-    name = url.split("/")[-1]
-    with open("products_" + name + ".json", "w", encoding="utf-8") as file:
+    file_name_suffix = url.split("/")[-1]
+    with open("products_" + file_name_suffix + ".json", "w", encoding="utf-8") as file:
         json.dump(product_data_list, file, ensure_ascii=False, indent=4)
 
     driver.quit()
-    print("Products have been saved to the file products.json and images have been downloaded.")
+    print("Products have been saved to the file products_" + file_name_suffix +".json and images have been downloaded.")
 
 
 if __name__ == "__main__":
