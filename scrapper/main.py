@@ -4,8 +4,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 import json
+import concurrent.futures
 import requests
 import os
+import time
 from selenium.webdriver.chrome.service import Service
 
 def download_image(image_url, product_id, suffix=""):
@@ -64,18 +66,18 @@ def download_data(driver, product):
     detailed_data_names = detailed_data_element.find_all("dt")
     detailed_data_values = detailed_data_element.find_all("dd")
     for detailed_data_name, detailed_data_value in zip(detailed_data_names, detailed_data_values):
-        name = detailed_data_name.get_text(strip=True)
-        if name == "Skład:":
+        detail_name = detailed_data_name.get_text(strip=True)
+        if detail_name == "Skład:":
             composition = detailed_data_value.get_text(strip=True)
-        elif name == "Rozmiar:":
+        elif detail_name == "Rozmiar:":
             size = detailed_data_value.get_text(strip=True)
-        elif name == "Waga motka:":
+        elif detail_name == "Waga motka:":
             weight = detailed_data_value.get_text(strip=True)
-        elif name == "Długość:":
+        elif detail_name == "Długość:":
             length = detailed_data_value.get_text(strip=True)
-        elif name == "Zalecany rozmiar szydełka:":
+        elif detail_name == "Zalecany rozmiar szydełka:":
             crochet_size = detailed_data_value.get_text(strip=True)
-        elif name == "Zalecany rozmiar drutów:":
+        elif detail_name == "Zalecany rozmiar drutów:":
             needle_size = detailed_data_value.get_text(strip=True)
 
     # FLAGS
@@ -85,6 +87,8 @@ def download_data(driver, product):
     tax = tax_element.get_text(strip=True) if tax_element else "No tax"
     delivery_element = product_soup.find("span", class_="delivery-information")
     delivery = delivery_element.get_text(strip=True) if delivery_element else "No delivery"
+    review_stars = product_soup.find("div", class_="product-comments-additional-info").find("div", class_="star-content star-full clearfix")
+    rating = 0 if review_stars is None else len(review_stars.find_all("div", class_="star-on"))
 
     # IMAGES
     image_element = product_soup.find_all("img", class_="thumb js-thumb selected js-thumb-selected")
@@ -109,6 +113,7 @@ def download_data(driver, product):
         "price": price,
         "price_content": price_content,
         "out_of_stock": out_of_stock,
+        "review": rating,
         "description_title_short": description_title_short,
         "description_short": description_short,
         "description_long": description_long,
@@ -118,10 +123,6 @@ def download_data(driver, product):
         "length": length,
         "crochet_size": crochet_size,
         "needle_size": needle_size,
-        "medium_image_url_1": medium_image_url_1,
-        "large_image_url_1": large_image_url_1,
-        "medium_image_url_2": medium_image_url_2,
-        "large_image_url_2": large_image_url_2,
         "medium_image_path_1": medium_image_path_1,
         "large_image_path_1": large_image_path_1,
         "medium_image_path_2": medium_image_path_2,
@@ -130,7 +131,7 @@ def download_data(driver, product):
 
     return product_data
 
-def main(url= ""):
+def generate(url= ""):
     # DRIVER CONFIGURATION
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
@@ -173,7 +174,8 @@ def main(url= ""):
             break
 
     # SAVE TO JSON FILE
-    with open("products.json", "w", encoding="utf-8") as file:
+    name = url.split("/")[-1]
+    with open("products_" + name + ".json", "w", encoding="utf-8") as file:
         json.dump(product_data_list, file, ensure_ascii=False, indent=4)
 
     driver.quit()
@@ -181,5 +183,16 @@ def main(url= ""):
 
 
 if __name__ == "__main__":
-    url = "https://karolinaszydelko.pl/20-cotton-spaghetti"
-    main(url)
+    urls = ["https://karolinaszydelko.pl/38-alize-bella", "https://karolinaszydelko.pl/21-yarnart-ideal"]
+
+    start_time = time.time()
+
+    # with concurrent.futures.ThreadPoolExecutor() as executor:
+    #     executor.map(main, urls)
+
+    for url in urls:
+        generate(url)
+
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"Scrapping took: {elapsed_time} seconds")
