@@ -1,12 +1,15 @@
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 import json
-import time
 import requests
 import os
 
 def download_image(image_url, product_id, suffix=""):
     try:
+        # DOWNLOAD IMAGE
         img_data = requests.get(image_url).content
         image_filename = f"{product_id}{suffix}.jpg"
         image_path = os.path.join(images_folder, image_filename)
@@ -19,101 +22,119 @@ def download_image(image_url, product_id, suffix=""):
         print(f"Failed to download image for product {product_id}: {e}")
         return "No image"
 
-# Selenium setup
-options = webdriver.ChromeOptions()
-options.add_argument('--headless')
-driver = webdriver.Chrome(options=options)
+def main(url= ""):
+    # DRIVER CONFIGURATION
+    options = webdriver.ChromeOptions()
+    options.add_argument('--headless')
+    driver = webdriver.Chrome(options=options)
+    driver.get(url)
 
-# Initial page URL
-url = "https://karolinaszydelko.pl/20-cotton-spaghetti"
-driver.get(url)
-time.sleep(3)
+    # CREATE FOLDER FOR IMAGES
+    global images_folder
+    images_folder = "downloaded_images"
+    os.makedirs(images_folder, exist_ok=True)
 
-# Folder for downloaded images
-images_folder = "downloaded_images"
-os.makedirs(images_folder, exist_ok=True)
+    products_list = []
 
-# List to store product data
-products_list = []
+    while True:
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "js-product")))  # Wait for products to load
+        soup = BeautifulSoup(driver.page_source, "html.parser")
+        products = soup.find_all("div", class_="js-product")
 
-while True:
-    soup = BeautifulSoup(driver.page_source, "html.parser")
-    products = soup.find_all("div", class_="js-product")
+        for product in products:
+            product_id = product.find("article", class_="product-miniature")["data-id-product"]
+            element = product.find("h2", class_="h3 product-title")
+            link = element.find("a")["href"] if element else "No link"
 
-    for product in products:
-        product_id = product.find("article", class_="product-miniature")["data-id-product"]
+            # OPEN PRODUCT PAGE
+            driver.get(link)
+            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "product-description")))  # Wait for product description to load
+            product_soup = BeautifulSoup(driver.page_source, "html.parser")
 
-        # Name and product page link
-        element = product.find("h2", class_="h3 product-title")
-        link = element.find("a")["href"] if element else "No link"
+            # PRODUCT NAME
+            name_element = product_soup.find("h1", class_="h1")
+            name = name_element.get_text(strip=True) if name_element else "No name"
 
-        # Go to product detail page to scrape more details
-        driver.get(link)
-        time.sleep(2)
-        product_soup = BeautifulSoup(driver.page_source, "html.parser")
+            # PRICE
+            price_element = product_soup.find("span", class_="current-price-value")
+            price_content = price_element["content"] if price_element else "No price content"
+            price = price_element.get_text(strip=True) if price_element else "No price"
 
-        #NAME
-        name_element = product_soup.find("h1", class_="h1")
-        name = name_element.get_text(strip=True) if name_element else "No name"
+            # DESCRIPTION
+            description_elements = product_soup.find_all("div", class_="product-description")
 
-        #PRICE
-        price_span = product_soup.find("span", class_="current-price-value")
-        price = price_span.get_text(strip=True) if price_span else "No price"
+            # SHORT DESCRIPTION
+            description_element = description_elements[0].find_all("p") if len(description_elements) > 0 else []
+            description_title_short = description_element[0].get_text(strip=True) if len(description_element) > 0 else "No short description title"
+            description_short = description_element[1].get_text(strip=True) if len(description_element) > 1 else "No short description"
 
-        #DESCRIPTION
-        description_div = product_soup.find("div", class_="product-description")
-        description_elements = description_div.find_all("p")
+            # LONG DESCRIPTION
+            description_element = description_elements[1].find_all("p") if len(description_elements) > 1 else []
+            description_long_paragraphs = [p.get_text(strip=True) for p in description_element if p.get_text(strip=True)]
+            description_long = "\n".join(description_long_paragraphs)
 
-        description_title = description_elements[0].get_text(strip=True) if description_elements[0] else "No description title"
-        description = description_elements[1].get_text(strip=True) if description_elements[1] else "No description"
+            # FLAGS
+            out_of_stock_element = product_soup.find("li", class_="product-flag out_of_stock")
+            out_of_stock = out_of_stock_element.get_text(strip=True) if out_of_stock_element else "No out of stock"
+            tax_element = product_soup.find("div", class_="tax-shipping-delivery-label")
+            tax = tax_element.get_text(strip=True) if tax_element else "No tax"
+            delivery_element = product_soup.find("span", class_="delivery-information")
+            delivery = delivery_element.get_text(strip=True) if delivery_element else "No delivery"
 
-        #IMAGES
-        image_element = product_soup.find("img", class_="thumb js-thumb selected js-thumb-selected")
-        medium_image_url = image_element["data-image-medium-src"] if image_element else "No medium image"
-        large_image_url = image_element["data-image-large-src"] if image_element else "No large image"
+            # IMAGES
+            image_element = product_soup.find_all("img", class_="thumb js-thumb selected js-thumb-selected")
+            medium_image_url_1 = image_element[0]["data-image-medium-src"] if len(image_element) >= 1 else f"No medium image 1"
+            large_image_url_1 = image_element[0]["data-image-large-src"] if len(image_element) >= 1 else f"No large image 1"
+            medium_image_url_2 = image_element[1]["data-image-medium-src"] if len(image_element) == 2 else f"No medium image 2"
+            large_image_url_2 = image_element[1]["data-image-large-src"] if len(image_element) == 2 else f"No large image 2"
 
-        #DOWNLOAD IMAGES
-        #medium_image_path = download_image(medium_image_url, product_id, suffix="_medium")
-        #large_image_path = download_image(large_image_url, product_id, suffix="_large")
+            # DOWNLOAD IMAGES
+            medium_image_path_1 = download_image(medium_image_url_1, product_id, suffix="_medium1")
+            large_image_path_1 = download_image(large_image_url_1, product_id, suffix="_large1")
+            medium_image_path_2 = download_image(medium_image_url_2, product_id, suffix="_medium2")
+            large_image_path_2 = download_image(large_image_url_2, product_id, suffix="_large2")
 
-        #FLAGS
-        out_of_stock_flag_li = product_soup.find("li", class_="out_of_stock")
-        out_of_stock_flag = out_of_stock_flag_li.get_text(strip=True) if out_of_stock_flag_li else "No flag"
+            # STORE PRODUCT DATA
+            product_data = {
+                "product_id": product_id,
+                "name": name,
+                "link": link,
+                "tax": tax,
+                "delivery": delivery,
+                "price": price,
+                "price_content": price_content,
+                "out_of_stock": out_of_stock,
+                "description_title_short": description_title_short,
+                "description_short": description_short,
+                "description_long": description_long,
+                "medium_image_url_1": medium_image_url_1,
+                "large_image_url_1": large_image_url_1,
+                "medium_image_url_2": medium_image_url_2,
+                "large_image_url_2": large_image_url_2
+            }
 
-        # Storing the product data
-        product_data = {
-            "product_id": product_id,
-            "name": name,
-            "link": link,
-            "price": price,
-            "description_title": description_title,
-            "description": description,
-            "medium_image_url": medium_image_url,
-            "large_image_url": large_image_url,
-            #"medium_image_path": medium_image_path,
-            #"large_image_path": large_image_path,
-            "out_of_stock_flag": out_of_stock_flag
-        }
+            products_list.append(product_data)
 
-        products_list.append(product_data)
-        # Return to the original listing page
-        driver.back()
-        time.sleep(2)
+            driver.back()
+            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "js-product")))  # Wait for the products to reload after going back
 
-    # Check for a "next" button to navigate pages
-    next_page_button = soup.find("a", rel="next")
-    if next_page_button:
-        next_url = next_page_button["href"]
-        driver.get(next_url)
-        time.sleep(3)
-    else:
-        break
+        # CHECK NEXT PAGE
+        next_page_button = soup.find("a", rel="next")
+        if next_page_button:
+            next_url = next_page_button["href"]
+            driver.get(next_url)
+            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "js-product")))  # Wait for products to load on the next page
+        else:
+            break
 
-# Save scraped data to JSON
-with open("products.json", "w", encoding="utf-8") as file:
-    json.dump(products_list, file, ensure_ascii=False, indent=4)
+    # SAVE TO JSON FILE
+    with open("products.json", "w", encoding="utf-8") as file:
+        json.dump(products_list, file, ensure_ascii=False, indent=4)
 
-# Close the browser
-driver.quit()
+    driver.quit()
+    print("Products have been saved to the file products.json and images have been downloaded.")
 
-print("Products have been saved to the file products.json and images have been downloaded.")
+
+if __name__ == "__main__":
+    url = "https://karolinaszydelko.pl/20-cotton-spaghetti"
+    main(url)
