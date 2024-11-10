@@ -20,6 +20,10 @@
         "medium_image_url_1": "https://karolinaszydelko.pl/9645-medium_default/spaghetti-cotton.jpg",
         "large_image_url_1": "https://karolinaszydelko.pl/9645-large_default/spaghetti-cotton.jpg",
         "medium_image_url_2": "No medium image 2",
-        "large_image_url_2": "No large image 2"
+        "large_image_url_2": "No large image 2",
+        "medium_image_path_1": "downloaded_images/121_medium1.jpg",
+        "large_image_path_1": "downloaded_images/121_large1.jpg",
+        "medium_image_path_2": "No image",
+        "large_image_path_2": "No image"
     }
 ]

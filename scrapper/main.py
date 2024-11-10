@@ -121,7 +121,11 @@ def download_data(driver, product):
         "medium_image_url_1": medium_image_url_1,
         "large_image_url_1": large_image_url_1,
         "medium_image_url_2": medium_image_url_2,
-        "large_image_url_2": large_image_url_2
+        "large_image_url_2": large_image_url_2,
+        "medium_image_path_1": medium_image_path_1,
+        "large_image_path_1": large_image_path_1,
+        "medium_image_path_2": medium_image_path_2,
+        "large_image_path_2": large_image_path_2
     }
 
     return product_data
@@ -136,9 +140,7 @@ def main(url= ""):
     # Specify the chromedriver path using the Service object
     service = Service(executable_path='/usr/bin/chromedriver')
 
-    # Pass the service to the webdriver constructor
     driver = webdriver.Chrome(service=service, options=options)
-
     driver.get(url)
 
     # CREATE FOLDER FOR IMAGES
@@ -146,7 +148,7 @@ def main(url= ""):
     images_folder = "downloaded_images"
     os.makedirs(images_folder, exist_ok=True)
 
-    products_list = []
+    product_data_list = []
 
     while True:
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "js-product")))
@@ -156,7 +158,7 @@ def main(url= ""):
         for product in products:
             # DOWNLOAD DATA
             product_data = download_data(driver, product)
-            products_list.append(product_data)
+            product_data_list.append(product_data)
 
             driver.back()
             WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "js-product")))
@@ -172,7 +174,7 @@ def main(url= ""):
 
     # SAVE TO JSON FILE
     with open("products.json", "w", encoding="utf-8") as file:
-        json.dump(products_list, file, ensure_ascii=False, indent=4)
+        json.dump(product_data_list, file, ensure_ascii=False, indent=4)
 
     driver.quit()
     print("Products have been saved to the file products.json and images have been downloaded.")
