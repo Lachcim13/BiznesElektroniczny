@@ -18,7 +18,7 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  */
-namespace ps_metrics_module_v4_0_8\PrestaShop\ModuleLibCacheDirectoryProvider\Cache;
+namespace ps_metrics_module_v4_0_9\PrestaShop\ModuleLibCacheDirectoryProvider\Cache;
 
 /**
  * Class responsible for returning cache directory path.

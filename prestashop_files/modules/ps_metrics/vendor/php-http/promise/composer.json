@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ps_metrics_module_v4_0_8\\Http\\Promise\\": "src\/"
+            "ps_metrics_module_v4_0_9\\Http\\Promise\\": "src\/"
         }
     },
     "scripts": {

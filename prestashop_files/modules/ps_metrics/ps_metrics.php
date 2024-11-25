@@ -30,9 +30,9 @@ use PrestaShop\Module\Ps_metrics\Module\Uninstall;
 use PrestaShop\Module\Ps_metrics\Tracker\Segment;
 use PrestaShop\ModuleLibServiceContainer\DependencyInjection\ServiceContainer;
 use PrestaShop\PrestaShop\Adapter\SymfonyContainer;
-use ps_metrics_module_v4_0_8\PrestaShop\PsAccountsInstaller\Installer\Facade\PsAccounts;
+use ps_metrics_module_v4_0_9\PrestaShop\PsAccountsInstaller\Installer\Facade\PsAccounts;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use ps_metrics_module_v4_0_8\Twig\Environment as TwigEnvironment;
+use ps_metrics_module_v4_0_9\Twig\Environment as TwigEnvironment;
 if (!\defined('_PS_VERSION_')) {
     exit;
 }
@@ -60,7 +60,7 @@ class Ps_metrics extends \Module
     {
         $this->name = 'ps_metrics';
         $this->tab = 'advertising_marketing';
-        $this->version = '4.0.8';
+        $this->version = '4.0.9';
         $this->author = 'PrestaShop';
         $this->need_instance = 0;
         $this->module_key = '697657ffe038d20741105e95a10b12d1';

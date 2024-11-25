@@ -40,7 +40,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "ps_metrics_module_v4_0_8\\Tests\\": "tests\/"
+            "ps_metrics_module_v4_0_9\\Tests\\": "tests\/"
         }
     },
     "scripts": {

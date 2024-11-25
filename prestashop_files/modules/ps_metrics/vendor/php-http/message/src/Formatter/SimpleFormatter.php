@@ -1,8 +1,8 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Http\Message\Formatter;
+namespace ps_metrics_module_v4_0_9\Http\Message\Formatter;
 
-use ps_metrics_module_v4_0_8\Http\Message\Formatter;
+use ps_metrics_module_v4_0_9\Http\Message\Formatter;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 /**

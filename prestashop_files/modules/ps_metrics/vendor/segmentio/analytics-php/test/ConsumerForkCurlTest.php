@@ -1,6 +1,6 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8;
+namespace ps_metrics_module_v4_0_9;
 
 require_once \dirname(__FILE__) . "/../lib/Segment/Client.php";
 class ConsumerForkCurlTest extends PHPUnit_Framework_TestCase

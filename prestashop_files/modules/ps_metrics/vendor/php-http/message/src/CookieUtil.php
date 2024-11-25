@@ -1,8 +1,8 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Http\Message;
+namespace ps_metrics_module_v4_0_9\Http\Message;
 
-use ps_metrics_module_v4_0_8\Http\Message\Exception\UnexpectedValueException;
+use ps_metrics_module_v4_0_9\Http\Message\Exception\UnexpectedValueException;
 final class CookieUtil
 {
     /**

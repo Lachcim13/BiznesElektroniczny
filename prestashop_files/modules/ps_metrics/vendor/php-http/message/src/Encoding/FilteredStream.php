@@ -1,9 +1,9 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Http\Message\Encoding;
+namespace ps_metrics_module_v4_0_9\Http\Message\Encoding;
 
-use ps_metrics_module_v4_0_8\Clue\StreamFilter as Filter;
-use ps_metrics_module_v4_0_8\Http\Message\Decorator\StreamDecorator;
+use ps_metrics_module_v4_0_9\Clue\StreamFilter as Filter;
+use ps_metrics_module_v4_0_9\Http\Message\Decorator\StreamDecorator;
 use Psr\Http\Message\StreamInterface;
 /**
  * A filtered stream has a filter for filtering output and a filter for filtering input made to a underlying stream.

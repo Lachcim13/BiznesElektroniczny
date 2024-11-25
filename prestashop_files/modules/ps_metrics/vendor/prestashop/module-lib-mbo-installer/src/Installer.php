@@ -1,10 +1,10 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Prestashop\ModuleLibMboInstaller;
+namespace ps_metrics_module_v4_0_9\Prestashop\ModuleLibMboInstaller;
 
 use GuzzleHttp\Psr7\Request;
-use ps_metrics_module_v4_0_8\Prestashop\ModuleLibGuzzleAdapter\ClientFactory;
-use ps_metrics_module_v4_0_8\Prestashop\ModuleLibGuzzleAdapter\Interfaces\HttpClientInterface;
+use ps_metrics_module_v4_0_9\Prestashop\ModuleLibGuzzleAdapter\ClientFactory;
+use ps_metrics_module_v4_0_9\Prestashop\ModuleLibGuzzleAdapter\Interfaces\HttpClientInterface;
 use PrestaShop\PrestaShop\Core\Addon\Module\ModuleManagerBuilder;
 class Installer
 {

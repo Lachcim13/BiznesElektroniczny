@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ps_metrics_module_v4_0_8\\Clue\\StreamFilter\\": "src\/"
+            "ps_metrics_module_v4_0_9\\Clue\\StreamFilter\\": "src\/"
         },
         "files": [
             "src\/functions_include.php"
@@ -34,7 +34,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "ps_metrics_module_v4_0_8\\Clue\\Tests\\StreamFilter\\": "tests\/"
+            "ps_metrics_module_v4_0_9\\Clue\\Tests\\StreamFilter\\": "tests\/"
         }
     }
 }

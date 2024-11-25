@@ -20,7 +20,7 @@
  */
 namespace PrestaShop\Module\Ps_metrics\Config;
 
-use ps_metrics_module_v4_0_8\Dotenv\Dotenv;
+use ps_metrics_module_v4_0_9\Dotenv\Dotenv;
 /**
  * This class allows to retrieve config data that can be overwritten by a .env file.
  * Otherwise it returns by default from the Config class.

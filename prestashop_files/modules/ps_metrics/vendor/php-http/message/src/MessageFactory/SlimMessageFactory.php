@@ -1,13 +1,13 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Http\Message\MessageFactory;
+namespace ps_metrics_module_v4_0_9\Http\Message\MessageFactory;
 
-use ps_metrics_module_v4_0_8\Http\Message\MessageFactory;
-use ps_metrics_module_v4_0_8\Http\Message\StreamFactory\SlimStreamFactory;
-use ps_metrics_module_v4_0_8\Http\Message\UriFactory\SlimUriFactory;
-use ps_metrics_module_v4_0_8\Slim\Http\Headers;
-use ps_metrics_module_v4_0_8\Slim\Http\Request;
-use ps_metrics_module_v4_0_8\Slim\Http\Response;
+use ps_metrics_module_v4_0_9\Http\Message\MessageFactory;
+use ps_metrics_module_v4_0_9\Http\Message\StreamFactory\SlimStreamFactory;
+use ps_metrics_module_v4_0_9\Http\Message\UriFactory\SlimUriFactory;
+use ps_metrics_module_v4_0_9\Slim\Http\Headers;
+use ps_metrics_module_v4_0_9\Slim\Http\Request;
+use ps_metrics_module_v4_0_9\Slim\Http\Response;
 if (!\interface_exists(MessageFactory::class)) {
     throw new \LogicException('You cannot use "Http\\Message\\MessageFactory\\SlimMessageFactory" as the "php-http/message-factory" package is not installed. Try running "composer require php-http/message-factory". Note that this package is deprecated, use "psr/http-factory" instead');
 }

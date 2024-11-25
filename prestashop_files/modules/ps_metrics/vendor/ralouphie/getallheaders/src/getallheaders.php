@@ -1,6 +1,6 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8;
+namespace ps_metrics_module_v4_0_9;
 
 if (!\function_exists('getallheaders')) {
     /**

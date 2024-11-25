@@ -1,8 +1,8 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Dotenv\Environment;
+namespace ps_metrics_module_v4_0_9\Dotenv\Environment;
 
-use ps_metrics_module_v4_0_8\Dotenv\Environment\Adapter\ArrayAdapter;
+use ps_metrics_module_v4_0_9\Dotenv\Environment\Adapter\ArrayAdapter;
 use InvalidArgumentException;
 use ReturnTypeWillChange;
 /**

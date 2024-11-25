@@ -1,6 +1,6 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8;
+namespace ps_metrics_module_v4_0_9;
 
 require __DIR__ . '/Consumer.php';
 require __DIR__ . '/QueueConsumer.php';
@@ -24,7 +24,7 @@ class Segment_Client
      */
     public function __construct($secret, $options = array())
     {
-        $consumers = array("socket" => "ps_metrics_module_v4_0_8\Segment_Consumer_Socket", "file" => "Segment_Consumer_File", "fork_curl" => "Segment_Consumer_ForkCurl");
+        $consumers = array("socket" => "ps_metrics_module_v4_0_9\Segment_Consumer_Socket", "file" => "Segment_Consumer_File", "fork_curl" => "Segment_Consumer_ForkCurl");
         # Use our socket consumer by default
         $consumer_type = isset($options["consumer"]) ? $options["consumer"] : "socket";
         $Consumer = $consumers[$consumer_type];

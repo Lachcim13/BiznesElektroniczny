@@ -1,6 +1,6 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Http\Promise;
+namespace ps_metrics_module_v4_0_9\Http\Promise;
 
 /**
  * A promise already fulfilled.

@@ -1,9 +1,9 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Dotenv;
+namespace ps_metrics_module_v4_0_9\Dotenv;
 
-use ps_metrics_module_v4_0_8\Dotenv\Exception\InvalidFileException;
-use ps_metrics_module_v4_0_8\Dotenv\Regex\Regex;
+use ps_metrics_module_v4_0_9\Dotenv\Exception\InvalidFileException;
+use ps_metrics_module_v4_0_9\Dotenv\Regex\Regex;
 class Parser
 {
     const INITIAL_STATE = 0;

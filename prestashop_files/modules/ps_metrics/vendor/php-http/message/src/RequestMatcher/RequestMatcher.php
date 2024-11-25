@@ -1,8 +1,8 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Http\Message\RequestMatcher;
+namespace ps_metrics_module_v4_0_9\Http\Message\RequestMatcher;
 
-use ps_metrics_module_v4_0_8\Http\Message\RequestMatcher as RequestMatcherInterface;
+use ps_metrics_module_v4_0_9\Http\Message\RequestMatcher as RequestMatcherInterface;
 use Psr\Http\Message\RequestInterface;
 /**
  * A port of the Symfony RequestMatcher for PSR-7.

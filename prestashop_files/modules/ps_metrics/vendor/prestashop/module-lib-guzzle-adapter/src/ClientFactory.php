@@ -1,11 +1,11 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Prestashop\ModuleLibGuzzleAdapter;
+namespace ps_metrics_module_v4_0_9\Prestashop\ModuleLibGuzzleAdapter;
 
-use ps_metrics_module_v4_0_8\Prestashop\ModuleLibGuzzleAdapter\Guzzle5\Client as Guzzle5Client;
-use ps_metrics_module_v4_0_8\Prestashop\ModuleLibGuzzleAdapter\Guzzle5\Config as Guzzle5Config;
-use ps_metrics_module_v4_0_8\Prestashop\ModuleLibGuzzleAdapter\Guzzle7\Client as Guzzle7Client;
-use ps_metrics_module_v4_0_8\Prestashop\ModuleLibGuzzleAdapter\Guzzle7\Config as Guzzle7Config;
+use ps_metrics_module_v4_0_9\Prestashop\ModuleLibGuzzleAdapter\Guzzle5\Client as Guzzle5Client;
+use ps_metrics_module_v4_0_9\Prestashop\ModuleLibGuzzleAdapter\Guzzle5\Config as Guzzle5Config;
+use ps_metrics_module_v4_0_9\Prestashop\ModuleLibGuzzleAdapter\Guzzle7\Client as Guzzle7Client;
+use ps_metrics_module_v4_0_9\Prestashop\ModuleLibGuzzleAdapter\Guzzle7\Config as Guzzle7Config;
 class ClientFactory
 {
     /**

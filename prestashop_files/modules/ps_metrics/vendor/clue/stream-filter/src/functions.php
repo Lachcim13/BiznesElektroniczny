@@ -1,6 +1,6 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Clue\StreamFilter;
+namespace ps_metrics_module_v4_0_9\Clue\StreamFilter;
 
 /**
  * Append a filter callback to the given stream.

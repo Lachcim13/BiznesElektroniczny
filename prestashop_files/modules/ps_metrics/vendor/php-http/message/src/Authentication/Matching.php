@@ -1,9 +1,9 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Http\Message\Authentication;
+namespace ps_metrics_module_v4_0_9\Http\Message\Authentication;
 
-use ps_metrics_module_v4_0_8\Http\Message\Authentication;
-use ps_metrics_module_v4_0_8\Http\Message\RequestMatcher\CallbackRequestMatcher;
+use ps_metrics_module_v4_0_9\Http\Message\Authentication;
+use ps_metrics_module_v4_0_9\Http\Message\RequestMatcher\CallbackRequestMatcher;
 use Psr\Http\Message\RequestInterface;
 @\trigger_error('The ' . __NAMESPACE__ . '\\Matching class is deprecated since version 1.2 and will be removed in 2.0. Use Http\\Message\\Authentication\\RequestConditional instead.', \E_USER_DEPRECATED);
 /**

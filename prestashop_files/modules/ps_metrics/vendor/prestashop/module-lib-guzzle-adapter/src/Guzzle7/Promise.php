@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace ps_metrics_module_v4_0_8\Prestashop\ModuleLibGuzzleAdapter\Guzzle7;
+namespace ps_metrics_module_v4_0_9\Prestashop\ModuleLibGuzzleAdapter\Guzzle7;
 
 use GuzzleHttp\Exception as GuzzleExceptions;
 use GuzzleHttp\Promise\PromiseInterface;
 use Http\Client\Exception as HttplugException;
-use ps_metrics_module_v4_0_8\Http\Promise\Promise as HttpPromise;
-use ps_metrics_module_v4_0_8\Prestashop\ModuleLibGuzzleAdapter\Guzzle7\Exception\UnexpectedValueException;
+use ps_metrics_module_v4_0_9\Http\Promise\Promise as HttpPromise;
+use ps_metrics_module_v4_0_9\Prestashop\ModuleLibGuzzleAdapter\Guzzle7\Exception\UnexpectedValueException;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 /**

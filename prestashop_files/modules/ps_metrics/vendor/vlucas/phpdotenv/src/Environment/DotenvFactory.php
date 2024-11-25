@@ -1,12 +1,12 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Dotenv\Environment;
+namespace ps_metrics_module_v4_0_9\Dotenv\Environment;
 
-use ps_metrics_module_v4_0_8\Dotenv\Environment\Adapter\AdapterInterface;
-use ps_metrics_module_v4_0_8\Dotenv\Environment\Adapter\ApacheAdapter;
-use ps_metrics_module_v4_0_8\Dotenv\Environment\Adapter\EnvConstAdapter;
-use ps_metrics_module_v4_0_8\Dotenv\Environment\Adapter\PutenvAdapter;
-use ps_metrics_module_v4_0_8\Dotenv\Environment\Adapter\ServerConstAdapter;
+use ps_metrics_module_v4_0_9\Dotenv\Environment\Adapter\AdapterInterface;
+use ps_metrics_module_v4_0_9\Dotenv\Environment\Adapter\ApacheAdapter;
+use ps_metrics_module_v4_0_9\Dotenv\Environment\Adapter\EnvConstAdapter;
+use ps_metrics_module_v4_0_9\Dotenv\Environment\Adapter\PutenvAdapter;
+use ps_metrics_module_v4_0_9\Dotenv\Environment\Adapter\ServerConstAdapter;
 /**
  * The default implementation of the environment factory interface.
  */

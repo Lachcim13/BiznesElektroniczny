@@ -1,11 +1,11 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Http\Message\StreamFactory;
+namespace ps_metrics_module_v4_0_9\Http\Message\StreamFactory;
 
-use ps_metrics_module_v4_0_8\Http\Message\StreamFactory;
-use ps_metrics_module_v4_0_8\Laminas\Diactoros\Stream as LaminasStream;
+use ps_metrics_module_v4_0_9\Http\Message\StreamFactory;
+use ps_metrics_module_v4_0_9\Laminas\Diactoros\Stream as LaminasStream;
 use Psr\Http\Message\StreamInterface;
-use ps_metrics_module_v4_0_8\Zend\Diactoros\Stream as ZendStream;
+use ps_metrics_module_v4_0_9\Zend\Diactoros\Stream as ZendStream;
 if (!\interface_exists(StreamFactory::class)) {
     throw new \LogicException('You cannot use "Http\\Message\\MessageFactory\\DiactorosStreamFactory" as the "php-http/message-factory" package is not installed. Try running "composer require php-http/message-factory". Note that this package is deprecated, use "psr/http-factory" instead');
 }

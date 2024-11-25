@@ -18,11 +18,11 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  */
-namespace ps_metrics_module_v4_0_8\PrestaShop\PsAccountsInstaller\Tests\Unit\Installer\Presenter\InstallerPresenter;
+namespace ps_metrics_module_v4_0_9\PrestaShop\PsAccountsInstaller\Tests\Unit\Installer\Presenter\InstallerPresenter;
 
-use ps_metrics_module_v4_0_8\PrestaShop\PsAccountsInstaller\Installer\Installer;
-use ps_metrics_module_v4_0_8\PrestaShop\PsAccountsInstaller\Installer\Presenter\InstallerPresenter;
-use ps_metrics_module_v4_0_8\PrestaShop\PsAccountsInstaller\Tests\TestCase;
+use ps_metrics_module_v4_0_9\PrestaShop\PsAccountsInstaller\Installer\Installer;
+use ps_metrics_module_v4_0_9\PrestaShop\PsAccountsInstaller\Installer\Presenter\InstallerPresenter;
+use ps_metrics_module_v4_0_9\PrestaShop\PsAccountsInstaller\Tests\TestCase;
 class PresentTest extends TestCase
 {
     /**

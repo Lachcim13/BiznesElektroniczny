@@ -1,10 +1,10 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Http\Message\MessageFactory;
+namespace ps_metrics_module_v4_0_9\Http\Message\MessageFactory;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use ps_metrics_module_v4_0_8\Http\Message\MessageFactory;
+use ps_metrics_module_v4_0_9\Http\Message\MessageFactory;
 if (!\interface_exists(MessageFactory::class)) {
     throw new \LogicException('You cannot use "Http\\Message\\MessageFactory\\GuzzleMessageFactory" as the "php-http/message-factory" package is not installed. Try running "composer require php-http/message-factory". Note that this package is deprecated, use "psr/http-factory" instead');
 }

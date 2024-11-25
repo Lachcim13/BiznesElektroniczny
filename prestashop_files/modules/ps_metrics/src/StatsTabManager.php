@@ -20,9 +20,9 @@
  */
 namespace PrestaShop\Module\Ps_metrics;
 
-use ps_metrics_module_v4_0_8\PrestaShop\PsAccountsInstaller\Installer\Exception\ModuleNotInstalledException;
-use ps_metrics_module_v4_0_8\PrestaShop\PsAccountsInstaller\Installer\Exception\ModuleVersionException;
-use ps_metrics_module_v4_0_8\PrestaShop\PsAccountsInstaller\Installer\Facade\PsAccounts;
+use ps_metrics_module_v4_0_9\PrestaShop\PsAccountsInstaller\Installer\Exception\ModuleNotInstalledException;
+use ps_metrics_module_v4_0_9\PrestaShop\PsAccountsInstaller\Installer\Exception\ModuleVersionException;
+use ps_metrics_module_v4_0_9\PrestaShop\PsAccountsInstaller\Installer\Facade\PsAccounts;
 class StatsTabManager
 {
     /**

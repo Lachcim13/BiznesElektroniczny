@@ -1,6 +1,6 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Dotenv\Environment\Adapter;
+namespace ps_metrics_module_v4_0_9\Dotenv\Environment\Adapter;
 
 interface AdapterInterface
 {
