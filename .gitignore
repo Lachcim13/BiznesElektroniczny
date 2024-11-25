@@ -4,7 +4,6 @@
 /prestashop_files/var/cache/
 /prestashop_files/vendor/
 /prestashop_files/node_modules/
-/prestashop_files/themes/*
 /prestashop_files/upload/
 /prestashop_files/tools/profiling/*
 /prestashop_files/download/
