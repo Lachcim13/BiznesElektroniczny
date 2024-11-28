@@ -1,14 +1,3 @@
-/prestashop_files/config/settings.inc.php
-/prestashop_files/app/config/parameters.php
-/prestashop_files/var/logs/
-/prestashop_files/var/cache/
-/prestashop_files/vendor/
-/prestashop_files/node_modules/
-/prestashop_files/upload/
-/prestashop_files/tools/profiling/*
-/prestashop_files/download/
-/prestashop_files/translations/*
-
 .idea/
 .vscode/
 /scrapper/.venv/
