@@ -7558,139 +7558,7 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
         elseif (0 === strpos($pathinfo, '/modules')) {
-            // blockwishlist_configuration
-            if ('/modules/blockwishlist/configuration' === $pathinfo) {
-                $ret = array (  '_controller' => 'PrestaShop\\Module\\BlockWishList\\Controller\\WishlistConfigurationAdminController::configurationAction',  '_legacy_controller' => 'WishlistConfigurationAdminController',  '_legacy_link' => 'WishlistConfigurationAdminController',  '_route' => 'blockwishlist_configuration',);
-                if (!in_array($canonicalMethod, ['GET', 'POST'])) {
-                    $allow = array_merge($allow, ['GET', 'POST']);
-                    goto not_blockwishlist_configuration;
-                }
-
-                return $ret;
-            }
-            not_blockwishlist_configuration:
-
-            if (0 === strpos($pathinfo, '/modules/blockwishlist/statistics')) {
-                // blockwishlist_statistics
-                if ('/modules/blockwishlist/statistics' === $pathinfo) {
-                    $ret = array (  '_controller' => 'PrestaShop\\Module\\BlockWishList\\Controller\\WishlistConfigurationAdminController::statisticsAction',  '_legacy_controller' => 'WishlistStatisticsAdminController',  '_legacy_link' => 'WishlistStatisticsAdminController',  '_route' => 'blockwishlist_statistics',);
-                    if (!in_array($canonicalMethod, ['GET'])) {
-                        $allow = array_merge($allow, ['GET']);
-                        goto not_blockwishlist_statistics;
-                    }
-
-                    return $ret;
-                }
-                not_blockwishlist_statistics:
-
-                // blockwishlist_statistics_reset
-                if ('/modules/blockwishlist/statistics/reset' === $pathinfo) {
-                    $ret = array (  '_controller' => 'PrestaShop\\Module\\BlockWishList\\Controller\\WishlistConfigurationAdminController::resetStatisticsCacheAction',  '_route' => 'blockwishlist_statistics_reset',);
-                    if (!in_array($requestMethod, ['POST'])) {
-                        $allow = array_merge($allow, ['POST']);
-                        goto not_blockwishlist_statistics_reset;
-                    }
-
-                    return $ret;
-                }
-                not_blockwishlist_statistics_reset:
-
-            }
-
-            elseif (0 === strpos($pathinfo, '/modules/link-widget')) {
-                // admin_link_block_list
-                if ('/modules/link-widget/list' === $pathinfo) {
-                    $ret = array (  '_controller' => 'PrestaShop\\Module\\LinkList\\Controller\\Admin\\Improve\\Design\\LinkBlockController::listAction',  '_legacy_controller' => 'AdminLinkWidget',  '_legacy_link' => 'AdminLinkWidget',  '_route' => 'admin_link_block_list',);
-                    if (!in_array($canonicalMethod, ['GET'])) {
-                        $allow = array_merge($allow, ['GET']);
-                        goto not_admin_link_block_list;
-                    }
-
-                    return $ret;
-                }
-                not_admin_link_block_list:
-
-                if (0 === strpos($pathinfo, '/modules/link-widget/create')) {
-                    // admin_link_block_create
-                    if ('/modules/link-widget/create' === $pathinfo) {
-                        $ret = array (  '_controller' => 'PrestaShop\\Module\\LinkList\\Controller\\Admin\\Improve\\Design\\LinkBlockController::createAction',  '_legacy_controller' => 'AdminLinkWidget',  '_route' => 'admin_link_block_create',);
-                        if (!in_array($canonicalMethod, ['GET'])) {
-                            $allow = array_merge($allow, ['GET']);
-                            goto not_admin_link_block_create;
-                        }
-
-                        return $ret;
-                    }
-                    not_admin_link_block_create:
-
-                    // admin_link_block_create_process
-                    if ('/modules/link-widget/create' === $pathinfo) {
-                        $ret = array (  '_controller' => 'PrestaShop\\Module\\LinkList\\Controller\\Admin\\Improve\\Design\\LinkBlockController::createProcessAction',  '_legacy_controller' => 'AdminLinkWidget',  '_route' => 'admin_link_block_create_process',);
-                        if (!in_array($requestMethod, ['POST'])) {
-                            $allow = array_merge($allow, ['POST']);
-                            goto not_admin_link_block_create_process;
-                        }
-
-                        return $ret;
-                    }
-                    not_admin_link_block_create_process:
-
-                }
-
-                elseif (0 === strpos($pathinfo, '/modules/link-widget/edit')) {
-                    // admin_link_block_edit
-                    if (preg_match('#^/modules/link\\-widget/edit/(?P<linkBlockId>[^/]++)$#sD', $pathinfo, $matches)) {
-                        $ret = $this->mergeDefaults(array_replace($matches, ['_route' => 'admin_link_block_edit']), array (  '_controller' => 'PrestaShop\\Module\\LinkList\\Controller\\Admin\\Improve\\Design\\LinkBlockController::editAction',  '_legacy_controller' => 'AdminLinkWidget',));
-                        if (!in_array($canonicalMethod, ['GET'])) {
-                            $allow = array_merge($allow, ['GET']);
-                            goto not_admin_link_block_edit;
-                        }
-
-                        return $ret;
-                    }
-                    not_admin_link_block_edit:
-
-                    // admin_link_block_edit_process
-                    if (preg_match('#^/modules/link\\-widget/edit/(?P<linkBlockId>[^/]++)$#sD', $pathinfo, $matches)) {
-                        $ret = $this->mergeDefaults(array_replace($matches, ['_route' => 'admin_link_block_edit_process']), array (  '_controller' => 'PrestaShop\\Module\\LinkList\\Controller\\Admin\\Improve\\Design\\LinkBlockController::editProcessAction',  '_legacy_controller' => 'AdminLinkWidget',));
-                        if (!in_array($requestMethod, ['POST'])) {
-                            $allow = array_merge($allow, ['POST']);
-                            goto not_admin_link_block_edit_process;
-                        }
-
-                        return $ret;
-                    }
-                    not_admin_link_block_edit_process:
-
-                }
-
-                // admin_link_block_delete
-                if (0 === strpos($pathinfo, '/modules/link-widget/delete') && preg_match('#^/modules/link\\-widget/delete/(?P<linkBlockId>\\d+)$#sD', $pathinfo, $matches)) {
-                    $ret = $this->mergeDefaults(array_replace($matches, ['_route' => 'admin_link_block_delete']), array (  '_controller' => 'PrestaShop\\Module\\LinkList\\Controller\\Admin\\Improve\\Design\\LinkBlockController::deleteAction',  '_legacy_controller' => 'AdminLinkWidget',));
-                    if (!in_array($requestMethod, ['POST'])) {
-                        $allow = array_merge($allow, ['POST']);
-                        goto not_admin_link_block_delete;
-                    }
-
-                    return $ret;
-                }
-                not_admin_link_block_delete:
-
-                // admin_link_block_update_positions
-                if (0 === strpos($pathinfo, '/modules/link-widget/update-positions') && preg_match('#^/modules/link\\-widget/update\\-positions/(?P<hookId>\\d+)$#sD', $pathinfo, $matches)) {
-                    $ret = $this->mergeDefaults(array_replace($matches, ['_route' => 'admin_link_block_update_positions']), array (  '_controller' => 'PrestaShop\\Module\\LinkList\\Controller\\Admin\\Improve\\Design\\LinkBlockController::updatePositionsAction',  '_legacy_controller' => 'AdminLinkWidget',));
-                    if (!in_array($requestMethod, ['POST'])) {
-                        $allow = array_merge($allow, ['POST']);
-                        goto not_admin_link_block_update_positions;
-                    }
-
-                    return $ret;
-                }
-                not_admin_link_block_update_positions:
-
-            }
-
-            elseif (0 === strpos($pathinfo, '/modules/addons/modules')) {
+            if (0 === strpos($pathinfo, '/modules/addons/modules')) {
                 if (0 === strpos($pathinfo, '/modules/addons/modules/catalog')) {
                     // admin_mbo_catalog_module
                     if ('/modules/addons/modules/catalog' === $pathinfo) {
@@ -7864,6 +7732,138 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                     return $ret;
                 }
                 not_metrics_graphql:
+
+            }
+
+            elseif (0 === strpos($pathinfo, '/modules/link-widget')) {
+                // admin_link_block_list
+                if ('/modules/link-widget/list' === $pathinfo) {
+                    $ret = array (  '_controller' => 'PrestaShop\\Module\\LinkList\\Controller\\Admin\\Improve\\Design\\LinkBlockController::listAction',  '_legacy_controller' => 'AdminLinkWidget',  '_legacy_link' => 'AdminLinkWidget',  '_route' => 'admin_link_block_list',);
+                    if (!in_array($canonicalMethod, ['GET'])) {
+                        $allow = array_merge($allow, ['GET']);
+                        goto not_admin_link_block_list;
+                    }
+
+                    return $ret;
+                }
+                not_admin_link_block_list:
+
+                if (0 === strpos($pathinfo, '/modules/link-widget/create')) {
+                    // admin_link_block_create
+                    if ('/modules/link-widget/create' === $pathinfo) {
+                        $ret = array (  '_controller' => 'PrestaShop\\Module\\LinkList\\Controller\\Admin\\Improve\\Design\\LinkBlockController::createAction',  '_legacy_controller' => 'AdminLinkWidget',  '_route' => 'admin_link_block_create',);
+                        if (!in_array($canonicalMethod, ['GET'])) {
+                            $allow = array_merge($allow, ['GET']);
+                            goto not_admin_link_block_create;
+                        }
+
+                        return $ret;
+                    }
+                    not_admin_link_block_create:
+
+                    // admin_link_block_create_process
+                    if ('/modules/link-widget/create' === $pathinfo) {
+                        $ret = array (  '_controller' => 'PrestaShop\\Module\\LinkList\\Controller\\Admin\\Improve\\Design\\LinkBlockController::createProcessAction',  '_legacy_controller' => 'AdminLinkWidget',  '_route' => 'admin_link_block_create_process',);
+                        if (!in_array($requestMethod, ['POST'])) {
+                            $allow = array_merge($allow, ['POST']);
+                            goto not_admin_link_block_create_process;
+                        }
+
+                        return $ret;
+                    }
+                    not_admin_link_block_create_process:
+
+                }
+
+                elseif (0 === strpos($pathinfo, '/modules/link-widget/edit')) {
+                    // admin_link_block_edit
+                    if (preg_match('#^/modules/link\\-widget/edit/(?P<linkBlockId>[^/]++)$#sD', $pathinfo, $matches)) {
+                        $ret = $this->mergeDefaults(array_replace($matches, ['_route' => 'admin_link_block_edit']), array (  '_controller' => 'PrestaShop\\Module\\LinkList\\Controller\\Admin\\Improve\\Design\\LinkBlockController::editAction',  '_legacy_controller' => 'AdminLinkWidget',));
+                        if (!in_array($canonicalMethod, ['GET'])) {
+                            $allow = array_merge($allow, ['GET']);
+                            goto not_admin_link_block_edit;
+                        }
+
+                        return $ret;
+                    }
+                    not_admin_link_block_edit:
+
+                    // admin_link_block_edit_process
+                    if (preg_match('#^/modules/link\\-widget/edit/(?P<linkBlockId>[^/]++)$#sD', $pathinfo, $matches)) {
+                        $ret = $this->mergeDefaults(array_replace($matches, ['_route' => 'admin_link_block_edit_process']), array (  '_controller' => 'PrestaShop\\Module\\LinkList\\Controller\\Admin\\Improve\\Design\\LinkBlockController::editProcessAction',  '_legacy_controller' => 'AdminLinkWidget',));
+                        if (!in_array($requestMethod, ['POST'])) {
+                            $allow = array_merge($allow, ['POST']);
+                            goto not_admin_link_block_edit_process;
+                        }
+
+                        return $ret;
+                    }
+                    not_admin_link_block_edit_process:
+
+                }
+
+                // admin_link_block_delete
+                if (0 === strpos($pathinfo, '/modules/link-widget/delete') && preg_match('#^/modules/link\\-widget/delete/(?P<linkBlockId>\\d+)$#sD', $pathinfo, $matches)) {
+                    $ret = $this->mergeDefaults(array_replace($matches, ['_route' => 'admin_link_block_delete']), array (  '_controller' => 'PrestaShop\\Module\\LinkList\\Controller\\Admin\\Improve\\Design\\LinkBlockController::deleteAction',  '_legacy_controller' => 'AdminLinkWidget',));
+                    if (!in_array($requestMethod, ['POST'])) {
+                        $allow = array_merge($allow, ['POST']);
+                        goto not_admin_link_block_delete;
+                    }
+
+                    return $ret;
+                }
+                not_admin_link_block_delete:
+
+                // admin_link_block_update_positions
+                if (0 === strpos($pathinfo, '/modules/link-widget/update-positions') && preg_match('#^/modules/link\\-widget/update\\-positions/(?P<hookId>\\d+)$#sD', $pathinfo, $matches)) {
+                    $ret = $this->mergeDefaults(array_replace($matches, ['_route' => 'admin_link_block_update_positions']), array (  '_controller' => 'PrestaShop\\Module\\LinkList\\Controller\\Admin\\Improve\\Design\\LinkBlockController::updatePositionsAction',  '_legacy_controller' => 'AdminLinkWidget',));
+                    if (!in_array($requestMethod, ['POST'])) {
+                        $allow = array_merge($allow, ['POST']);
+                        goto not_admin_link_block_update_positions;
+                    }
+
+                    return $ret;
+                }
+                not_admin_link_block_update_positions:
+
+            }
+
+            // blockwishlist_configuration
+            if ('/modules/blockwishlist/configuration' === $pathinfo) {
+                $ret = array (  '_controller' => 'PrestaShop\\Module\\BlockWishList\\Controller\\WishlistConfigurationAdminController::configurationAction',  '_legacy_controller' => 'WishlistConfigurationAdminController',  '_legacy_link' => 'WishlistConfigurationAdminController',  '_route' => 'blockwishlist_configuration',);
+                if (!in_array($canonicalMethod, ['GET', 'POST'])) {
+                    $allow = array_merge($allow, ['GET', 'POST']);
+                    goto not_blockwishlist_configuration;
+                }
+
+                return $ret;
+            }
+            not_blockwishlist_configuration:
+
+            if (0 === strpos($pathinfo, '/modules/blockwishlist/statistics')) {
+                // blockwishlist_statistics
+                if ('/modules/blockwishlist/statistics' === $pathinfo) {
+                    $ret = array (  '_controller' => 'PrestaShop\\Module\\BlockWishList\\Controller\\WishlistConfigurationAdminController::statisticsAction',  '_legacy_controller' => 'WishlistStatisticsAdminController',  '_legacy_link' => 'WishlistStatisticsAdminController',  '_route' => 'blockwishlist_statistics',);
+                    if (!in_array($canonicalMethod, ['GET'])) {
+                        $allow = array_merge($allow, ['GET']);
+                        goto not_blockwishlist_statistics;
+                    }
+
+                    return $ret;
+                }
+                not_blockwishlist_statistics:
+
+                // blockwishlist_statistics_reset
+                if ('/modules/blockwishlist/statistics/reset' === $pathinfo) {
+                    $ret = array (  '_controller' => 'PrestaShop\\Module\\BlockWishList\\Controller\\WishlistConfigurationAdminController::resetStatisticsCacheAction',  '_route' => 'blockwishlist_statistics_reset',);
+                    if (!in_array($requestMethod, ['POST'])) {
+                        $allow = array_merge($allow, ['POST']);
+                        goto not_blockwishlist_statistics_reset;
+                    }
+
+                    return $ret;
+                }
+                not_blockwishlist_statistics_reset:
 
             }
 
