@@ -1,18 +1,30 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.48, created on 2024-11-28 20:18:31
+=======
+/* Smarty version 3.1.48, created on 2024-11-28 21:54:08
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
   from '/var/www/html/themes/classic/templates/catalog/_partials/products-top.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
+<<<<<<< HEAD
   'unifunc' => 'content_6748c2074ca298_85377827',
+=======
+  'unifunc' => 'content_6748d870b3d8b1_59441452',
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '769a8869e0fd8b52ef792a1070f139c62aadc4c5' => 
     array (
       0 => '/var/www/html/themes/classic/templates/catalog/_partials/products-top.tpl',
+<<<<<<< HEAD
       1 => 1732817112,
+=======
+      1 => 1702485415,
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
       2 => 'file',
     ),
   ),
@@ -21,7 +33,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/sort-orders.tpl' => 1,
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_6748c2074ca298_85377827 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_6748d870b3d8b1_59441452 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -39,7 +55,11 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <div class="row sort-by-row">
 
       <?php 
+<<<<<<< HEAD
 $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10698315656748c2074c8913_65640167', 'sort_by');
+=======
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6844169756748d870b3b734_96365241', 'sort_by');
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
 ?>
 
 
@@ -60,12 +80,20 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10698315656748c207
 </div>
 <?php }
 /* {block 'sort_by'} */
+<<<<<<< HEAD
 class Block_10698315656748c2074c8913_65640167 extends Smarty_Internal_Block
+=======
+class Block_6844169756748d870b3b734_96365241 extends Smarty_Internal_Block
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
 {
 public $subBlocks = array (
   'sort_by' => 
   array (
+<<<<<<< HEAD
     0 => 'Block_10698315656748c2074c8913_65640167',
+=======
+    0 => 'Block_6844169756748d870b3b734_96365241',
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

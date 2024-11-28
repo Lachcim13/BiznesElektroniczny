@@ -1,18 +1,30 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.48, created on 2024-11-28 20:18:31
+=======
+/* Smarty version 3.1.48, created on 2024-11-28 21:54:08
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
   from '/var/www/html/themes/classic/templates/catalog/_partials/category-header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
+<<<<<<< HEAD
   'unifunc' => 'content_6748c2074c25c8_72583136',
+=======
+  'unifunc' => 'content_6748d870b164f6_52660920',
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6abc52fbc88ae24c6f2738a9280ee2ceb41ac158' => 
     array (
       0 => '/var/www/html/themes/classic/templates/catalog/_partials/category-header.tpl',
+<<<<<<< HEAD
       1 => 1732817112,
+=======
+      1 => 1702485415,
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
       2 => 'file',
     ),
   ),
@@ -20,7 +32,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_6748c2074c25c8_72583136 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_6748d870b164f6_52660920 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
 ?><div id="js-product-list-header">
     <?php if ($_smarty_tpl->tpl_vars['listing']->value['pagination']['items_shown_from'] == 1) {?>
         <div class="block-category card card-block">

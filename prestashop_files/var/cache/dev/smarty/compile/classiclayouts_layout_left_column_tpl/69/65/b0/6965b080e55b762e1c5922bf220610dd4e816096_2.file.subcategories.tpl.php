@@ -1,18 +1,30 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.48, created on 2024-11-28 21:51:12
+=======
+/* Smarty version 3.1.48, created on 2024-11-28 21:54:08
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
   from '/var/www/html/themes/classic/templates/catalog/_partials/subcategories.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
+<<<<<<< HEAD
   'unifunc' => 'content_6748d7c0a74a92_45533321',
+=======
+  'unifunc' => 'content_6748d870b2b130_63050920',
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6965b080e55b762e1c5922bf220610dd4e816096' => 
     array (
       0 => '/var/www/html/themes/classic/templates/catalog/_partials/subcategories.tpl',
+<<<<<<< HEAD
       1 => 1732817112,
+=======
+      1 => 1702485415,
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
       2 => 'file',
     ),
   ),
@@ -20,7 +32,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_6748d7c0a74a92_45533321 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_6748d870b2b130_63050920 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
 if (!empty($_smarty_tpl->tpl_vars['subcategories']->value)) {?>
   <?php if (((isset($_smarty_tpl->tpl_vars['display_subcategories']->value)) && $_smarty_tpl->tpl_vars['display_subcategories']->value == 1) || !(isset($_smarty_tpl->tpl_vars['display_subcategories']->value))) {?>
     <div id="subcategories" class="card card-block">

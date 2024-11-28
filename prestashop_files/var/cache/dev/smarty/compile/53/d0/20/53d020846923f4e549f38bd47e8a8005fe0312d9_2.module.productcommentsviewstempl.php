@@ -1,18 +1,30 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.48, created on 2024-11-28 21:51:14
+=======
+/* Smarty version 3.1.48, created on 2024-11-28 21:15:29
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
   from 'module:productcommentsviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
+<<<<<<< HEAD
   'unifunc' => 'content_6748d7c2dbd5b7_59697101',
+=======
+  'unifunc' => 'content_6748cf610559c8_42014641',
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '53d020846923f4e549f38bd47e8a8005fe0312d9' => 
     array (
       0 => 'module:productcommentsviewstempl',
+<<<<<<< HEAD
       1 => 1732817092,
+=======
+      1 => 1693383296,
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
       2 => 'module',
     ),
   ),
@@ -20,7 +32,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_6748d7c2dbd5b7_59697101 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_6748cf610559c8_42014641 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> 51cc5654c55d5f71a9528ce4585659e17452868f
 ?><!-- begin /var/www/html/modules/productcomments/views/templates/hook/alert-modal.tpl -->
 <?php $_smarty_tpl->_assignInScope('icon', (($tmp = @$_smarty_tpl->tpl_vars['icon']->value)===null||$tmp==='' ? 'check_circle' : $tmp));
 $_smarty_tpl->_assignInScope('modal_message', (($tmp = @$_smarty_tpl->tpl_vars['modal_message']->value)===null||$tmp==='' ? '' : $tmp));?>
