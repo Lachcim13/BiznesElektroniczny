@@ -21,7 +21,7 @@ def download_image(image_url, name, suffix=""):
         return image_path
     except Exception as e:
         print(f"Failed to download image for product {name}: {e}")
-        return "No image"
+        return ""
 
 def download_product_data(driver, product):
     # OPEN PRODUCT PAGE
@@ -33,20 +33,27 @@ def download_product_data(driver, product):
 
     # PRODUCT NAME
     name_element = product_soup.find("h1", class_="h1")
-    name = name_element.get_text(strip=True) if name_element else "No name"
+    name = name_element.get_text(strip=True) if name_element else ""
 
     # PRICE
     price_element = product_soup.find("span", class_="current-price-value")
-    price_content = price_element["content"] if price_element else "No price content"
-    price = price_element.get_text(strip=True) if price_element else "No price"
+    price_content = price_element["content"] if price_element else ""
+    price = price_element.get_text(strip=True) if price_element else ""
 
     # DESCRIPTION
     description_elements = product_soup.find_all("div", class_="product-description")
 
     # SHORT DESCRIPTION
     description_element = description_elements[0].find_all("p") if len(description_elements) > 0 else []
-    description_title_short = description_element[0].get_text(strip=True) if len(description_element) > 0 else "No short description title"
-    description_short = description_element[1].get_text(strip=True) if len(description_element) > 1 else "No short description"
+    if len(description_element) >= 2:
+        description_title_short = description_element[0].get_text(strip=True)
+        description_short = description_element[1].get_text(strip=True)
+    elif len(description_element) >= 1:
+        description_title_short =  description_elements[0].find("h3").find("span").get_text(strip=True)
+        description_short = description_element[0].get_text(strip=True)
+    else:
+        description_title_short = ""
+        description_short = ""
 
     # LONG DESCRIPTION
     description_element = description_elements[1].find_all("p") if len(description_elements) > 1 else []
@@ -54,12 +61,12 @@ def download_product_data(driver, product):
     description_long = "\n".join(description_long_paragraphs)
 
     # DETAILED DATA
-    composition = "No composition"
-    size = "No size"
-    weight = "No weight"
-    length = "No length"
-    crochet_size = "No crochet size"
-    needle_size = "No needle size"
+    composition = ""
+    size = ""
+    weight = ""
+    length = ""
+    crochet_size = ""
+    needle_size = ""
     detailed_data_element = product_soup.find("dl", class_="data-sheet")
     detailed_data_names = detailed_data_element.find_all("dt")
     detailed_data_values = detailed_data_element.find_all("dd")
@@ -80,19 +87,19 @@ def download_product_data(driver, product):
 
     # FLAGS
     out_of_stock_element = product_soup.find("li", class_="product-flag out_of_stock")
-    out_of_stock = out_of_stock_element.get_text(strip=True) if out_of_stock_element else "No out of stock"
+    out_of_stock = out_of_stock_element.get_text(strip=True) if out_of_stock_element else ""
     tax_element = product_soup.find("div", class_="tax-shipping-delivery-label")
-    tax = str(tax_element.contents[0]).strip() if tax_element else "No tax"
+    tax = str(tax_element.contents[0]).strip() if tax_element else ""
 
     delivery_element = product_soup.find("span", class_="delivery-information")
-    delivery = delivery_element.get_text(strip=True) if delivery_element else "No delivery"
+    delivery = delivery_element.get_text(strip=True) if delivery_element else ""
     review_stars = product_soup.find("div", class_="product-comments-additional-info").find("div", class_="star-content star-full clearfix")
     rating = 0 if review_stars is None else len(review_stars.find_all("div", class_="star-on"))
 
     # IMAGES
     image_element = product_soup.find("img", class_="thumb js-thumb selected js-thumb-selected")
-    medium_image_url = image_element["data-image-medium-src"] if image_element else f"No medium image"
-    large_image_url = image_element["data-image-large-src"] if image_element else f"No large image"
+    medium_image_url = image_element["data-image-medium-src"] if image_element else ""
+    large_image_url = image_element["data-image-large-src"] if image_element else ""
 
     # DOWNLOAD IMAGES
     medium_image_path = download_image(medium_image_url, name, suffix="_medium")
@@ -122,7 +129,7 @@ def download_product_data(driver, product):
 
     return product_data
 
-def download_category_data(driver, name, category_soup, sub = False, depth):
+def download_category_data(driver, name, category_soup, sub = False):
     # CATEGORY DESCRIPTION
     description_element = category_soup.find("div", id="category-description")
     if description_element:
@@ -130,11 +137,11 @@ def download_category_data(driver, name, category_soup, sub = False, depth):
         description_texts = [s.get_text(strip=True) for s in description_spans if s.get_text(strip=True)]
         description = " ".join(description_texts)
     else:
-        description = "No description"
+        description = ""
 
     # CATEGORY IMAGE
     image_element = category_soup.find("img", class_="img-res")
-    image_url = image_element["src"] if image_element else f"No image"
+    image_url = image_element["src"] if image_element else f""
 
     # DOWNLOAD IMAGES
     image_path = download_image(image_url, name, suffix="_image")
@@ -158,7 +165,7 @@ def download_category_data(driver, name, category_soup, sub = False, depth):
 
             # CATEGORY NAME
             name_element = subcategory_soup.find("h1", class_="h1")
-            name = name_element.get_text(strip=True) if name_element else "No name"
+            name = name_element.get_text(strip=True) if name_element else ""
 
             if name in categories_names:
                 subcategory_data = download_category_data(driver, name, subcategory_soup, True)
@@ -199,7 +206,7 @@ def download_category_data(driver, name, category_soup, sub = False, depth):
 
     return category_data
 
-def generate(url= "", categories_names = [""],):
+def generate(url= "", categories_names = [""]):
     # DRIVER CONFIGURATION
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
@@ -230,10 +237,10 @@ def generate(url= "", categories_names = [""],):
 
         # CATEGORY NAME
         name_element = category_soup.find("h1", class_="h1")
-        name = name_element.get_text(strip=True) if name_element else "No name"
+        name = name_element.get_text(strip=True) if name_element else ""
 
         if name in categories_names:
-            category_data = download_category_data(driver, name, category_soup, categories_names)
+            category_data = download_category_data(driver, name, category_soup)
             category_data_list.append(category_data)
 
         driver.back()
@@ -249,7 +256,7 @@ def generate(url= "", categories_names = [""],):
 
 if __name__ == "__main__":
     url = "https://karolinaszydelko.pl"
-    categories_names = [["Włóczki", False], ["Włóczki z kaszmirem", False]]
+    categories_names = ["Włóczki", "Włóczki z kaszmirem", "Szydełka", "Prym ergonomics"]
 
     start_time = time.time()
     generate(url, categories_names)
