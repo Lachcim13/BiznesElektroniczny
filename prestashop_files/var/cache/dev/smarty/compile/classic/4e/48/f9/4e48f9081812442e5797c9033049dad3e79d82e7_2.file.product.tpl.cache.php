@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2024-11-26 20:06:52
+/* Smarty version 3.1.48, created on 2024-11-28 23:03:10
   from '/var/www/html/themes/classic/templates/catalog/_partials/miniatures/product.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_67461c4c71cc51_22955475',
+  'unifunc' => 'content_6748e89e12cdf4_57530217',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4e48f9081812442e5797c9033049dad3e79d82e7' => 
     array (
       0 => '/var/www/html/themes/classic/templates/catalog/_partials/miniatures/product.tpl',
-      1 => 1702485415,
+      1 => 1732830589,
       2 => 'file',
     ),
   ),
@@ -22,16 +22,16 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/product-flags.tpl' => 1,
   ),
 ),false)) {
-function content_67461c4c71cc51_22955475 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6748e89e12cdf4_57530217 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->compiled->nocache_hash = '12299236167461c4c70b533_54970183';
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_53327675267461c4c70e207_09159054', 'product_miniature_item');
+$_smarty_tpl->compiled->nocache_hash = '1232569326748e89e11d327_29990865';
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21340089196748e89e122296_85579194', 'product_miniature_item');
 ?>
 
 <?php }
 /* {block 'product_thumbnail'} */
-class Block_93013312667461c4c70f2c2_69739887 extends Smarty_Internal_Block
+class Block_11309222946748e89e1233b9_65875440 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -75,7 +75,7 @@ echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'mo
 }
 /* {/block 'product_thumbnail'} */
 /* {block 'quick_view'} */
-class Block_117442250367461c4c713980_18785101 extends Smarty_Internal_Block
+class Block_13989239456748e89e126821_55814658 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -89,7 +89,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'quick_view'} */
 /* {block 'product_variants'} */
-class Block_163096793767461c4c7140e7_64534868 extends Smarty_Internal_Block
+class Block_4298228836748e89e126d62_13563704 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -103,7 +103,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'product_variants'} */
 /* {block 'product_name'} */
-class Block_154852705667461c4c714de5_29330270 extends Smarty_Internal_Block
+class Block_14139016606748e89e127696_56943543 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -124,7 +124,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'product_name'} */
 /* {block 'product_price_and_shipping'} */
-class Block_36059182867461c4c716fc0_35079397 extends Smarty_Internal_Block
+class Block_12052217416748e89e128dc6_09681152 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -176,7 +176,7 @@ $_smarty_tpl->smarty->ext->_capture->close($_smarty_tpl);?>
 }
 /* {/block 'product_price_and_shipping'} */
 /* {block 'product_reviews'} */
-class Block_168116367367461c4c71bfc2_57492715 extends Smarty_Internal_Block
+class Block_10852273206748e89e12c521_81089193 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -188,36 +188,36 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'product_reviews'} */
 /* {block 'product_miniature_item'} */
-class Block_53327675267461c4c70e207_09159054 extends Smarty_Internal_Block
+class Block_21340089196748e89e122296_85579194 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_miniature_item' => 
   array (
-    0 => 'Block_53327675267461c4c70e207_09159054',
+    0 => 'Block_21340089196748e89e122296_85579194',
   ),
   'product_thumbnail' => 
   array (
-    0 => 'Block_93013312667461c4c70f2c2_69739887',
+    0 => 'Block_11309222946748e89e1233b9_65875440',
   ),
   'quick_view' => 
   array (
-    0 => 'Block_117442250367461c4c713980_18785101',
+    0 => 'Block_13989239456748e89e126821_55814658',
   ),
   'product_variants' => 
   array (
-    0 => 'Block_163096793767461c4c7140e7_64534868',
+    0 => 'Block_4298228836748e89e126d62_13563704',
   ),
   'product_name' => 
   array (
-    0 => 'Block_154852705667461c4c714de5_29330270',
+    0 => 'Block_14139016606748e89e127696_56943543',
   ),
   'product_price_and_shipping' => 
   array (
-    0 => 'Block_36059182867461c4c716fc0_35079397',
+    0 => 'Block_12052217416748e89e128dc6_09681152',
   ),
   'product_reviews' => 
   array (
-    0 => 'Block_168116367367461c4c71bfc2_57492715',
+    0 => 'Block_10852273206748e89e12c521_81089193',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -231,18 +231,18 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
     <div class="thumbnail-container">
       <div class="thumbnail-top">
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_93013312667461c4c70f2c2_69739887', 'product_thumbnail', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11309222946748e89e1233b9_65875440', 'product_thumbnail', $this->tplIndex);
 ?>
 
 
         <div class="highlighted-informations<?php if (!$_smarty_tpl->tpl_vars['product']->value['main_variants']) {?> no-variants<?php }?>">
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_117442250367461c4c713980_18785101', 'quick_view', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13989239456748e89e126821_55814658', 'quick_view', $this->tplIndex);
 ?>
 
 
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_163096793767461c4c7140e7_64534868', 'product_variants', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4298228836748e89e126d62_13563704', 'product_variants', $this->tplIndex);
 ?>
 
         </div>
@@ -250,17 +250,17 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_163096793767461c4c
 
       <div class="product-description">
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_154852705667461c4c714de5_29330270', 'product_name', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14139016606748e89e127696_56943543', 'product_name', $this->tplIndex);
 ?>
 
 
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_36059182867461c4c716fc0_35079397', 'product_price_and_shipping', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12052217416748e89e128dc6_09681152', 'product_price_and_shipping', $this->tplIndex);
 ?>
 
 
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_168116367367461c4c71bfc2_57492715', 'product_reviews', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10852273206748e89e12c521_81089193', 'product_reviews', $this->tplIndex);
 ?>
 
       </div>

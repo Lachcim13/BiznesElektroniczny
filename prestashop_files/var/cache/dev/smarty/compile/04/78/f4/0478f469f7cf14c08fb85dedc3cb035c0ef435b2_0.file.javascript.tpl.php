@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2024-11-26 20:07:03
+/* Smarty version 3.1.48, created on 2024-11-28 23:03:17
   from '/var/www/html/themes/javascript.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_67461c572f4d31_51616121',
+  'unifunc' => 'content_6748e8a5bc12c0_20357935',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0478f469f7cf14c08fb85dedc3cb035c0ef435b2' => 
     array (
       0 => '/var/www/html/themes/javascript.tpl',
-      1 => 1702485415,
+      1 => 1732830589,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_67461c572f4d31_51616121 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6748e8a5bc12c0_20357935 (Smarty_Internal_Template $_smarty_tpl) {
 if ((isset($_smarty_tpl->tpl_vars['js_def']->value)) && is_array($_smarty_tpl->tpl_vars['js_def']->value) && count($_smarty_tpl->tpl_vars['js_def']->value)) {
 echo '<script'; ?>
  type="text/javascript">

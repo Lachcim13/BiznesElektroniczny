@@ -16,6 +16,6 @@ if (!\class_exists(appDevDebugProjectContainer::class, false)) {
 
 return new \ContainerXiwpqrt\appDevDebugProjectContainer([
     'container.build_hash' => 'Xiwpqrt',
-    'container.build_id' => 'c1b7480c',
-    'container.build_time' => 1732831025,
+    'container.build_id' => '1078c1fb',
+    'container.build_time' => 1732831396,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerXiwpqrt');
