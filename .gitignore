@@ -10,7 +10,6 @@ __pycache__/
 *.log
 *.tmp
 
-.env
 .DS_Store
 Thumbs.db
 
