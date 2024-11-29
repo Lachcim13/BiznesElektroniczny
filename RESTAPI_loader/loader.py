@@ -138,6 +138,9 @@ def create_product(name, price, description_short, description_long, composition
     price_element = etree.SubElement(product_element, "price")
     price_element.text = str(price)
 
+    etree.SubElement(product_element, "show_price").text = "1"
+    etree.SubElement(product_element, "additional_delivery_times").text = "1"
+
     etree.SubElement(product_element, "available_for_order").text = "1"
 
     description_short_element = etree.SubElement(product_element, "description_short")
