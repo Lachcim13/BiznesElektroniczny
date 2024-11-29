@@ -138,6 +138,11 @@ def create_product(name, price, description_short, description_long, composition
     price_element = etree.SubElement(product_element, "price")
     price_element.text = str(price)
 
+    etree.SubElement(product_element, "show_price").text = "1"
+    etree.SubElement(product_element, "additional_delivery_times").text = "1"
+
+    etree.SubElement(product_element, "available_for_order").text = "1"
+
     description_short_element = etree.SubElement(product_element, "description_short")
     description_short_lang = etree.SubElement(description_short_element, "language", id=lang_id_str)
     description_short_lang.text = description_short
@@ -157,7 +162,8 @@ def create_product(name, price, description_short, description_long, composition
 
     category_element_def = etree.SubElement(categories, "category")
     etree.SubElement(category_element_def, "id").text = "2"
-
+    etree.SubElement(product_element, "id_shop_default").text = "1"
+    etree.SubElement(product_element, "id_category_default").text = "2"
 
     features_elements = etree.SubElement(associations, "product_features")
 
@@ -204,7 +210,7 @@ def create_product(name, price, description_short, description_long, composition
     active_element.text = "1"
 
     tree = etree.ElementTree(prestashop)
-    tree.write("product.xml", pretty_print=True)
+    #tree.write("product.xml", pretty_print=True)
     xml_data = etree.tostring(tree.getroot(), pretty_print=True, xml_declaration=True, encoding="UTF-8")
 
     response = requests.post(f"{API_URL}/products", headers=headers, data=xml_data)
@@ -261,6 +267,7 @@ def create_product(name, price, description_short, description_long, composition
     else:
         print(f"Error creating product: {response.text}")
 
+    requests.put(f"{API_URL}/products/{response.json()["product"]["id"]}", headers=headers, data=xml_data)
 
 source_data = {
     "categories": [
