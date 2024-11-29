@@ -2977,17 +2977,17 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
         $b = new \Doctrine\Persistence\Mapping\Driver\MappingDriverChain();
 
         $c = ${($_ = isset($this->services['annotation_reader']) ? $this->services['annotation_reader'] : ($this->services['annotation_reader'] = new \Doctrine\Common\Annotations\AnnotationReader())) && false ?: '_'};
-        $d = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => '/var/www/html/modules/productcomments/src/Entity']);
-        $d->addExcludePaths([0 => '/var/www/html/modules/productcomments/src/Entity/index.php']);
-        $e = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => '/var/www/html/modules/ps_accounts/src/Entity']);
-        $e->addExcludePaths([0 => '/var/www/html/modules/ps_accounts/src/Entity/index.php']);
-        $f = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => '/var/www/html/modules/ps_checkout/src/Entity']);
-        $f->addExcludePaths([0 => '/var/www/html/modules/ps_checkout/src/Entity/index.php']);
+        $d = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => '/var/www/html/modules/ps_accounts/src/Entity']);
+        $d->addExcludePaths([0 => '/var/www/html/modules/ps_accounts/src/Entity/index.php']);
+        $e = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => '/var/www/html/modules/ps_checkout/src/Entity']);
+        $e->addExcludePaths([0 => '/var/www/html/modules/ps_checkout/src/Entity/index.php']);
+        $f = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => '/var/www/html/modules/productcomments/src/Entity']);
+        $f->addExcludePaths([0 => '/var/www/html/modules/productcomments/src/Entity/index.php']);
 
         $b->addDriver(new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($c, [0 => '/var/www/html/src/PrestaShopBundle/Entity']), 'PrestaShop');
-        $b->addDriver($d, 'PrestaShop\\Module\\ProductComment\\Entity');
-        $b->addDriver($e, 'PrestaShop\\Module\\PsAccounts\\Entity');
-        $b->addDriver($f, 'PrestaShop\\Module\\PrestashopCheckout\\Entity');
+        $b->addDriver($d, 'PrestaShop\\Module\\PsAccounts\\Entity');
+        $b->addDriver($e, 'PrestaShop\\Module\\PrestashopCheckout\\Entity');
+        $b->addDriver($f, 'PrestaShop\\Module\\ProductComment\\Entity');
 
         $a->setEntityNamespaces(['PrestaShopBundle\\Entity' => 'PrestaShop']);
         $a->setMetadataCacheImpl(${($_ = isset($this->services['doctrine.orm.cache.provider.cache.doctrine.orm.default.metadata']) ? $this->services['doctrine.orm.cache.provider.cache.doctrine.orm.default.metadata'] : $this->getDoctrine_Orm_Cache_Provider_Cache_Doctrine_Orm_Default_MetadataService()) && false ?: '_'});
@@ -3004,9 +3004,9 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
         $a->setEntityListenerResolver(${($_ = isset($this->services['doctrine.orm.default_entity_listener_resolver']) ? $this->services['doctrine.orm.default_entity_listener_resolver'] : ($this->services['doctrine.orm.default_entity_listener_resolver'] = new \Doctrine\Bundle\DoctrineBundle\Mapping\ContainerEntityListenerResolver($this))) && false ?: '_'});
         $a->setRepositoryFactory(new \Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory(new \Symfony\Component\DependencyInjection\ServiceLocator([])));
         $a->addCustomStringFunction('regexp', 'DoctrineExtensions\\Query\\Mysql\\Regexp');
-        $a->addEntityNamespace('Moduleproductcomments', 'PrestaShop\\Module\\ProductComment\\Entity');
         $a->addEntityNamespace('ModulepsAccounts', 'PrestaShop\\Module\\PsAccounts\\Entity');
         $a->addEntityNamespace('ModulepsCheckout', 'PrestaShop\\Module\\PrestashopCheckout\\Entity');
+        $a->addEntityNamespace('Moduleproductcomments', 'PrestaShop\\Module\\ProductComment\\Entity');
 
         $this->services['doctrine.orm.default_entity_manager'] = $instance = \Doctrine\ORM\EntityManager::create(${($_ = isset($this->services['doctrine.dbal.default_connection']) ? $this->services['doctrine.dbal.default_connection'] : $this->getDoctrine_Dbal_DefaultConnectionService()) && false ?: '_'}, $a);
 
@@ -5667,11 +5667,6 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'doctrine.orm.auto_generate_proxy_classes' => true,
             'doctrine.orm.proxy_dir' => '/var/www/html/var/cache/dev//doctrine/orm/Proxies',
             'doctrine.orm.proxy_namespace' => 'Proxies',
-            'ps_eventbus.proxy_api_url' => 'https://eventbus-proxy.psessentials.net',
-            'ps_eventbus.sync_api_url' => 'https://eventbus-sync.psessentials.net',
-            'ps_eventbus.live_sync_api_url' => 'https://api.cloudsync.prestashop.com/live-sync/v1',
-            'ps_eventbus.sentry_dsn' => 'https://457f191226df4b8f9a0d7bf6f250bab2@o298402.ingest.sentry.io/6066714',
-            'ps_eventbus.sentry_env' => 'production',
             'ps_accounts.environment' => 'production',
             'ps_accounts.accounts_api_url' => 'https://accounts-api.distribution.prestashop.net/',
             'ps_accounts.accounts_ui_url' => 'https://accounts.distribution.prestashop.net',
@@ -5689,6 +5684,11 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'ps_accounts.svc_accounts_ui_url' => 'https://accounts.psessentials.net',
             'ps_accounts.oauth2_url' => 'https://oauth.prestashop.com',
             'ps_accounts.testimonials_url' => 'https://assets.prestashop3.com/dst/accounts/assets/testimonials.json',
+            'ps_eventbus.proxy_api_url' => 'https://eventbus-proxy.psessentials.net',
+            'ps_eventbus.sync_api_url' => 'https://eventbus-sync.psessentials.net',
+            'ps_eventbus.live_sync_api_url' => 'https://api.cloudsync.prestashop.com/live-sync/v1',
+            'ps_eventbus.sentry_dsn' => 'https://457f191226df4b8f9a0d7bf6f250bab2@o298402.ingest.sentry.io/6066714',
+            'ps_eventbus.sentry_env' => 'production',
         ];
     }
 }
