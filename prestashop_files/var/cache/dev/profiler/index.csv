@@ -471,3 +471,13 @@ e4dcdc,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifica
 427413,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=oY2t7IpZ977qOeFbKB7PRi1_saSK3g_e75eFW8evOAo&rand=1732905994153,1732905993,,200
 f5d88a,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=oY2t7IpZ977qOeFbKB7PRi1_saSK3g_e75eFW8evOAo,1732906115,,200
 94a979,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=oY2t7IpZ977qOeFbKB7PRi1_saSK3g_e75eFW8evOAo&rand=1732906115160,1732906115,,200
+126873,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=oY2t7IpZ977qOeFbKB7PRi1_saSK3g_e75eFW8evOAo,1732906236,,200
+87693d,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=oY2t7IpZ977qOeFbKB7PRi1_saSK3g_e75eFW8evOAo&rand=1732906236160,1732906236,,200
+13ae43,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=oY2t7IpZ977qOeFbKB7PRi1_saSK3g_e75eFW8evOAo,1732906357,,200
+800693,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=oY2t7IpZ977qOeFbKB7PRi1_saSK3g_e75eFW8evOAo&rand=1732906357156,1732906357,,200
+8bf080,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=oY2t7IpZ977qOeFbKB7PRi1_saSK3g_e75eFW8evOAo,1732906477,,200
+afc8b6,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=oY2t7IpZ977qOeFbKB7PRi1_saSK3g_e75eFW8evOAo&rand=1732906478161,1732906477,,200
+0be515,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=oY2t7IpZ977qOeFbKB7PRi1_saSK3g_e75eFW8evOAo,1732906598,,200
+8d94d9,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=oY2t7IpZ977qOeFbKB7PRi1_saSK3g_e75eFW8evOAo&rand=1732906599151,1732906598,,200
+da9551,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=oY2t7IpZ977qOeFbKB7PRi1_saSK3g_e75eFW8evOAo,1732906720,,200
+f06d36,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=oY2t7IpZ977qOeFbKB7PRi1_saSK3g_e75eFW8evOAo&rand=1732906720166,1732906720,,200

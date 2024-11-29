@@ -213,6 +213,7 @@ def create_product(name, price, review, description_short, description_long, com
         etree.SubElement(stock_available_element, 'id_product').text = str(id)
         etree.SubElement(stock_available_element, 'id_product_attribute').text = "0"
         etree.SubElement(stock_available_element, 'quantity').text = str(quantity)
+        etree.SubElement(stock_available_element, 'id_shop').text = "1"
         etree.SubElement(stock_available_element, 'depends_on_stock').text = "0"
         etree.SubElement(stock_available_element, 'out_of_stock').text = "0"
 
