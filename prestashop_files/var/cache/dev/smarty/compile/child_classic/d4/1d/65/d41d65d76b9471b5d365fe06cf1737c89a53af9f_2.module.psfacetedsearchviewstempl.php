@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.48, created on 2024-11-29 16:15:25
+/* Smarty version 3.1.48, created on 2024-11-29 19:12:59
   from 'module:psfacetedsearchviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_6749da8d735f03_95962418',
+  'unifunc' => 'content_674a042b0d7030_70008980',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,19 +20,19 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6749da8d735f03_95962418 (Smarty_Internal_Template $_smarty_tpl) {
+function content_674a042b0d7030_70008980 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <!-- begin /var/www/html/modules/ps_facetedsearch/views/templates/front/catalog/facets.tpl --><?php if (count($_smarty_tpl->tpl_vars['displayedFacets']->value)) {?>
   <div id="search_filters">
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17926184136749da8d725290_80694410', 'facets_title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_573632555674a042b0c10c2_23678307', 'facets_title');
 ?>
 
 
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18719103526749da8d725cc7_05089115', 'facets_clearall_button');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1845945866674a042b0c2057_36433313', 'facets_clearall_button');
 ?>
 
 
@@ -73,19 +73,19 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
         <?php if (in_array($_smarty_tpl->tpl_vars['facet']->value['widgetType'],array('radio','checkbox'))) {?>
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8979281416749da8d7295b6_97862331', 'facet_item_other');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1370554794674a042b0c7a28_13834699', 'facet_item_other');
 ?>
 
 
         <?php } elseif ($_smarty_tpl->tpl_vars['facet']->value['widgetType'] == 'dropdown') {?>
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10588546156749da8d72f0b7_60098688', 'facet_item_dropdown');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1787462391674a042b0cf6a0_15488574', 'facet_item_dropdown');
 ?>
 
 
         <?php } elseif ($_smarty_tpl->tpl_vars['facet']->value['widgetType'] == 'slider') {?>
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19744822756749da8d7338b2_23851159', 'facet_item_slider');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_623740090674a042b0d3f60_49632750', 'facet_item_slider');
 ?>
 
         <?php }?>
@@ -100,12 +100,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 <?php }?>
 <!-- end /var/www/html/modules/ps_facetedsearch/views/templates/front/catalog/facets.tpl --><?php }
 /* {block 'facets_title'} */
-class Block_17926184136749da8d725290_80694410 extends Smarty_Internal_Block
+class Block_573632555674a042b0c10c2_23678307 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'facets_title' => 
   array (
-    0 => 'Block_17926184136749da8d725290_80694410',
+    0 => 'Block_573632555674a042b0c10c2_23678307',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -118,12 +118,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'facets_title'} */
 /* {block 'facets_clearall_button'} */
-class Block_18719103526749da8d725cc7_05089115 extends Smarty_Internal_Block
+class Block_1845945866674a042b0c2057_36433313 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'facets_clearall_button' => 
   array (
-    0 => 'Block_18719103526749da8d725cc7_05089115',
+    0 => 'Block_1845945866674a042b0c2057_36433313',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -144,12 +144,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'facets_clearall_button'} */
 /* {block 'facet_item_other'} */
-class Block_8979281416749da8d7295b6_97862331 extends Smarty_Internal_Block
+class Block_1370554794674a042b0c7a28_13834699 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'facet_item_other' => 
   array (
-    0 => 'Block_8979281416749da8d7295b6_97862331',
+    0 => 'Block_1370554794674a042b0c7a28_13834699',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -233,12 +233,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block 'facet_item_other'} */
 /* {block 'facet_item_dropdown'} */
-class Block_10588546156749da8d72f0b7_60098688 extends Smarty_Internal_Block
+class Block_1787462391674a042b0cf6a0_15488574 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'facet_item_dropdown' => 
   array (
-    0 => 'Block_10588546156749da8d72f0b7_60098688',
+    0 => 'Block_1787462391674a042b0cf6a0_15488574',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -310,12 +310,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block 'facet_item_dropdown'} */
 /* {block 'facet_item_slider'} */
-class Block_19744822756749da8d7338b2_23851159 extends Smarty_Internal_Block
+class Block_623740090674a042b0d3f60_49632750 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'facet_item_slider' => 
   array (
-    0 => 'Block_19744822756749da8d7338b2_23851159',
+    0 => 'Block_623740090674a042b0d3f60_49632750',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
