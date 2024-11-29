@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2024-11-29 20:46:05
+/* Smarty version 3.1.48, created on 2024-11-29 23:39:51
   from 'module:productcommentsviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_674a19fd037ae3_37014024',
+  'unifunc' => 'content_674a42b72f7b14_28207354',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '86a3fbdbbaf4c17b3f3d70f925fe6312d03f2c1c' => 
     array (
       0 => 'module:productcommentsviewstempl',
-      1 => 1732830588,
+      1 => 1732917439,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_674a19fd037ae3_37014024 (Smarty_Internal_Template $_smarty_tpl) {
+function content_674a42b72f7b14_28207354 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin /var/www/html/modules/productcomments/views/templates/hook/product-comment-item-prototype.tpl -->
 <div class="product-comment-list-item row" data-product-comment-id="@COMMENT_ID@" data-product-id="@PRODUCT_ID@">
   <div class="col-sm-3 comment-infos">
