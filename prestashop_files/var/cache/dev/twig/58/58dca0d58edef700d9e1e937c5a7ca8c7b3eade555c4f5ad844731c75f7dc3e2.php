@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* @PrestaShop/Admin/Helpers/bootstrap_popup.html.twig */
+/* PrestaShopBundle:Admin/Helpers:bootstrap_popup.html.twig */
 class __TwigTemplate_0cf1f5925e51f1e6ca58924b1fd63fbfa3680bf68e6c1861331ed20a837635b0 extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -30,10 +30,10 @@ class __TwigTemplate_0cf1f5925e51f1e6ca58924b1fd63fbfa3680bf68e6c1861331ed20a837
     protected function doDisplay(array $context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@PrestaShop/Admin/Helpers/bootstrap_popup.html.twig"));
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "PrestaShopBundle:Admin/Helpers:bootstrap_popup.html.twig"));
 
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@PrestaShop/Admin/Helpers/bootstrap_popup.html.twig"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "PrestaShopBundle:Admin/Helpers:bootstrap_popup.html.twig"));
 
         // line 25
         echo "<div class=\"modal fade\" id=\"";
@@ -252,7 +252,7 @@ $context["action"], "type", [], "any", true, true) && ($this->getAttribute($cont
 
     public function getTemplateName()
     {
-        return "@PrestaShop/Admin/Helpers/bootstrap_popup.html.twig";
+        return "PrestaShopBundle:Admin/Helpers:bootstrap_popup.html.twig";
     }
 
     public function isTraitable()
@@ -359,6 +359,6 @@ $context["action"], "type", [], "any", true, true) && ($this->getAttribute($cont
         });
     });
 </script>
-", "@PrestaShop/Admin/Helpers/bootstrap_popup.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Helpers/bootstrap_popup.html.twig");
+", "PrestaShopBundle:Admin/Helpers:bootstrap_popup.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/Helpers/bootstrap_popup.html.twig");
     }
 }

@@ -29,7 +29,7 @@
       {l
         s='Call us: [1]%phone%[/1]'
         sprintf=[
-          '[1]' => '<span>',
+          '[1]' => '<span id="custom_phone_number">',
           '[/1]' => '</span>',
           '%phone%' => $contact_infos.phone
         ]
