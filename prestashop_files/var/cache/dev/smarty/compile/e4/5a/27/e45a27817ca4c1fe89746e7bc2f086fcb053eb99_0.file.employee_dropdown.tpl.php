@@ -1,18 +1,26 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.48, created on 2024-11-30 14:35:31
+=======
+/* Smarty version 3.1.48, created on 2024-11-30 14:27:11
+>>>>>>> 1284c66d9 (improved css)
   from '/var/www/html/admin-dev/themes/new-theme/template/components/layout/employee_dropdown.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
+<<<<<<< HEAD
   'unifunc' => 'content_674b14a3e3bc74_60678357',
+=======
+  'unifunc' => 'content_674b12afde0d10_28407373',
+>>>>>>> 1284c66d9 (improved css)
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e45a27817ca4c1fe89746e7bc2f086fcb053eb99' => 
     array (
       0 => '/var/www/html/admin-dev/themes/new-theme/template/components/layout/employee_dropdown.tpl',
-      1 => 1732917439,
+      1 => 1732878095,
       2 => 'file',
     ),
   ),
@@ -20,7 +28,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_674b14a3e3bc74_60678357 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_674b12afde0d10_28407373 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> 1284c66d9 (improved css)
 if ((isset($_smarty_tpl->tpl_vars['employee']->value))) {?>
 <div class="dropdown employee-dropdown">
   <div class="rounded-circle person" data-toggle="dropdown">

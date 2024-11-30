@@ -1,18 +1,26 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.48, created on 2024-11-30 14:35:31
+=======
+/* Smarty version 3.1.48, created on 2024-11-30 14:27:11
+>>>>>>> 1284c66d9 (improved css)
   from '/var/www/html/admin-dev/themes/new-theme/template/controllers/modules/login_addons.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
+<<<<<<< HEAD
   'unifunc' => 'content_674b14a3d7f4a3_13152039',
+=======
+  'unifunc' => 'content_674b12afd04d59_58669640',
+>>>>>>> 1284c66d9 (improved css)
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'de3c9e9338c3f4a59c6ae58b13cc098c69537ab9' => 
     array (
       0 => '/var/www/html/admin-dev/themes/new-theme/template/controllers/modules/login_addons.tpl',
-      1 => 1732917439,
+      1 => 1732878095,
       2 => 'file',
     ),
   ),
@@ -20,7 +28,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_674b14a3d7f4a3_13152039 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_674b12afd04d59_58669640 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> 1284c66d9 (improved css)
 ?>
 <div class="modal-body">
 <?php if ($_smarty_tpl->tpl_vars['add_permission']->value == '1') {?>

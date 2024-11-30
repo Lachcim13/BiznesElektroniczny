@@ -1,18 +1,26 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.48, created on 2024-11-30 14:35:31
+=======
+/* Smarty version 3.1.48, created on 2024-11-30 14:27:11
+>>>>>>> 1284c66d9 (improved css)
   from '/var/www/html/admin-dev/themes/new-theme/template/modal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
+<<<<<<< HEAD
   'unifunc' => 'content_674b14a3dd3f91_71164720',
+=======
+  'unifunc' => 'content_674b12afd56bf9_68969845',
+>>>>>>> 1284c66d9 (improved css)
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '426265c3a458d67f0860d1d99a8d6211e00ac785' => 
     array (
       0 => '/var/www/html/admin-dev/themes/new-theme/template/modal.tpl',
-      1 => 1732917439,
+      1 => 1732878095,
       2 => 'file',
     ),
   ),
@@ -20,7 +28,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_674b14a3dd3f91_71164720 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_674b12afd56bf9_68969845 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> 1284c66d9 (improved css)
 ?><div class="modal fade" id="<?php echo $_smarty_tpl->tpl_vars['modal_id']->value;?>
 " tabindex="-1">
 	<div class="modal-dialog <?php if ((isset($_smarty_tpl->tpl_vars['modal_class']->value))) {

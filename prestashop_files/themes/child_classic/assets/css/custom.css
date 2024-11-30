@@ -3,3 +3,9 @@
  * A template should always ship with an empty custom.css
  */
  #custom_phone_number{ color: #232323 }
+ @media (min-width: 1200px) {
+    .container {
+        width: 1400px;
+        max-width: 100%;
+    }
+}

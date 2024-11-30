@@ -1,18 +1,26 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.48, created on 2024-11-30 14:35:31
+=======
+/* Smarty version 3.1.48, created on 2024-11-30 14:27:11
+>>>>>>> 1284c66d9 (improved css)
   from '/var/www/html/admin-dev/themes/new-theme/template/components/layout/search_form.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
+<<<<<<< HEAD
   'unifunc' => 'content_674b14a3e2d337_44735049',
+=======
+  'unifunc' => 'content_674b12afdcafc5_09267397',
+>>>>>>> 1284c66d9 (improved css)
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c16c2f74e8de53a61305f366f0c53d5ab9956e4d' => 
     array (
       0 => '/var/www/html/admin-dev/themes/new-theme/template/components/layout/search_form.tpl',
-      1 => 1732917439,
+      1 => 1732878095,
       2 => 'file',
     ),
   ),
@@ -20,7 +28,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_674b14a3e2d337_44735049 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_674b12afdcafc5_09267397 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> 1284c66d9 (improved css)
 ?>
 <form id="header_search"
       class="bo_search_form dropdown-form js-dropdown-form collapsed"

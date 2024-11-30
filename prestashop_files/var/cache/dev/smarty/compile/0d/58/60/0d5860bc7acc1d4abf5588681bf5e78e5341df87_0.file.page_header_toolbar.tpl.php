@@ -1,18 +1,26 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.48, created on 2024-11-30 14:35:31
+=======
+/* Smarty version 3.1.48, created on 2024-11-30 14:27:11
+>>>>>>> 1284c66d9 (improved css)
   from '/var/www/html/admin-dev/themes/new-theme/template/page_header_toolbar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
+<<<<<<< HEAD
   'unifunc' => 'content_674b14a3dec0d9_40310316',
+=======
+  'unifunc' => 'content_674b12afd7e4d0_06093400',
+>>>>>>> 1284c66d9 (improved css)
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0d5860bc7acc1d4abf5588681bf5e78e5341df87' => 
     array (
       0 => '/var/www/html/admin-dev/themes/new-theme/template/page_header_toolbar.tpl',
-      1 => 1732917439,
+      1 => 1732878095,
       2 => 'file',
     ),
   ),
@@ -20,7 +28,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_674b14a3dec0d9_40310316 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_674b12afd7e4d0_06093400 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> 1284c66d9 (improved css)
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -31,18 +43,30 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
   <div class="container-fluid">
 
     <?php 
+<<<<<<< HEAD
 $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_367932958674b14a3dd72a3_38961100', 'pageBreadcrumb');
+=======
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1006587706674b12afd5ba98_62785487', 'pageBreadcrumb');
+>>>>>>> 1284c66d9 (improved css)
 ?>
 
 
     <div class="title-row">
       <?php 
+<<<<<<< HEAD
 $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1887282506674b14a3dd93f0_14124329', 'pageTitle');
+=======
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2088097447674b12afd5f5f2_06719412', 'pageTitle');
+>>>>>>> 1284c66d9 (improved css)
 ?>
 
 
       <?php 
+<<<<<<< HEAD
 $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_446071557674b14a3dda1a2_81595989', 'toolbarBox');
+=======
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1165590303674b12afd60bf0_18421205', 'toolbarBox');
+>>>>>>> 1284c66d9 (improved css)
 ?>
 
     </div>
@@ -206,12 +230,20 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </div>
 <?php }
 /* {block 'pageBreadcrumb'} */
+<<<<<<< HEAD
 class Block_367932958674b14a3dd72a3_38961100 extends Smarty_Internal_Block
+=======
+class Block_1006587706674b12afd5ba98_62785487 extends Smarty_Internal_Block
+>>>>>>> 1284c66d9 (improved css)
 {
 public $subBlocks = array (
   'pageBreadcrumb' => 
   array (
+<<<<<<< HEAD
     0 => 'Block_367932958674b14a3dd72a3_38961100',
+=======
+    0 => 'Block_1006587706674b12afd5ba98_62785487',
+>>>>>>> 1284c66d9 (improved css)
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -238,12 +270,20 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'pageBreadcrumb'} */
 /* {block 'pageTitle'} */
+<<<<<<< HEAD
 class Block_1887282506674b14a3dd93f0_14124329 extends Smarty_Internal_Block
+=======
+class Block_2088097447674b12afd5f5f2_06719412 extends Smarty_Internal_Block
+>>>>>>> 1284c66d9 (improved css)
 {
 public $subBlocks = array (
   'pageTitle' => 
   array (
+<<<<<<< HEAD
     0 => 'Block_1887282506674b14a3dd93f0_14124329',
+=======
+    0 => 'Block_2088097447674b12afd5f5f2_06719412',
+>>>>>>> 1284c66d9 (improved css)
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -261,12 +301,20 @@ echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escap
 }
 /* {/block 'pageTitle'} */
 /* {block 'toolbarBox'} */
+<<<<<<< HEAD
 class Block_446071557674b14a3dda1a2_81595989 extends Smarty_Internal_Block
+=======
+class Block_1165590303674b12afd60bf0_18421205 extends Smarty_Internal_Block
+>>>>>>> 1284c66d9 (improved css)
 {
 public $subBlocks = array (
   'toolbarBox' => 
   array (
+<<<<<<< HEAD
     0 => 'Block_446071557674b14a3dda1a2_81595989',
+=======
+    0 => 'Block_1165590303674b12afd60bf0_18421205',
+>>>>>>> 1284c66d9 (improved css)
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
