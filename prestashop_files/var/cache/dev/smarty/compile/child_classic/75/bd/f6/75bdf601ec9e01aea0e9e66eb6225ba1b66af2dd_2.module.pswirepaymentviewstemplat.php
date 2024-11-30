@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.48, created on 2024-11-30 15:08:53
+/* Smarty version 3.1.48, created on 2024-11-30 18:24:34
   from 'module:pswirepaymentviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_674b1c75debdd7_61003856',
+  'unifunc' => 'content_674b4a52675445_57362921',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:ps_wirepayment/views/templates/hook/_partials/payment_infos.tpl' => 1,
   ),
 ),false)) {
-function content_674b1c75debdd7_61003856 (Smarty_Internal_Template $_smarty_tpl) {
+function content_674b4a52675445_57362921 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin /var/www/html/modules/ps_wirepayment/views/templates/hook/payment_return.tpl -->
 <p>
   <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Your order on %s is complete.','sprintf'=>array($_smarty_tpl->tpl_vars['shop_name']->value),'d'=>'Modules.Wirepayment.Shop'),$_smarty_tpl ) );?>
