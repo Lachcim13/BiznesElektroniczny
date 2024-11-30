@@ -9,3 +9,9 @@ __pycache__/
 *.tmp
 .DS_Store
 Thumbs.db
+
+
+*.meta
+mariadb_files/aria_log.00000001
+mariadb_files/aria_log_control
+mariadb_files/prestashop/ps_connections_source.ibd
