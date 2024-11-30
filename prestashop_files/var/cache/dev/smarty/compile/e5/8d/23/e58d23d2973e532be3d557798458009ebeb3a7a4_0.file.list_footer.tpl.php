@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.48, created on 2024-11-30 14:23:36
+/* Smarty version 3.1.48, created on 2024-11-30 14:34:19
   from '/var/www/html/admin-dev/themes/default/template/controllers/carriers/helpers/list/list_footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_674b11d83e0ca1_70099688',
+  'unifunc' => 'content_674b145b1efd76_59841363',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,25 +20,25 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_674b11d83e0ca1_70099688 (Smarty_Internal_Template $_smarty_tpl) {
+function content_674b145b1efd76_59841363 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 	<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1094680362674b11d83df954_45550654', "after");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1482361734674b145b1ee669_55075911', "after");
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "helpers/list/list_footer.tpl");
 }
 /* {block "after"} */
-class Block_1094680362674b11d83df954_45550654 extends Smarty_Internal_Block
+class Block_1482361734674b145b1ee669_55075911 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'after' => 
   array (
-    0 => 'Block_1094680362674b11d83df954_45550654',
+    0 => 'Block_1482361734674b145b1ee669_55075911',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
