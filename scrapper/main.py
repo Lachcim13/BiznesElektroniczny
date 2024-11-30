@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.common import exceptions
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -10,8 +11,10 @@ import time
 from selenium.webdriver.chrome.service import Service
 
 def download_image(image_url, name, suffix=""):
+    if image_url == "" or image_url is None:
+        return ""
     try:
-        img_data = requests.get(image_url).content
+        img_data = requests.get(image_url, timeout=5).content
         image_filename = f"{name}{suffix}.jpg"
         image_path = os.path.join(images_folder, image_filename)
 
@@ -19,6 +22,10 @@ def download_image(image_url, name, suffix=""):
             img_file.write(img_data)
 
         return image_path
+    except requests.exceptions.Timeout:
+        print(f"Przekroczono czas oczekiwania na {image_url}")
+    except requests.exceptions.RequestException as e:
+        print(f"Wystąpił błąd: {e}")
     except Exception as e:
         print(f"Failed to download image for product {name}: {e}")
         return ""
@@ -31,7 +38,6 @@ def download_product_data(product_soup):
     # PRICE
     price_element = product_soup.find("span", class_="current-price-value")
     price_content = price_element["content"] if price_element else ""
-    price = price_element.get_text(strip=True) if price_element else ""
 
     # DESCRIPTION
     description_elements = product_soup.find_all("div", class_="product-description")
@@ -79,15 +85,9 @@ def download_product_data(product_soup):
             needle_size = detailed_data_value.get_text(strip=True)
 
     # FLAGS
-    out_of_stock_element = product_soup.find("li", class_="product-flag out_of_stock")
-    out_of_stock = out_of_stock_element.get_text(strip=True) if out_of_stock_element else ""
     tax_element = product_soup.find("div", class_="tax-shipping-delivery-label")
     tax = str(tax_element.contents[0]).strip() if tax_element else ""
 
-    delivery_element = product_soup.find("span", class_="delivery-information")
-    delivery = delivery_element.get_text(strip=True) if delivery_element else ""
-    review_stars = product_soup.find("div", class_="product-comments-additional-info").find("div", class_="star-content star-full clearfix")
-    rating = 0 if review_stars is None else len(review_stars.find_all("div", class_="star-on"))
 
     # IMAGES
     image_element = product_soup.find("img", class_="thumb js-thumb selected js-thumb-selected")
@@ -102,11 +102,7 @@ def download_product_data(product_soup):
     product_data = {
         "name": name,
         "tax": tax,
-        "delivery": delivery,
-        "price": price,
         "price_content": price_content,
-        "out_of_stock": out_of_stock,
-        "review": rating,
         "description_title_short": description_title_short,
         "description_short": description_short,
         "description_long": description_long,
@@ -163,9 +159,10 @@ def download_category_data(driver, name, category_soup, category_link, sub = Fal
             if name in categories_names:
                 subcategory_data = download_category_data(driver, name, subcategory_soup, link, True)
                 subcategory_data_list.append(subcategory_data)
+                print(f"Added (sub)category {subcategory_data['name']}")
 
-            driver.back()
-            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "h1")))
+        driver.get(category_link)
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "h1")))
 
         category_data["subcategories"] = subcategory_data_list
 
@@ -183,20 +180,25 @@ def download_category_data(driver, name, category_soup, category_link, sub = Fal
                 element = product.find("h2", class_="h3 product-title")
                 link = element.find("a")["href"]
                 driver.get(link)
-                WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "h1")))
+                try:
+                    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "h1")))
+                except exceptions.TimeoutException as e:
+                    print(f"ERROR: {e.msg}")
+                    continue
+
                 product_soup = BeautifulSoup(driver.page_source, "html.parser")
                 product_data = download_product_data(product_soup)
                 product_data_list.append(product_data)
+                print(f"Added product {product_data['name']}")
 
-                driver.get(category_link)
-                WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "js-product")))
+            driver.get(category_link)
+            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "js-product")))
 
             # CHECK NEXT PAGE
             next_page_button = soup.find("a", rel="next")
             if next_page_button:
                 next_url = next_page_button["href"]
                 driver.get(next_url)
-                WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "js-product")))
             else:
                 break
 
@@ -207,7 +209,7 @@ def download_category_data(driver, name, category_soup, category_link, sub = Fal
 def generate(url= "", categories_names = [""]):
     # DRIVER CONFIGURATION
     options = webdriver.ChromeOptions()
-    options.add_argument('--headless')
+    #options.add_argument('--headless')
     options.add_argument('--disable-gpu')
     options.add_argument('--no-sandbox')
     service = Service(executable_path='/usr/bin/chromedriver')
@@ -241,19 +243,16 @@ def generate(url= "", categories_names = [""]):
             category_data = download_category_data(driver, name, category_soup, link)
             category_data_list.append(category_data)
             # SAVE TO JSON FILE
-            with open("../scrapper_results/" + name + ".json", "w", encoding="utf-8") as file:
+            with open("../scrapper_results/" + name + "_merino.json", "w", encoding="utf-8") as file:
                 json.dump({"categories": category_data_list}, file, ensure_ascii=False, indent=4)
 
-        driver.back()
-        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "category")))
-
     driver.quit()
-    print("Products have been saved to the file products_.json and images have been downloaded.")
+    print("Products have been saved to the file and images have been downloaded.")
 
 
 if __name__ == "__main__":
     url = "https://karolinaszydelko.pl"
-    categories_names = ["Włóczki", "Włóczki z kaszmirem"]
+    categories_names = ["Włóczki", "Włóczki Merino"]
 
     start_time = time.time()
     generate(url, categories_names)
