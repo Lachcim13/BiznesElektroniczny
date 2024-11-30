@@ -131,7 +131,7 @@ def create_product(name, price, description_short, description_long, composition
     prestashop = etree.Element('prestashop', xmlns_xlink="http://www.w3.org/1999/xlink")
     product_element = etree.SubElement(prestashop,"product")
 
-    #TODO: delivery
+
     name_element = etree.SubElement(product_element, "name")
     etree.SubElement(name_element, "language", id=lang_id_str).text = name
 
