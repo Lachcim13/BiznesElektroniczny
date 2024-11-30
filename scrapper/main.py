@@ -45,11 +45,11 @@ def download_product_data(driver, product):
 
     # SHORT DESCRIPTION
     description_element = description_elements[0].find_all("p") if len(description_elements) > 0 else []
-    if len(description_element) >= 2:
+    if len(description_element) == 2:
         description_title_short = description_element[0].get_text(strip=True)
         description_short = description_element[1].get_text(strip=True)
-    elif len(description_element) >= 1:
-        description_title_short =  description_elements[0].find("h3").find("span").get_text(strip=True)
+    elif len(description_element) == 1:
+        description_title_short =  ""
         description_short = description_element[0].get_text(strip=True)
     else:
         description_title_short = ""
@@ -218,7 +218,7 @@ def generate(url= "", categories_names = [""]):
 
     # CREATE FOLDER FOR IMAGES
     global images_folder
-    images_folder = "downloaded_images"
+    images_folder = "../scrapper_results/downloaded_images"
     os.makedirs(images_folder, exist_ok=True)
 
     # FINDING MAIN PAGE CATEGORIES
@@ -247,7 +247,7 @@ def generate(url= "", categories_names = [""]):
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "category")))
 
     # SAVE TO JSON FILE
-    with open("categories.json", "w", encoding="utf-8") as file:
+    with open("../scrapper_results/categories.json", "w", encoding="utf-8") as file:
         json.dump({"categories": category_data_list}, file, ensure_ascii=False, indent=4)
 
     driver.quit()
