@@ -748,3 +748,16 @@ a9e3f4,172.18.0.1,GET,http://localhost:8080/admin-dev/index.php/improve/payment/
 412828,172.18.0.1,GET,http://localhost:8080/admin-dev/index.php/modules/addons/modules/recommended?_token=L0ThcEJ9KqPlr5b46wQGVkAgMX8bD6PkRlm8JjkoCvY&tabClassName=AdminPayment,1732927737,,200
 ec8bf1,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=L0ThcEJ9KqPlr5b46wQGVkAgMX8bD6PkRlm8JjkoCvY,1732927737,,200
 aaf9c0,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=L0ThcEJ9KqPlr5b46wQGVkAgMX8bD6PkRlm8JjkoCvY&rand=1732927737537,1732927737,,200
+ef2f60,172.18.0.1,GET,http://localhost:8080/admin-dev/index.php/modules/addons/modules/recommended?_token=m3BWmjQy2-_l_ytSartub8IbZSP-orSkBkGNN0wvMtM&tabClassName=AdminCarriers,1732972963,,200
+22df8f,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=m3BWmjQy2-_l_ytSartub8IbZSP-orSkBkGNN0wvMtM&rand=1732972963523,1732972963,,200
+502f0e,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=m3BWmjQy2-_l_ytSartub8IbZSP-orSkBkGNN0wvMtM&rand=1732972963525,1732972963,,200
+a0fa22,172.18.0.1,GET,http://localhost:8080/admin-dev/index.php/modules/addons/themes/catalog?_token=m3BWmjQy2-_l_ytSartub8IbZSP-orSkBkGNN0wvMtM,1732972969,,200
+9659eb,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=m3BWmjQy2-_l_ytSartub8IbZSP-orSkBkGNN0wvMtM,1732972969,,200
+892184,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=m3BWmjQy2-_l_ytSartub8IbZSP-orSkBkGNN0wvMtM&rand=1732972969944,1732972970,,200
+8cc33a,172.18.0.1,GET,http://localhost:8080/admin-dev/index.php/_fragment?_path=_format%3Dhtml%26_locale%3Den-US%26_controller%3DPrestaShopBundle%255CController%255CAdmin%255CProductController%253A%253AlistAction,1732972976,407a30,200
+407a30,172.18.0.1,GET,http://localhost:8080/admin-dev/index.php/sell/catalog/products?_token=m3BWmjQy2-_l_ytSartub8IbZSP-orSkBkGNN0wvMtM,1732972976,,200
+f689e5,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=m3BWmjQy2-_l_ytSartub8IbZSP-orSkBkGNN0wvMtM,1732972976,,200
+b452a5,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=m3BWmjQy2-_l_ytSartub8IbZSP-orSkBkGNN0wvMtM&rand=1732972976983,1732972976,,200
+ecbd57,172.18.0.1,GET,http://localhost:8080/admin-dev/index.php/modules/addons/modules/recommended?_token=m3BWmjQy2-_l_ytSartub8IbZSP-orSkBkGNN0wvMtM&tabClassName=AdminCarriers,1732973016,,200
+0b90d8,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=m3BWmjQy2-_l_ytSartub8IbZSP-orSkBkGNN0wvMtM&rand=1732973016387,1732973016,,200
+607019,172.18.0.1,POST,http://localhost:8080/admin-dev/index.php/common/notifications?_token=m3BWmjQy2-_l_ytSartub8IbZSP-orSkBkGNN0wvMtM&rand=1732973016391,1732973016,,200
