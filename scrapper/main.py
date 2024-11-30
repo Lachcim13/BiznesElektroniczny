@@ -23,14 +23,7 @@ def download_image(image_url, name, suffix=""):
         print(f"Failed to download image for product {name}: {e}")
         return ""
 
-def download_product_data(driver, product):
-    # OPEN PRODUCT PAGE
-    element = product.find("h2", class_="h3 product-title")
-    link = element.find("a")["href"]
-    driver.get(link)
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "h1")))
-    product_soup = BeautifulSoup(driver.page_source, "html.parser")
-
+def download_product_data(product_soup):
     # PRODUCT NAME
     name_element = product_soup.find("h1", class_="h1")
     name = name_element.get_text(strip=True) if name_element else ""
@@ -129,7 +122,7 @@ def download_product_data(driver, product):
 
     return product_data
 
-def download_category_data(driver, name, category_soup, sub = False):
+def download_category_data(driver, name, category_soup, category_link, sub = False):
     # CATEGORY DESCRIPTION
     description_element = category_soup.find("div", id="category-description")
     if description_element:
@@ -168,7 +161,7 @@ def download_category_data(driver, name, category_soup, sub = False):
             name = name_element.get_text(strip=True) if name_element else ""
 
             if name in categories_names:
-                subcategory_data = download_category_data(driver, name, subcategory_soup, True)
+                subcategory_data = download_category_data(driver, name, subcategory_soup, link, True)
                 subcategory_data_list.append(subcategory_data)
 
             driver.back()
@@ -187,10 +180,15 @@ def download_category_data(driver, name, category_soup, sub = False):
 
             for product in products:
                 # DOWNLOAD DATA
-                product_data = download_product_data(driver, product)
+                element = product.find("h2", class_="h3 product-title")
+                link = element.find("a")["href"]
+                driver.get(link)
+                WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "h1")))
+                product_soup = BeautifulSoup(driver.page_source, "html.parser")
+                product_data = download_product_data(product_soup)
                 product_data_list.append(product_data)
 
-                driver.back()
+                driver.get(category_link)
                 WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "js-product")))
 
             # CHECK NEXT PAGE
@@ -240,15 +238,14 @@ def generate(url= "", categories_names = [""]):
         name = name_element.get_text(strip=True) if name_element else ""
 
         if name in categories_names:
-            category_data = download_category_data(driver, name, category_soup)
+            category_data = download_category_data(driver, name, category_soup, link)
             category_data_list.append(category_data)
+            # SAVE TO JSON FILE
+            with open("../scrapper_results/" + name + ".json", "w", encoding="utf-8") as file:
+                json.dump({"categories": category_data_list}, file, ensure_ascii=False, indent=4)
 
         driver.back()
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "category")))
-
-    # SAVE TO JSON FILE
-    with open("../scrapper_results/categories.json", "w", encoding="utf-8") as file:
-        json.dump({"categories": category_data_list}, file, ensure_ascii=False, indent=4)
 
     driver.quit()
     print("Products have been saved to the file products_.json and images have been downloaded.")
@@ -256,7 +253,7 @@ def generate(url= "", categories_names = [""]):
 
 if __name__ == "__main__":
     url = "https://karolinaszydelko.pl"
-    categories_names = ["Włóczki", "Włóczki z kaszmirem", "Szydełka", "Prym ergonomics"]
+    categories_names = ["Włóczki", "Włóczki z kaszmirem"]
 
     start_time = time.time()
     generate(url, categories_names)
