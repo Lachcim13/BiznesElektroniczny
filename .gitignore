@@ -10,8 +10,16 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
+<<<<<<< HEAD
 
 *.meta
 mariadb_files/aria_log.00000001
 mariadb_files/aria_log_control
 mariadb_files/prestashop/ps_connections_source.ibd
+=======
+mariadb_files/aria_log.00000001
+mariadb_files/aria_log_control
+mariadb_files/prestashop/ps_connections_source.ibd
+prestashop_files/var/cache/dev/*.php.meta
+prestashop_files/var/cache/dev/smarty/compile/*
+>>>>>>> development

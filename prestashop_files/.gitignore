@@ -1,2 +1,4 @@
-prestashop_files/var/cache/dev/*
 *.meta
+var/cache/dev/profiler/*
+var/cache/dev/pools/*
+
