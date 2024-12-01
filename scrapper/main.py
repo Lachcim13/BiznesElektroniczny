@@ -14,8 +14,9 @@ def download_image(image_url, name, suffix=""):
     if image_url == "" or image_url is None:
         return ""
     try:
-        img_data = requests.get(image_url, timeout=5).content
         image_filename = f"{name}{suffix}.jpg"
+        return os.path.join(images_folder, image_filename)
+        img_data = requests.get(image_url, timeout=5).content
         image_path = os.path.join(images_folder, image_filename)
 
         with open(image_path, 'wb') as img_file:
@@ -71,17 +72,17 @@ def download_product_data(product_soup):
     detailed_data_values = detailed_data_element.find_all("dd")
     for detailed_data_name, detailed_data_value in zip(detailed_data_names, detailed_data_values):
         detail_name = detailed_data_name.get_text(strip=True)
-        if detail_name == "Skład:":
+        if detail_name == "Skład:" or detail_name == "Skład":
             composition = detailed_data_value.get_text(strip=True)
-        elif detail_name == "Rozmiar:":
+        elif detail_name == "Rozmiar" or detail_name == "Rozmiar:":
             size = detailed_data_value.get_text(strip=True)
-        elif detail_name == "Waga motka:":
+        elif detail_name == "Waga motka:" or detail_name == "Waga motka":
             weight = detailed_data_value.get_text(strip=True)
-        elif detail_name == "Długość:":
+        elif detail_name == "Długość:" or detail_name == "Długość":
             length = detailed_data_value.get_text(strip=True)
-        elif detail_name == "Zalecany rozmiar szydełka:":
+        elif detail_name == "Zalecany rozmiar szydełka:" or detail_name == "Zalecany rozmiar szydełka":
             crochet_size = detailed_data_value.get_text(strip=True)
-        elif detail_name == "Zalecany rozmiar drutów:":
+        elif detail_name == "Zalecany rozmiar drutów:" or detail_name == "Zalecany rozmiar drutów":
             needle_size = detailed_data_value.get_text(strip=True)
 
     # FLAGS
@@ -243,7 +244,7 @@ def generate(url= "", categories_names = [""]):
             category_data = download_category_data(driver, name, category_soup, link)
             category_data_list.append(category_data)
             # SAVE TO JSON FILE
-            with open("../scrapper_results/" + name + "_merino.json", "w", encoding="utf-8") as file:
+            with open("../scrapper_results/" + name + ".json", "w", encoding="utf-8") as file:
                 json.dump({"categories": category_data_list}, file, ensure_ascii=False, indent=4)
 
     driver.quit()
@@ -252,7 +253,7 @@ def generate(url= "", categories_names = [""]):
 
 if __name__ == "__main__":
     url = "https://karolinaszydelko.pl"
-    categories_names = ["Włóczki", "Włóczki Merino"]
+    categories_names = ["Szydełka", "Clover", "TULIP"]
 
     start_time = time.time()
     generate(url, categories_names)

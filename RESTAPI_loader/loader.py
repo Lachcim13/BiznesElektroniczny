@@ -4,6 +4,9 @@ from lxml import etree
 import base64
 from pathlib import Path
 import json
+import re
+import os
+
 
 API_URL = "http://localhost:8080/api"
 API_KEY = "L7SW4H4NYKZB1D8EB6MK3B1XFQH5XNKZ"
@@ -33,10 +36,43 @@ def get_feature_id_as_str_by_name(feature_name):
     return str(id)
 
 
+def get_weight_str(weight_str):
+    weight = 0.0
+    match = re.search(r'\d+', weight_str)
+    if match:
+        weight = float(f"0.{match.group()}")
+    return str(weight)
+
+
+def check_feature_value(feature_id, search_value):
+    endpoint = f"{API_URL}/product_feature_values"
+    params = {
+        "filter[id_feature]": feature_id,
+        "filter[value]": search_value
+    }
+
+    response = requests.get(endpoint, params=params, headers=headers)
+    if response.status_code == 200 or response.status_code == 201 or response.status_code == 204:
+        data = json.loads(response.text)
+        if data == [] or data is None:
+            return False, None
+        id = data['product_feature_values'][0].get('id', None)
+        if id is None:
+            return False, None
+        return True, id
+    else:
+        print(f"Error: {response.status_code}, {response.text}")
+        return False, None
+
 def create_feature_value(feature_name, value):
     if value is None or value == "":
         return "", ""
     feature_id = int(get_feature_id_as_str_by_name(feature_name))
+
+    val_exists, val_id = check_feature_value(feature_id, value)
+
+    if val_exists:
+        return feature_id, val_id
 
     prestashop = etree.Element('prestashop', xmlns_xlink="http://www.w3.org/1999/xlink")
     product_feat_val_element = etree.SubElement(prestashop, "product_feature_value")
@@ -58,9 +94,10 @@ def create_feature_value(feature_name, value):
     return feature_id, feature_value_id
 
 def get_img_path(current_path):
-    if current_path == '':
+    if current_path == '' or current_path is None:
         return None
-    relative_path = Path(f"../scrapper/{current_path}")
+    current_path = current_path.replace("\\", "/")
+    relative_path = Path(f"{current_path}")
     return relative_path.resolve()
 
 
@@ -138,6 +175,8 @@ def create_product(name, price, description_short, description_long, composition
     price_element = etree.SubElement(product_element, "price")
     price_element.text = str(price)
 
+    etree.SubElement(product_element, "weight").text = get_weight_str(weight)
+
     etree.SubElement(product_element, "show_price").text = "1"
     etree.SubElement(product_element, "additional_delivery_times").text = "1"
 
@@ -169,40 +208,46 @@ def create_product(name, price, description_short, description_long, composition
 
     temp_feature_id, temp_feature_value_id = None, None
 
-    composition_feature = etree.SubElement(features_elements, "product_feature")
     temp_feature_id, temp_feature_value_id = create_feature_value("Skład:", composition)
-    etree.SubElement(composition_feature, "id").text = str(temp_feature_id)
-    etree.SubElement(composition_feature, "id_feature_value").text = str(temp_feature_value_id)
+    if temp_feature_id != "" and temp_feature_value_id != "":
+        composition_feature = etree.SubElement(features_elements, "product_feature")
+        etree.SubElement(composition_feature, "id").text = str(temp_feature_id)
+        etree.SubElement(composition_feature, "id_feature_value").text = str(temp_feature_value_id)
 
 
-    weight_feature = etree.SubElement(features_elements, "product_feature")
     temp_feature_id, temp_feature_value_id = create_feature_value("Waga motka:", weight)
-    etree.SubElement(weight_feature, "id").text = str(temp_feature_id)
-    etree.SubElement(weight_feature, "id_feature_value").text = str(temp_feature_value_id)
+    if temp_feature_id != "" and temp_feature_value_id != "":
+        weight_feature = etree.SubElement(features_elements, "product_feature")
+        etree.SubElement(weight_feature, "id").text = str(temp_feature_id)
+        etree.SubElement(weight_feature, "id_feature_value").text = str(temp_feature_value_id)
 
 
-    size_feature = etree.SubElement(features_elements, "product_feature")
     temp_feature_id, temp_feature_value_id = create_feature_value("Rozmiar:", size)
-    etree.SubElement(size_feature, "id").text = str(temp_feature_id)
-    etree.SubElement(size_feature, "id_feature_value").text = str(temp_feature_value_id)
+    if temp_feature_id != "" and temp_feature_value_id != "":
+        size_feature = etree.SubElement(features_elements, "product_feature")
+        etree.SubElement(size_feature, "id").text = str(temp_feature_id)
+        etree.SubElement(size_feature, "id_feature_value").text = str(temp_feature_value_id)
 
 
-    crochet_size_feature = etree.SubElement(features_elements, "product_feature")
     temp_feature_id, temp_feature_value_id = create_feature_value("Zalecany rozmiar szydełka:", crochet_size)
-    etree.SubElement(crochet_size_feature, "id").text = str(temp_feature_id)
-    etree.SubElement(crochet_size_feature, "id_feature_value").text = str(temp_feature_value_id)
+    if temp_feature_id != "" and temp_feature_value_id != "":
+        crochet_size_feature = etree.SubElement(features_elements, "product_feature")
+        etree.SubElement(crochet_size_feature, "id").text = str(temp_feature_id)
+        etree.SubElement(crochet_size_feature, "id_feature_value").text = str(temp_feature_value_id)
 
 
-    needle_size_feature = etree.SubElement(features_elements, "product_feature")
     temp_feature_id, temp_feature_value_id = create_feature_value("Zalecany rozmiar drutów:", needle_size)
-    etree.SubElement(needle_size_feature, "id").text = str(temp_feature_id)
-    etree.SubElement(needle_size_feature, "id_feature_value").text = str(temp_feature_value_id)
+    if temp_feature_id != "" and temp_feature_value_id != "":
+        needle_size_feature = etree.SubElement(features_elements, "product_feature")
+        etree.SubElement(needle_size_feature, "id").text = str(temp_feature_id)
+        etree.SubElement(needle_size_feature, "id_feature_value").text = str(temp_feature_value_id)
 
 
-    length_feature = etree.SubElement(features_elements, "product_feature")
     temp_feature_id, temp_feature_value_id = create_feature_value("Długość:", length)
-    etree.SubElement(length_feature, "id").text = str(temp_feature_id)
-    etree.SubElement(length_feature, "id_feature_value").text = str(temp_feature_value_id)
+    if temp_feature_id != "" and temp_feature_value_id != "":
+        length_feature = etree.SubElement(features_elements, "product_feature")
+        etree.SubElement(length_feature, "id").text = str(temp_feature_id)
+        etree.SubElement(length_feature, "id_feature_value").text = str(temp_feature_value_id)
 
     etree.SubElement(product_element, "state").text = "1"
 
@@ -210,7 +255,7 @@ def create_product(name, price, description_short, description_long, composition
     active_element.text = "1"
 
     tree = etree.ElementTree(prestashop)
-    #tree.write("product.xml", pretty_print=True)
+    tree.write("product.xml", pretty_print=True)
     xml_data = etree.tostring(tree.getroot(), pretty_print=True, xml_declaration=True, encoding="UTF-8")
 
     response = requests.post(f"{API_URL}/products", headers=headers, data=xml_data)
@@ -221,7 +266,7 @@ def create_product(name, price, description_short, description_long, composition
 
         #Images
         #TODO: Upload medium photo
-        medium_image_text = str(get_img_path(medium_image_path))
+        #medium_image_text = str(get_img_path(medium_image_path))
         large_images_text = str(get_img_path(large_image_path))
 
         url = f"{API_URL}/images/products/{id}"
@@ -230,21 +275,30 @@ def create_product(name, price, description_short, description_long, composition
             img_headers = {
                 "Authorization": f"Basic {encoded_api_key}"
             }
-            img_files = {
-                'image': open(large_images_text, 'rb')
-            }
 
-            img_response = requests.post(
-                url,
-                files=img_files,
-                headers=img_headers,
-            )
-
-            if img_response.status_code == 201 or img_response.status_code == 200:
-                print(f"Cover image successfully added to product {id}!")
+            img_ok = True
+            img_files = None
+            if os.path.exists(large_images_text):
+                img_files = {
+                    'image': open(large_images_text, 'rb')
+                }
             else:
-                print(f"Error uploading cover image: {img_response.status_code}, {img_response.text}")
+                print(f"File not found: {large_images_text}")
+                img_ok = False
 
+            if img_ok:
+                img_response = requests.post(
+                    url,
+                    files=img_files,
+                    headers=img_headers,
+                )
+
+                if img_response.status_code == 201 or img_response.status_code == 200:
+                    print(f"Cover image successfully added to product {id}!")
+                else:
+                    print(f"Error uploading cover image: {img_response.status_code}, {img_response.text}")
+            else:
+                print(f"Error uploading cover image: {name}, bad image")
         #Stock
         stock_prestashop = etree.Element('prestashop')
         stock_available_element = etree.SubElement(stock_prestashop, 'stock_available')
@@ -263,73 +317,43 @@ def create_product(name, price, description_short, description_long, composition
 
         stock_xml_data = etree.tostring(stock_prestashop, pretty_print=True, encoding="UTF-8", xml_declaration=True)
         stock_response = requests.put(f"{API_URL}/stock_availables/{stock_id}", headers=headers, data=stock_xml_data)
-        print(stock_response.text)
+        #print(stock_response.text)
     else:
         print(f"Error creating product: {response.text}")
 
-    requests.put(f"{API_URL}/products/{response.json()["product"]["id"]}", headers=headers, data=xml_data)
+    #requests.put(f"{API_URL}/products/{response.json()["product"]["id"]}", headers=headers, data=xml_data)
 
-source_data = {
-    "categories": [
-        {
-            "name": "FRANEK_DEBIL_KATEGORIAaaaaaaaa",
-            "description": "XD",
-            "image_path": "downloaded_images/Włóczki_image.jpg",
-            "subcategories": [
-                {
-                    "name": "Włóczki z kaszmirem",
-                    "description": "",
-                    "image_path": "",
-                    "products": [
-                        {
-                            "name": "Phil Laine Cachemire PHILDAR 1446",
-                            "tax": "Brutto",
-                            "delivery": "Realizacja zamówień w 24h",
-                            "price": "29,90zł",
-                            "price_content": "29.9",
-                            "out_of_stock": "Obecnie brak na stanie",
-                            "review": 0,
-                            "description_title_short": "Włóczka Phil Laine Cachemire Phildar",
-                            "description_short": "Włóczka Phil Laine Cachemire to wysokiej jakości luksusowa włóczka o szlachetnym składzie 80% wełna i 20% kaszmir. Phil Laine Cachemire w 25 gramowym motku posiada 100 metrów. Jest to niesamowicie delikatna i całkowicie niegryząca włóczka.",
-                            "description_long": "Phil Laine Cachemire francuskiej marki Phildar jest wysokiej jakości włóczką wyprodukowaną we Włoszech. Wełna kaszmirska pochodzi z puchu bardzo wytrzymałej na zimno rasy kóz kaszmirskich zamieszkałych w górskich terenach Chin i Mongolii. Wełna kaszmirska charakteryzuje się wyjątkową delikatnością i o wiele większym utrzymaniem ciepła niż wełna owcza. Włóczka ta doskonale nadaję się na robótki jesienno-zimowe takie jak delikatne sweterki, chusty, eleganckie szale(nawet ślubne) lub poncza. Bardzo polecam ją na zimowe komplety: czapki, kominy i szaliki. Śmiało można z tej włóczki dziergać i szydełkować robótki dla dzieci i niemowląt.",
-                            "composition": "80% wełna, 20% kaszmir",
-                            "size": "",
-                            "weight": "25g",
-                            "length": "100 m",
-                            "crochet_size": "3,5 mm",
-                            "needle_size": "3,5 mm",
-                            "medium_image_path": "downloaded_images/Phil Laine Cachemire PHILDAR 1446_medium.jpg",
-                            "large_image_path": "downloaded_images/Phil Laine Cachemire PHILDAR 1446_large.jpg"
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-}
 
-category_ids = {}
-for category in source_data["categories"]:
-    category_id = create_category(category["name"], category["description"], category["image_path"])
-    if category_id:
-        category_ids[category["name"]] = category_id
-        for subcategory in category["subcategories"]:
-            subcategory_id = create_category(subcategory["name"], subcategory["description"], subcategory["image_path"], category_id)
-            if subcategory_id:
-                for product in subcategory["products"]:
-                    create_product(
-                        product["name"],
-                        product["price_content"],
-                        product["description_short"],
-                        product["description_long"],
-                        product["composition"],
-                        product["length"],
-                        product["weight"],
-                        product["size"],
-                        product["crochet_size"],
-                        product["needle_size"],
-                        category_id,
-                        subcategory_id,
-                        product["medium_image_path"],
-                        product["large_image_path"]
-                    )
+def generate():
+    filename = "Włóczki.json"
+    with open(f"../scrapper_results/{filename}", 'r') as file:
+        source_data = json.load(file)
+        category_ids = {}
+        for category in source_data["categories"]:
+            category_id = create_category(category["name"], category["description"], category["image_path"])
+            if category_id:
+                category_ids[category["name"]] = category_id
+                for subcategory in category["subcategories"]:
+                    subcategory_id = create_category(subcategory["name"], subcategory["description"], subcategory["image_path"], category_id)
+                    if subcategory_id:
+                        for product in subcategory["products"]:
+                            create_product(
+                                product["name"],
+                                product["price_content"],
+                                product["description_short"],
+                                product["description_long"],
+                                product["composition"],
+                                product["length"],
+                                product["weight"],
+                                product["size"],
+                                product["crochet_size"],
+                                product["needle_size"],
+                                category_id,
+                                subcategory_id,
+                                product["medium_image_path"],
+                                product["large_image_path"]
+                            )
+
+print("Zaczynam wstawianie")
+generate()
+print("Zakonczylem wstawianie")

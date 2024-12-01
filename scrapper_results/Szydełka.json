@@ -3,7 +3,7 @@
         {
             "name": "Szydełka",
             "description": "Zapoznaj się z moją ofertą szydełek...",
-            "image_path": "../scrapper_results/downloaded_images\\Szydełka_image.jpg",
+            "image_path": "../scrapper_results/downloaded_images/Szydełka_image.jpg",
             "subcategories": [
                 {
                     "name": "Clover",
@@ -18,13 +18,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.\nSzydełka Clover o rozmiarze 1 mm - 1,75 mm dodatkowo posiadają metalową zdejmowaną skuwkę, która zabezpiecza szydełko przed uszkodzeniem kiedy go nie używamy.",
                             "composition": "",
-                            "size": "",
+                            "size": "0,9mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 0.9mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 0.9mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 0.9mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 0.9mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 0.75mm",
@@ -34,13 +34,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.\nSzydełka Clover o rozmiarze 1 mm - 1,75 mm dodatkowo posiadają metalową zdejmowaną skuwkę, która zabezpiecza szydełko przed uszkodzeniem kiedy go nie używamy.",
                             "composition": "",
-                            "size": "",
+                            "size": "0,75mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 0.75mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 0.75mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 0.75mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 0.75mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 0.6mm",
@@ -50,13 +50,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.\nSzydełka Clover o rozmiarze 1 mm - 1,75 mm dodatkowo posiadają metalową zdejmowaną skuwkę, która zabezpiecza szydełko przed uszkodzeniem kiedy go nie używamy.",
                             "composition": "",
-                            "size": "",
+                            "size": "0,6mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 0.6mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 0.6mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 0.6mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 0.6mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 0.5mm",
@@ -66,13 +66,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.\nSzydełka Clover o rozmiarze 1 mm - 1,75 mm dodatkowo posiadają metalową zdejmowaną skuwkę, która zabezpiecza szydełko przed uszkodzeniem kiedy go nie używamy.",
                             "composition": "",
-                            "size": "",
+                            "size": "0,5mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 0.5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 0.5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 0.5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 0.5mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 3,75mm",
@@ -82,13 +82,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.\nSzydełka Clover o rozmiarze 1 mm - 1,75 mm dodatkowo posiadają metalową zdejmowaną skuwkę, która zabezpiecza szydełko przed uszkodzeniem kiedy go nie używamy.",
                             "composition": "",
-                            "size": "",
+                            "size": "3,75mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 3,75mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 3,75mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 3,75mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 3,75mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 3,25mm",
@@ -98,13 +98,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.\nSzydełka Clover o rozmiarze 1 mm - 1,75 mm dodatkowo posiadają metalową zdejmowaną skuwkę, która zabezpiecza szydełko przed uszkodzeniem kiedy go nie używamy.",
                             "composition": "",
-                            "size": "",
+                            "size": "3,25mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 3,25mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 3,25mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 3,25mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 3,25mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 2,75mm",
@@ -114,13 +114,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.\nSzydełka Clover o rozmiarze 1 mm - 1,75 mm dodatkowo posiadają metalową zdejmowaną skuwkę, która zabezpiecza szydełko przed uszkodzeniem kiedy go nie używamy.",
                             "composition": "",
-                            "size": "",
+                            "size": "2,75mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 2,75mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 2,75mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 2,75mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 2,75mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 2,25mm",
@@ -130,13 +130,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.\nSzydełka Clover o rozmiarze 1 mm - 1,75 mm dodatkowo posiadają metalową zdejmowaną skuwkę, która zabezpiecza szydełko przed uszkodzeniem kiedy go nie używamy.",
                             "composition": "",
-                            "size": "",
+                            "size": "2,25mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 2,25mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 2,25mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 2,25mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 2,25mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 5,5mm",
@@ -146,13 +146,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.\nSzydełka Clover o rozmiarze 1 mm - 1,75 mm dodatkowo posiadają metalową zdejmowaną skuwkę, która zabezpiecza szydełko przed uszkodzeniem kiedy go nie używamy.",
                             "composition": "",
-                            "size": "",
+                            "size": "5,5mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 5,5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 5,5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 5,5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 5,5mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 1.25mm",
@@ -162,13 +162,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.\nSzydełka Clover o rozmiarze 1 mm - 1,75 mm dodatkowo posiadają metalową zdejmowaną skuwkę, która zabezpiecza szydełko przed uszkodzeniem kiedy go nie używamy.",
                             "composition": "",
-                            "size": "",
+                            "size": "1,25mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 1.25mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 1.25mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 1.25mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 1.25mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 6mm",
@@ -178,13 +178,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.\nSzydełka Clover o rozmiarze 1 mm - 1,75 mm dodatkowo posiadają metalową zdejmowaną skuwkę, która zabezpiecza szydełko przed uszkodzeniem kiedy go nie używamy.",
                             "composition": "",
-                            "size": "",
+                            "size": "6mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 6mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 6mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 6mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 6mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 4,5mm",
@@ -194,13 +194,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.\nSzydełka Clover o rozmiarze 1 mm - 1,75 mm dodatkowo posiadają metalową zdejmowaną skuwkę, która zabezpiecza szydełko przed uszkodzeniem kiedy go nie używamy.",
                             "composition": "",
-                            "size": "",
+                            "size": "4,5mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 4,5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 4,5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 4,5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 4,5mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 1mm",
@@ -210,13 +210,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.\nSzydełka Clover o rozmiarze 1 mm - 1,75 mm dodatkowo posiadają metalową zdejmowaną skuwkę, która zabezpiecza szydełko przed uszkodzeniem kiedy go nie używamy.",
                             "composition": "",
-                            "size": "",
+                            "size": "1mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 1mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 1mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 1mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 1mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 5mm",
@@ -226,13 +226,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.",
                             "composition": "",
-                            "size": "",
+                            "size": "5mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 5mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 4mm",
@@ -242,13 +242,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.",
                             "composition": "",
-                            "size": "",
+                            "size": "4mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 4mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 4mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 4mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 4mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 3,5mm",
@@ -258,13 +258,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.",
                             "composition": "",
-                            "size": "",
+                            "size": "3,5mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 3,5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 3,5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 3,5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 3,5mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 3mm",
@@ -274,13 +274,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.",
                             "composition": "",
-                            "size": "",
+                            "size": "3mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 3mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 3mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 3mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 3mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 2,5mm",
@@ -290,13 +290,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.",
                             "composition": "",
-                            "size": "",
+                            "size": "2,5mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 2,5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 2,5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 2,5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 2,5mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 2mm",
@@ -306,13 +306,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.",
                             "composition": "",
-                            "size": "",
+                            "size": "2mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 2mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 2mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 2mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 2mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 1,75mm",
@@ -322,13 +322,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.\nSzydełka Clover o rozmiarze 1,5 mm , 1, 75 mm dodatkowo posiadają metalową zdejmowaną skuwkę, która zabezpiecza szydełko przed uszkodzeniem kiedy go nie używamy.",
                             "composition": "",
-                            "size": "",
+                            "size": "1,75mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 1,75mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 1,75mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 1,75mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 1,75mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Clover 1,5mm",
@@ -338,20 +338,20 @@
                             "description_short": "Wysokiej jakości szydełka firmy Clover. Japońskie szydełka z ergonomiczną rączką i wyprofilowanym haczykiem zapewniają wygodę i komfort nawet podczas długiego szydełkowania. Szydełka Clover są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "Szczególnie polecam szydełka firmy Clover osobom, które dużo szydełkują i oczekują wysokiego komfortu pracy. Osobiście szydełkuję nimi od jakiegoś czasu i zauważyłam,że dłoń nie męczy się tak jak podczas dziergania innymi szydełkami. Aluminiowy gładki haczyk w szydełku Clover nie rozwarstwia włóczki a wygodna lekka rączka świetnie układa się w dłoni. Dodatkowym atutem szydełka Clover jest umieszczenie miękkiej antypoślizgowej skórki.\nSzydełka Clover o rozmiarze 1,5 mm , 1, 75 mm dodatkowo posiadają metalową zdejmowaną skuwkę, która zabezpiecza szydełko przed uszkodzeniem kiedy go nie używamy.",
                             "composition": "",
-                            "size": "",
+                            "size": "1,5mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 1,5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Clover 1,5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 1,5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Clover 1,5mm_large.jpg"
                         }
                     ]
                 },
                 {
                     "name": "TULIP",
                     "description": "Japońskie szydełka firmy Tulip.",
-                    "image_path": "../scrapper_results/downloaded_images\\TULIP_image.jpg",
+                    "image_path": "../scrapper_results/downloaded_images/TULIP_image.jpg",
                     "products": [
                         {
                             "name": "Szydełko Tulip 0,8mm",
@@ -361,13 +361,13 @@
                             "description_short": "",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "0,8mm",
                             "weight": "",
                             "length": "12cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 0,8mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 0,8mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 0,8mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 0,8mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Tulip 1,9mm",
@@ -377,13 +377,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Tulip. Japońskie szydełka z wyprofilowanym i pozłacanym haczykiem. Szydełka Tulip są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "1,9mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 1,9mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 1,9mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 1,9mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 1,9mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Tulip 1,6mm",
@@ -393,13 +393,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Tulip. Japońskie szydełka z wyprofilowanym i pozłacanym haczykiem. Szydełka Tulip są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "1,6mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 1,6mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 1,6mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 1,6mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 1,6mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Tulip 1,25mm",
@@ -409,13 +409,13 @@
                             "description_short": "",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "1,25mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 1,25mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 1,25mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 1,25mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 1,25mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Tulip 1,1mm",
@@ -425,13 +425,13 @@
                             "description_short": "",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "1,1mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 1,1mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 1,1mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 1,1mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 1,1mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Tulip 1,3mm",
@@ -441,13 +441,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Tulip. Japońskie szydełka z wyprofilowanym i pozłacanym haczykiem. Szydełka Tulip są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "1,3mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 1,3mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 1,3mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 1,3mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 1,3mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Tulip 1mm",
@@ -457,13 +457,13 @@
                             "description_short": "",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "1mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 1mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 1mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 1mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 1mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Tulip 2,1mm",
@@ -473,13 +473,13 @@
                             "description_short": "",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "2,1mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 2,1mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 2,1mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 2,1mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 2,1mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Tulip 0,85mm",
@@ -489,13 +489,13 @@
                             "description_short": "",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "0,85mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 0,85mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 0,85mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 0,85mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 0,85mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Tulip 0,95mm",
@@ -505,13 +505,13 @@
                             "description_short": "",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "0,95mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 0,95mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 0,95mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 0,95mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 0,95mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Tulip 0,9mm",
@@ -521,13 +521,13 @@
                             "description_short": "",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "0,9mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 0,9mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 0,9mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 0,9mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 0,9mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Tulip 0,75mm",
@@ -537,13 +537,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Tulip. Japońskie szydełka z wyprofilowanym i pozłacanym haczykiem. Szydełka Tulip są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "0,75mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 0,75mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 0,75mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 0,75mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 0,75mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Tulip 0,7mm",
@@ -553,13 +553,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Tulip. Japońskie szydełka z wyprofilowanym i pozłacanym haczykiem. Szydełka Tulip są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "0,7mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 0,7mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 0,7mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 0,7mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 0,7mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Tulip 0,6mm",
@@ -569,13 +569,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Tulip. Japońskie szydełka z wyprofilowanym i pozłacanym haczykiem. Szydełka Tulip są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "0,6mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 0,6mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 0,6mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 0,6mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 0,6mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Tulip 0,55mm",
@@ -585,13 +585,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Tulip. Japońskie szydełka z wyprofilowanym i pozłacanym haczykiem. Szydełka Tulip są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "0,55mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 0,55mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 0,55mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 0,55mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 0,55mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Tulip 0,5mm",
@@ -601,13 +601,13 @@
                             "description_short": "Wysokiej jakości szydełka firmy Tulip. Japońskie szydełka z wyprofilowanym i pozłacanym haczykiem. Szydełka Tulip są bardzo lekkie, wykonane z wysokiej jakości materiałów.",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "0,5mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 0,5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 0,5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 0,5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 0,5mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Tulip 1,75mm",
@@ -617,13 +617,13 @@
                             "description_short": "",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "1,75mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 1,75mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 1,75mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 1,75mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 1,75mm_large.jpg"
                         },
                         {
                             "name": "Szydełko Tulip 1,5mm",
@@ -633,13 +633,13 @@
                             "description_short": "",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "1,5mm",
                             "weight": "",
                             "length": "",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 1,5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Szydełko Tulip 1,5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 1,5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Szydełko Tulip 1,5mm_large.jpg"
                         }
                     ]
                 }

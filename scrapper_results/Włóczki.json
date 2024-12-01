@@ -584,7 +584,7 @@
                             "crochet_size": "4mm",
                             "needle_size": "4 mm",
                             "medium_image_path": "../scrapper_results/downloaded_images/Drops Lima 2923 musztardowy_medium.jpg",
-                            "large_image_path": null
+                            "large_image_path": "../scrapper_results/downloaded_images/Drops Lima 2923 musztardowy_large.jpg"
                         },
                         {
                             "name": "Drops Lima 9016 granatowy",
@@ -1239,7 +1239,7 @@
                             "length": "250m",
                             "crochet_size": "2-4 mm",
                             "needle_size": "4-5 mm",
-                            "medium_image_path": null,
+                            "medium_image_path": "../scrapper_results/downloaded_images/Alize Alpaca Royal New 262 beżowy_medium.jpg",
                             "large_image_path": "../scrapper_results/downloaded_images/Alize Alpaca Royal New 262 beżowy_large.jpg"
                         },
                         {
@@ -1256,7 +1256,7 @@
                             "crochet_size": "2-4 mm",
                             "needle_size": "4-5 mm",
                             "medium_image_path": "../scrapper_results/downloaded_images/Alize Alpaca Royal New 001 kremowy_medium.jpg",
-                            "large_image_path": null
+                            "large_image_path": "../scrapper_results/downloaded_images/Alize Alpaca Royal New 001 kremowy_large.jpg"
                         },
                         {
                             "name": "Alize Alpaca Royal New 055 biały",
@@ -1272,7 +1272,7 @@
                             "crochet_size": "2-4 mm",
                             "needle_size": "4-5 mm",
                             "medium_image_path": "../scrapper_results/downloaded_images/Alize Alpaca Royal New 055 biały_medium.jpg",
-                            "large_image_path": null
+                            "large_image_path": "../scrapper_results/downloaded_images/Alize Alpaca Royal New 055 biały_large.jpg"
                         },
                         {
                             "name": "Nako Arya Ebruli 402 beżowy, niebieski, jeans",
@@ -1287,8 +1287,8 @@
                             "length": "450m",
                             "crochet_size": "1,5",
                             "needle_size": "2,5 - 3 mm",
-                            "medium_image_path": null,
-                            "large_image_path": null
+                            "medium_image_path": "../scrapper_results/downloaded_images/Nako Arya Ebruli 402 beżowy, niebieski, jeans_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Nako Arya Ebruli 402 beżowy, niebieski, jeans_large.jpg"
                         },
                         {
                             "name": "Drops Nord 28",
@@ -1367,7 +1367,7 @@
                             "length": "170m",
                             "crochet_size": "4mm",
                             "needle_size": "4 mm",
-                            "medium_image_path": null,
+                            "medium_image_path": "../scrapper_results/downloaded_images/Drops Nord 16 jeans_medium.jpg",
                             "large_image_path": "../scrapper_results/downloaded_images/Drops Nord 16 jeans_large.jpg"
                         },
                         {
@@ -1592,7 +1592,7 @@
                             "crochet_size": "",
                             "needle_size": "4 mm",
                             "medium_image_path": "../scrapper_results/downloaded_images/Drops Puna Mix 05 ciemny szary_medium.jpg",
-                            "large_image_path": null
+                            "large_image_path": "../scrapper_results/downloaded_images/Drops Puna Mix 05 ciemny szary_large.jpg"
                         },
                         {
                             "name": "Drops Puna Mix 04 szaro brązowy",
@@ -2392,7 +2392,7 @@
                             "crochet_size": "9mm",
                             "needle_size": "",
                             "medium_image_path": "../scrapper_results/downloaded_images/Drops Andes 7820 zielony_medium.jpg",
-                            "large_image_path": null
+                            "large_image_path": "../scrapper_results/downloaded_images/Drops Andes 7820 zielony_large.jpg"
                         },
                         {
                             "name": "Drops Andes 6990",
@@ -2487,8 +2487,8 @@
                             "length": "90m",
                             "crochet_size": "9mm",
                             "needle_size": "",
-                            "medium_image_path": null,
-                            "large_image_path": null
+                            "medium_image_path": "../scrapper_results/downloaded_images/Drops Andes 3946 buraczkowy_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Drops Andes 3946 buraczkowy_large.jpg"
                         },
                         {
                             "name": "Drops Andes 3145 pudrowy róż",
@@ -2503,7 +2503,7 @@
                             "length": "90m",
                             "crochet_size": "9mm",
                             "needle_size": "",
-                            "medium_image_path": null,
+                            "medium_image_path": "../scrapper_results/downloaded_images/Drops Andes 3145 pudrowy róż_medium.jpg",
                             "large_image_path": "../scrapper_results/downloaded_images/Drops Andes 3145 pudrowy róż_large.jpg"
                         },
                         {
@@ -2583,7 +2583,7 @@
                             "length": "150m",
                             "crochet_size": "5 mm",
                             "needle_size": "5mm",
-                            "medium_image_path": null,
+                            "medium_image_path": "../scrapper_results/downloaded_images/Drops Air 35_medium.jpg",
                             "large_image_path": "../scrapper_results/downloaded_images/Drops Air 35_large.jpg"
                         },
                         {
@@ -3288,7 +3288,7 @@
                             "crochet_size": "9mm",
                             "needle_size": "9mm",
                             "medium_image_path": "../scrapper_results/downloaded_images/YarnArt Alpine Alpaca New 1448 żółty_medium.jpg",
-                            "large_image_path": null
+                            "large_image_path": "../scrapper_results/downloaded_images/YarnArt Alpine Alpaca New 1448 żółty_large.jpg"
                         },
                         {
                             "name": "YarnArt Alpine Alpaca New 1447 szary",
@@ -3912,7 +3912,7 @@
                             "crochet_size": "5 mm",
                             "needle_size": "5-6mm",
                             "medium_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 85 cukierkowy róż_medium.jpg",
-                            "large_image_path": null
+                            "large_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 85 cukierkowy róż_large.jpg"
                         },
                         {
                             "name": "Gazzal Alpaca Air 84 gołębi",
@@ -3927,8 +3927,8 @@
                             "length": "150m",
                             "crochet_size": "5 mm",
                             "needle_size": "5-6mm",
-                            "medium_image_path": null,
-                            "large_image_path": null
+                            "medium_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 84 gołębi_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 84 gołębi_large.jpg"
                         },
                         {
                             "name": "Gazzal Alpaca Air 80 czarny",
@@ -3943,8 +3943,8 @@
                             "length": "150m",
                             "crochet_size": "5 mm",
                             "needle_size": "5-6mm",
-                            "medium_image_path": null,
-                            "large_image_path": null
+                            "medium_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 80 czarny_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 80 czarny_large.jpg"
                         },
                         {
                             "name": "Gazzal Alpaca Air 79 szary",
@@ -3959,8 +3959,8 @@
                             "length": "150m",
                             "crochet_size": "5 mm",
                             "needle_size": "5-6mm",
-                            "medium_image_path": null,
-                            "large_image_path": null
+                            "medium_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 79 szary_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 79 szary_large.jpg"
                         },
                         {
                             "name": "Gazzal Alpaca Air 78 jasny szary",
@@ -3975,8 +3975,8 @@
                             "length": "150m",
                             "crochet_size": "5 mm",
                             "needle_size": "5-6mm",
-                            "medium_image_path": null,
-                            "large_image_path": null
+                            "medium_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 78 jasny szary_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 78 jasny szary_large.jpg"
                         },
                         {
                             "name": "Gazzal Alpaca Air 77 brązowy",
@@ -3991,8 +3991,8 @@
                             "length": "150m",
                             "crochet_size": "5 mm",
                             "needle_size": "5-6mm",
-                            "medium_image_path": null,
-                            "large_image_path": null
+                            "medium_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 77 brązowy_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 77 brązowy_large.jpg"
                         },
                         {
                             "name": "Gazzal Alpaca Air 76 kawa z mlekiem",
@@ -4007,8 +4007,8 @@
                             "length": "150m",
                             "crochet_size": "5 mm",
                             "needle_size": "5-6mm",
-                            "medium_image_path": null,
-                            "large_image_path": null
+                            "medium_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 76 kawa z mlekiem_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 76 kawa z mlekiem_large.jpg"
                         },
                         {
                             "name": "Gazzal Alpaca Air 75 ciepły beż",
@@ -4023,8 +4023,8 @@
                             "length": "150m",
                             "crochet_size": "5 mm",
                             "needle_size": "5-6mm",
-                            "medium_image_path": null,
-                            "large_image_path": null
+                            "medium_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 75 ciepły beż_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 75 ciepły beż_large.jpg"
                         },
                         {
                             "name": "Gazzal Alpaca Air 74 beżowy",
@@ -4039,8 +4039,8 @@
                             "length": "150m",
                             "crochet_size": "5 mm",
                             "needle_size": "5-6mm",
-                            "medium_image_path": null,
-                            "large_image_path": null
+                            "medium_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 74 beżowy_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 74 beżowy_large.jpg"
                         },
                         {
                             "name": "Gazzal Alpaca Air 72 chłodny beż",
@@ -4055,8 +4055,8 @@
                             "length": "150m",
                             "crochet_size": "5 mm",
                             "needle_size": "5-6mm",
-                            "medium_image_path": null,
-                            "large_image_path": null
+                            "medium_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 72 chłodny beż_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 72 chłodny beż_large.jpg"
                         },
                         {
                             "name": "Gazzal Alpaca Air 71 jasny beż",
@@ -4071,8 +4071,8 @@
                             "length": "150m",
                             "crochet_size": "5 mm",
                             "needle_size": "5-6mm",
-                            "medium_image_path": null,
-                            "large_image_path": null
+                            "medium_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 71 jasny beż_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 71 jasny beż_large.jpg"
                         },
                         {
                             "name": "Gazzal Alpaca Air 70 ekri",
@@ -4088,7 +4088,7 @@
                             "crochet_size": "5 mm",
                             "needle_size": "5-6mm",
                             "medium_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 70 ekri_medium.jpg",
-                            "large_image_path": null
+                            "large_image_path": "../scrapper_results/downloaded_images/Gazzal Alpaca Air 70 ekri_large.jpg"
                         },
                         {
                             "name": "Phil Big Wool Phildar 2446",
@@ -4103,8 +4103,8 @@
                             "length": "50m",
                             "crochet_size": "15mm",
                             "needle_size": "15mm",
-                            "medium_image_path": null,
-                            "large_image_path": null
+                            "medium_image_path": "../scrapper_results/downloaded_images/Phil Big Wool Phildar 2446_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Phil Big Wool Phildar 2446_large.jpg"
                         },
                         {
                             "name": "Phil Big Wool Phildar 2333",
@@ -4119,7 +4119,7 @@
                             "length": "50m",
                             "crochet_size": "15mm",
                             "needle_size": "15mm",
-                            "medium_image_path": null,
+                            "medium_image_path": "../scrapper_results/downloaded_images/Phil Big Wool Phildar 2333_medium.jpg",
                             "large_image_path": "../scrapper_results/downloaded_images/Phil Big Wool Phildar 2333_large.jpg"
                         },
                         {
@@ -4135,7 +4135,7 @@
                             "length": "50m",
                             "crochet_size": "15mm",
                             "needle_size": "15mm",
-                            "medium_image_path": null,
+                            "medium_image_path": "../scrapper_results/downloaded_images/Phil Big Wool Phildar 2149_medium.jpg",
                             "large_image_path": "../scrapper_results/downloaded_images/Phil Big Wool Phildar 2149_large.jpg"
                         },
                         {
@@ -4199,7 +4199,7 @@
                             "length": "50m",
                             "crochet_size": "15mm",
                             "needle_size": "15mm",
-                            "medium_image_path": null,
+                            "medium_image_path": "../scrapper_results/downloaded_images/Phil Big Wool Phildar 1001_medium.jpg",
                             "large_image_path": "../scrapper_results/downloaded_images/Phil Big Wool Phildar 1001_large.jpg"
                         },
                         {
@@ -4808,7 +4808,7 @@
                             "crochet_size": "3,5 mm",
                             "needle_size": "3,5 mm",
                             "medium_image_path": "../scrapper_results/downloaded_images/Flowers Alpaca YarnArt 406_medium.jpg",
-                            "large_image_path": null
+                            "large_image_path": "../scrapper_results/downloaded_images/Flowers Alpaca YarnArt 406_large.jpg"
                         },
                         {
                             "name": "Flowers Alpaca YarnArt 405",
@@ -4856,7 +4856,7 @@
                             "crochet_size": "3,5 mm",
                             "needle_size": "3,5 mm",
                             "medium_image_path": "../scrapper_results/downloaded_images/Flowers Alpaca YarnArt 403_medium.jpg",
-                            "large_image_path": null
+                            "large_image_path": "../scrapper_results/downloaded_images/Flowers Alpaca YarnArt 403_large.jpg"
                         },
                         {
                             "name": "Flowers Alpaca YarnArt 402",
