@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2024-12-01 16:22:48
+/* Smarty version 3.1.48, created on 2024-12-01 21:36:30
   from '/var/www/html/admin-dev/themes/new-theme/template/footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_674c7f48b9bf17_74418750',
+  'unifunc' => 'content_674cc8ce3fc901_57709527',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '79a4c7e3e0d65c5c293825381cdcd1d6a01d9477' => 
     array (
       0 => '/var/www/html/admin-dev/themes/new-theme/template/footer.tpl',
-      1 => 1732878095,
+      1 => 1732922125,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_674c7f48b9bf17_74418750 (Smarty_Internal_Template $_smarty_tpl) {
+function content_674cc8ce3fc901_57709527 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="footer" class="bootstrap">
     <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>"displayBackOfficeFooter"),$_smarty_tpl ) );?>
 
