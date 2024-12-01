@@ -20,7 +20,7 @@
  */
 namespace PrestaShop\Module\Ps_metrics\Adapter;
 
-use ps_metrics_module_v4_0_8\PrestaShopLogger;
+use ps_metrics_module_v4_0_9\PrestaShopLogger;
 use Psr\Log\LoggerInterface;
 /**
  * Class that bridge the PrestaShop implementation of Logger with Psr Logger interface.

@@ -1,6 +1,6 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Prestashop\ModuleLibGuzzleAdapter\Guzzle5;
+namespace ps_metrics_module_v4_0_9\Prestashop\ModuleLibGuzzleAdapter\Guzzle5;
 
 use Exception;
 use GuzzleHttp\Client as GuzzleClient;
@@ -10,7 +10,7 @@ use GuzzleHttp\Message\RequestInterface as GuzzleRequest;
 use GuzzleHttp\Message\ResponseInterface as GuzzleResponse;
 use GuzzleHttp\Psr7\Response;
 use Http\Client\Exception as HttplugException;
-use ps_metrics_module_v4_0_8\Prestashop\ModuleLibGuzzleAdapter\Interfaces\HttpClientInterface;
+use ps_metrics_module_v4_0_9\Prestashop\ModuleLibGuzzleAdapter\Interfaces\HttpClientInterface;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 /**

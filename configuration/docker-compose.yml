@@ -1,13 +1,15 @@
 services:
   mysql:
     container_name: some-mysql
-    image: mysql:5.7
+    image: mariadb:11.5.2
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: admin
       MYSQL_DATABASE: prestashop
     networks:
       - prestashop_network
+    volumes:
+      - ../mariadb_files:/var/lib/mysql
   prestashop:
     container_name: prestashop
     image: prestashop/prestashop:1.7.8 
@@ -21,11 +23,14 @@ services:
       DB_NAME: prestashop
       DB_USER: root
       DB_PASSWD: admin
+      PS_FOLDER_ADMIN: admin-dev
+      PS_FOLDER_INSTALL: install-dev
+      PS_DEV_MODE: 1
       PS_INSTALL_AUTO: 1
       PS_DOMAIN: localhost:8080
-    volumes:
-      - ../prestashop_files:/var/www/html  
     networks:
-      - prestashop_network
+      - prestashop_network 
+    volumes:
+      - ../prestashop_files:/var/www/html   
 networks:
     prestashop_network:

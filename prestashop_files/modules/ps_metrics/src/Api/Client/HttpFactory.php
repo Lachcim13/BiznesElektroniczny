@@ -28,7 +28,7 @@ use PrestaShop\Module\Ps_metrics\Middleware\LogMiddleware;
 use PrestaShop\Module\Ps_metrics\Middleware\Middleware;
 use PrestaShop\Module\Ps_metrics\Middleware\ResponseMiddleware;
 use PrestaShop\Module\Ps_metrics\Middleware\SentryMiddleware;
-use ps_metrics_module_v4_0_8\Prestashop\ModuleLibGuzzleAdapter\ClientFactory;
+use ps_metrics_module_v4_0_9\Prestashop\ModuleLibGuzzleAdapter\ClientFactory;
 class HttpFactory
 {
     /**

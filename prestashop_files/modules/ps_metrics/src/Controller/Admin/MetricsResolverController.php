@@ -29,7 +29,7 @@ use PrestaShop\Module\Ps_metrics\Presenter\FaqPresenter;
 use PrestaShop\Module\Ps_metrics\Presenter\ShopDataPresenter;
 use PrestaShop\Module\Ps_metrics\Provider\AnalyticsAccountsListProvider;
 use PrestaShop\Module\Ps_metrics\Validation\SelectAccountAnalytics;
-use ps_metrics_module_v4_0_8\Prestashop\ModuleLibMboInstaller\Installer as MBOInstaller;
+use ps_metrics_module_v4_0_9\Prestashop\ModuleLibMboInstaller\Installer as MBOInstaller;
 use PrestaShopBundle\Controller\Admin\FrameworkBundleAdminController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -98,7 +98,7 @@ class MetricsResolverController extends FrameworkBundleAdminController
         if (null !== $context) {
             /** @var \Language $language */
             $language = $context->language;
-            $categoryTree = \ps_metrics_module_v4_0_8\Category::getNestedCategories(\ps_metrics_module_v4_0_8\Category::getRootCategory()->id, (int) $language->id, \false);
+            $categoryTree = \Category::getNestedCategories(\Category::getRootCategory()->id, (int) $language->id, \false);
         }
         if (null === $categoryTree) {
             $categoryTree = [];

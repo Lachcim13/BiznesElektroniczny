@@ -30,7 +30,7 @@
                     "src/functions_include.php"
                 ],
                 "psr-4": {
-                    "ps_metrics_module_v4_0_8\\Clue\\StreamFilter\\": "src/"
+                    "ps_metrics_module_v4_0_9\\Clue\\StreamFilter\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -288,7 +288,7 @@
                     "src/filters.php"
                 ],
                 "psr-4": {
-                    "ps_metrics_module_v4_0_8\\Http\\Message\\": "src/"
+                    "ps_metrics_module_v4_0_9\\Http\\Message\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -342,7 +342,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "ps_metrics_module_v4_0_8\\Http\\Promise\\": "src/"
+                    "ps_metrics_module_v4_0_9\\Http\\Promise\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -407,7 +407,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "ps_metrics_module_v4_0_8\\PhpOption\\": "src/PhpOption/"
+                    "ps_metrics_module_v4_0_9\\PhpOption\\": "src/PhpOption/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -475,7 +475,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "ps_metrics_module_v4_0_8\\PrestaShop\\ModuleLibCacheDirectoryProvider\\": "src/"
+                    "ps_metrics_module_v4_0_9\\PrestaShop\\ModuleLibCacheDirectoryProvider\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -537,7 +537,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "ps_metrics_module_v4_0_8\\Prestashop\\ModuleLibGuzzleAdapter\\": "src/"
+                    "ps_metrics_module_v4_0_9\\Prestashop\\ModuleLibGuzzleAdapter\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -586,7 +586,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "ps_metrics_module_v4_0_8\\Prestashop\\ModuleLibMboInstaller\\": "src/"
+                    "ps_metrics_module_v4_0_9\\Prestashop\\ModuleLibMboInstaller\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -698,7 +698,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "ps_metrics_module_v4_0_8\\PrestaShop\\PsAccountsInstaller\\": "src/"
+                    "ps_metrics_module_v4_0_9\\PrestaShop\\PsAccountsInstaller\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -989,7 +989,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "ps_metrics_module_v4_0_8\\Dotenv\\": "src/"
+                    "ps_metrics_module_v4_0_9\\Dotenv\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",

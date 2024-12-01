@@ -109,7 +109,7 @@ if ($lastParametersModificationTime) {
     define('_PS_CACHING_SYSTEM_',  $config['parameters']['ps_caching']);
 
     if (!defined('PS_IN_UPGRADE') && !defined('_PS_IN_TEST_')) {
-        define('_PS_CACHE_ENABLED_', $config['parameters']['ps_cache_enable']);
+        define('_PS_CACHE_ENABLED_', false);
     } else {
         define('_PS_CACHE_ENABLED_', 0);
         $config['parameters']['ps_cache_enable'] = 0;

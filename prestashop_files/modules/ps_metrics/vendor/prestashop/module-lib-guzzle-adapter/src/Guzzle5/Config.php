@@ -1,8 +1,8 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Prestashop\ModuleLibGuzzleAdapter\Guzzle5;
+namespace ps_metrics_module_v4_0_9\Prestashop\ModuleLibGuzzleAdapter\Guzzle5;
 
-use ps_metrics_module_v4_0_8\Prestashop\ModuleLibGuzzleAdapter\Interfaces\ConfigInterface;
+use ps_metrics_module_v4_0_9\Prestashop\ModuleLibGuzzleAdapter\Interfaces\ConfigInterface;
 class Config implements ConfigInterface
 {
     /**

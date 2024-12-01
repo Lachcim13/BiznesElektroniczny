@@ -1,11 +1,11 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Http\Message\UriFactory;
+namespace ps_metrics_module_v4_0_9\Http\Message\UriFactory;
 
-use ps_metrics_module_v4_0_8\Http\Message\UriFactory;
-use ps_metrics_module_v4_0_8\Laminas\Diactoros\Uri as LaminasUri;
+use ps_metrics_module_v4_0_9\Http\Message\UriFactory;
+use ps_metrics_module_v4_0_9\Laminas\Diactoros\Uri as LaminasUri;
 use Psr\Http\Message\UriInterface;
-use ps_metrics_module_v4_0_8\Zend\Diactoros\Uri as ZendUri;
+use ps_metrics_module_v4_0_9\Zend\Diactoros\Uri as ZendUri;
 if (!\interface_exists(UriFactory::class)) {
     throw new \LogicException('You cannot use "Http\\Message\\MessageFactory\\DiactorosUriFactory" as the "php-http/message-factory" package is not installed. Try running "composer require php-http/message-factory". Note that this package is deprecated, use "psr/http-factory" instead');
 }

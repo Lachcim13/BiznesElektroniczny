@@ -1,6 +1,6 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Http\Message\Decorator;
+namespace ps_metrics_module_v4_0_9\Http\Message\Decorator;
 
 use Psr\Http\Message\MessageInterface;
 use Psr\Http\Message\StreamInterface;

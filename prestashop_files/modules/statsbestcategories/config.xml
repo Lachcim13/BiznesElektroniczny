@@ -3,7 +3,7 @@
     <name>statsbestcategories</name>
     <displayName><![CDATA[Best categories]]></displayName>
     <version><![CDATA[2.0.1]]></version>
-    <description><![CDATA[Adds a list of the best categories to the Stats dashboard.]]></description>
+    <description><![CDATA[Enrich your stats, add a list of the best selling categories to the dashboard.]]></description>
     <author><![CDATA[PrestaShop]]></author>
     <tab><![CDATA[analytics_stats]]></tab>
     <is_configurable>0</is_configurable>

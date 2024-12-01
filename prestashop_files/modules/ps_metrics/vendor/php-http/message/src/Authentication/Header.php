@@ -1,8 +1,8 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Http\Message\Authentication;
+namespace ps_metrics_module_v4_0_9\Http\Message\Authentication;
 
-use ps_metrics_module_v4_0_8\Http\Message\Authentication;
+use ps_metrics_module_v4_0_9\Http\Message\Authentication;
 use Psr\Http\Message\RequestInterface;
 class Header implements Authentication
 {

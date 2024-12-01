@@ -1,6 +1,6 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\PrestaShop\PsAccountsInstaller\Installer;
+namespace ps_metrics_module_v4_0_9\PrestaShop\PsAccountsInstaller\Installer;
 
 use PrestaShop\PrestaShop\Adapter\SymfonyContainer;
 use PrestaShop\PrestaShop\Core\Addon\Module\ModuleManagerBuilder;

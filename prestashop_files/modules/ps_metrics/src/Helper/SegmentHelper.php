@@ -20,7 +20,7 @@
  */
 namespace PrestaShop\Module\Ps_metrics\Helper;
 
-use ps_metrics_module_v4_0_8\Segment;
+use ps_metrics_module_v4_0_9\Segment;
 class SegmentHelper
 {
     /**

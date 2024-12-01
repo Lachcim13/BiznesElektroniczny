@@ -33,7 +33,7 @@
         ],
         "psr-4": {
             "PrestaShop\\Module\\Ps_metrics\\": "src\/",
-            "ps_metrics_module_v4_0_8\\exclude-from-classmap": []
+            "ps_metrics_module_v4_0_9\\exclude-from-classmap": []
         }
     },
     "type": "prestashop-module"

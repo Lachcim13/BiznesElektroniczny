@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ps_metrics_module_v4_0_8\\PhpOption\\": "src\/PhpOption\/"
+            "ps_metrics_module_v4_0_9\\PhpOption\\": "src\/PhpOption\/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ps_metrics_module_v4_0_8\\PhpOption\\Tests\\": "tests\/PhpOption\/Tests\/"
+            "ps_metrics_module_v4_0_9\\PhpOption\\Tests\\": "tests\/PhpOption\/Tests\/"
         }
     },
     "config": {

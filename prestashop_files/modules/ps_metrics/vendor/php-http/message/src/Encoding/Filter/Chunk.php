@@ -1,6 +1,6 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Http\Message\Encoding\Filter;
+namespace ps_metrics_module_v4_0_9\Http\Message\Encoding\Filter;
 
 /**
  * Userland implementation of the chunk stream filter.

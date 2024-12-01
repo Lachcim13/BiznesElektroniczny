@@ -1,9 +1,9 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Http\Message\Authentication;
+namespace ps_metrics_module_v4_0_9\Http\Message\Authentication;
 
-use ps_metrics_module_v4_0_8\Http\Message\Authentication;
-use ps_metrics_module_v4_0_8\Http\Message\RequestMatcher;
+use ps_metrics_module_v4_0_9\Http\Message\Authentication;
+use ps_metrics_module_v4_0_9\Http\Message\RequestMatcher;
 use Psr\Http\Message\RequestInterface;
 /**
  * Authenticate a PSR-7 Request if the request is matching the given request matcher.

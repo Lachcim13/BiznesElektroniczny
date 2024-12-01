@@ -4,7 +4,7 @@
     "license": "AFL-3.0",
     "autoload": {
         "psr-4": {
-            "ps_metrics_module_v4_0_8\\Prestashop\\ModuleLibGuzzleAdapter\\": "src\/"
+            "ps_metrics_module_v4_0_9\\Prestashop\\ModuleLibGuzzleAdapter\\": "src\/"
         }
     },
     "authors": [

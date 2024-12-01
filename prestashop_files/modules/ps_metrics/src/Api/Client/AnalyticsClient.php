@@ -25,8 +25,8 @@ use PrestaShop\Module\Ps_metrics\Middleware\CheckResponseMiddleware;
 use PrestaShop\Module\Ps_metrics\Middleware\LogMiddleware;
 use PrestaShop\Module\Ps_metrics\Middleware\ResponseMiddleware;
 use PrestaShop\Module\Ps_metrics\Middleware\SentryMiddleware;
-use ps_metrics_module_v4_0_8\PrestaShop\PsAccountsInstaller\Installer\Exception\InstallerException;
-use ps_metrics_module_v4_0_8\PrestaShop\PsAccountsInstaller\Installer\Facade\PsAccounts;
+use ps_metrics_module_v4_0_9\PrestaShop\PsAccountsInstaller\Installer\Exception\InstallerException;
+use ps_metrics_module_v4_0_9\PrestaShop\PsAccountsInstaller\Installer\Facade\PsAccounts;
 class AnalyticsClient extends \PrestaShop\Module\Ps_metrics\Api\Client\HttpFactory
 {
     /**

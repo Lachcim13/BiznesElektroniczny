@@ -22,7 +22,7 @@ namespace PrestaShop\Module\Ps_metrics\Module;
 
 use PrestaShop\Module\Ps_metrics\Api\AnalyticsApi;
 use PrestaShop\Module\Ps_metrics\Repository\ConfigurationRepository;
-use ps_metrics_module_v4_0_8\PrestaShop\PsAccountsInstaller\Installer\Facade\PsAccounts;
+use ps_metrics_module_v4_0_9\PrestaShop\PsAccountsInstaller\Installer\Facade\PsAccounts;
 class Uninstall
 {
     /**

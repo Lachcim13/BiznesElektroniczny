@@ -1,6 +1,6 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8;
+namespace ps_metrics_module_v4_0_9;
 
 /**
  * require client
@@ -58,7 +58,7 @@ foreach ($lines as $line) {
     $payload = \json_decode($line, \true);
     $payload["timestamp"] = \strtotime($payload["timestamp"]);
     $type = $payload["type"];
-    $ret = \call_user_func_array(array("ps_metrics_module_v4_0_8\\Segment", $type), array($payload));
+    $ret = \call_user_func_array(array("ps_metrics_module_v4_0_9\\Segment", $type), array($payload));
     if ($ret) {
         $successful++;
     }

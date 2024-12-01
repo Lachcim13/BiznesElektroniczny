@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace ps_metrics_module_v4_0_8\Prestashop\ModuleLibGuzzleAdapter\Guzzle7;
+namespace ps_metrics_module_v4_0_9\Prestashop\ModuleLibGuzzleAdapter\Guzzle7;
 
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Middleware;
 use GuzzleHttp\Utils;
-use ps_metrics_module_v4_0_8\Prestashop\ModuleLibGuzzleAdapter\Interfaces\HttpClientInterface;
+use ps_metrics_module_v4_0_9\Prestashop\ModuleLibGuzzleAdapter\Interfaces\HttpClientInterface;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 /**

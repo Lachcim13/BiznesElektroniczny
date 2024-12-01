@@ -45,7 +45,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ps_metrics_module_v4_0_8\\Http\\Message\\": "src\/"
+            "ps_metrics_module_v4_0_9\\Http\\Message\\": "src\/"
         },
         "files": [
             "src\/filters.php"
@@ -53,7 +53,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "ps_metrics_module_v4_0_8\\spec\\Http\\Message\\": "spec\/"
+            "ps_metrics_module_v4_0_9\\spec\\Http\\Message\\": "spec\/"
         }
     },
     "scripts": {

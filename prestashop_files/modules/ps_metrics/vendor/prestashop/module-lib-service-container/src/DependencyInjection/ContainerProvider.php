@@ -20,7 +20,7 @@
  */
 namespace PrestaShop\ModuleLibServiceContainer\DependencyInjection;
 
-use ps_metrics_module_v4_0_8\PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider;
+use ps_metrics_module_v4_0_9\PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider;
 use Symfony\Component\Config\ConfigCache;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

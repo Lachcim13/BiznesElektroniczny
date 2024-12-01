@@ -18,9 +18,9 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  */
-namespace ps_metrics_module_v4_0_8\Tests\Unit\DependencyInjection;
+namespace ps_metrics_module_v4_0_9\Tests\Unit\DependencyInjection;
 
-use ps_metrics_module_v4_0_8\PHPUnit\Framework\TestCase;
+use ps_metrics_module_v4_0_9\PHPUnit\Framework\TestCase;
 use PrestaShop\ModuleLibServiceContainer\DependencyInjection\ServiceContainer;
 class ServiceContainerTest extends TestCase
 {

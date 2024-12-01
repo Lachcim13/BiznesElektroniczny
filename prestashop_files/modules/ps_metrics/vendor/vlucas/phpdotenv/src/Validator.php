@@ -1,9 +1,9 @@
 <?php
 
-namespace ps_metrics_module_v4_0_8\Dotenv;
+namespace ps_metrics_module_v4_0_9\Dotenv;
 
-use ps_metrics_module_v4_0_8\Dotenv\Exception\ValidationException;
-use ps_metrics_module_v4_0_8\Dotenv\Regex\Regex;
+use ps_metrics_module_v4_0_9\Dotenv\Exception\ValidationException;
+use ps_metrics_module_v4_0_9\Dotenv\Regex\Regex;
 /**
  * This is the validator class.
  *
