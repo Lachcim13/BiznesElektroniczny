@@ -46,7 +46,11 @@
                 title="{$link.description}"
                 {if !empty($link.target)} target="{$link.target}" {/if}
             >
-              {$link.title}
+              {if $link.title eq 'Kontakt z nami'}
+                Skontaktuj się z nami
+              {else}
+                {$link.title}
+              {/if}
             </a>
           </li>
         {/foreach}
