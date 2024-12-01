@@ -3,7 +3,7 @@
         {
             "name": "Druty",
             "description": "",
-            "image_path": "../scrapper_results/downloaded_images\\Druty_image.jpg",
+            "image_path": "../scrapper_results/downloaded_images/Druty_image.jpg",
             "subcategories": [
                 {
                     "name": "Druty proste",
@@ -18,13 +18,13 @@
                             "description_short": "Wysokiej jakości druty aluminiowe powlekane firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "2,5mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 2.5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 2.5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 2.5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 2.5mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura Aluminiowe 2mm",
@@ -34,13 +34,13 @@
                             "description_short": "Wysokiej jakości druty aluminiowe powlekane firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "2mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 2mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 2mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 2mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 2mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura Aluminiowe 3.5mm",
@@ -50,13 +50,13 @@
                             "description_short": "Wysokiej jakości druty aluminiowe powlekane firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "3,5mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 3.5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 3.5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 3.5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 3.5mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura Aluminiowe 3mm",
@@ -66,13 +66,13 @@
                             "description_short": "Wysokiej jakości druty aluminiowe powlekane firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "3mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 3mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 3mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 3mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 3mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura Aluminiowe 4.5mm",
@@ -82,13 +82,13 @@
                             "description_short": "Wysokiej jakości druty aluminiowe powlekane firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "4,5mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 4.5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 4.5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 4.5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 4.5mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura Aluminiowe 4mm",
@@ -98,13 +98,13 @@
                             "description_short": "Wysokiej jakości druty aluminiowe powlekane firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "4mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 4mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 4mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 4mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 4mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura Aluminiowe 5.5mm",
@@ -114,13 +114,13 @@
                             "description_short": "Wysokiej jakości druty aluminiowe powlekane firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "5,5mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 5.5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 5.5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 5.5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 5.5mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura Aluminiowe 5mm",
@@ -130,13 +130,13 @@
                             "description_short": "Wysokiej jakości druty aluminiowe powlekane firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "5mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 5mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura bambusowe 2,5mm",
@@ -146,13 +146,13 @@
                             "description_short": "Wysokiej jakości druty bambusowe firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "2,5mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 2,5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 2,5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 2,5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 2,5mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura bambusowe 2mm",
@@ -162,13 +162,13 @@
                             "description_short": "Wysokiej jakości druty bambusowe firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "2mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 2mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 2mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 2mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 2mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura bambusowe 4,5mm",
@@ -178,13 +178,13 @@
                             "description_short": "Wysokiej jakości druty bambusowe firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "10mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 4,5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 4,5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 4,5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 4,5mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura bambusowe 4mm",
@@ -194,13 +194,13 @@
                             "description_short": "Wysokiej jakości druty bambusowe firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "10mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 4mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 4mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 4mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 4mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura bambusowe 3,5mm",
@@ -210,13 +210,13 @@
                             "description_short": "Wysokiej jakości druty bambusowe firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "3,5mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 3,5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 3,5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 3,5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 3,5mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura bambusowe 3mm",
@@ -226,13 +226,13 @@
                             "description_short": "Wysokiej jakości druty bambusowe firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "3mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 3mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 3mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 3mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 3mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura Aluminiowe 8mm",
@@ -242,13 +242,13 @@
                             "description_short": "Wysokiej jakości druty aluminiowe powlekane firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "8mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 8mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 8mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 8mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 8mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura Aluminiowe 7mm",
@@ -258,13 +258,13 @@
                             "description_short": "Wysokiej jakości druty aluminiowe powlekane firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "7mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 7mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 7mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 7mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 7mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura Aluminiowe 6mm",
@@ -274,13 +274,13 @@
                             "description_short": "Wysokiej jakości druty aluminiowe powlekane firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "6mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 6mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 6mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 6mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 6mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura bambusowe 6mm",
@@ -290,13 +290,13 @@
                             "description_short": "Wysokiej jakości druty bambusowe firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "5mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 6mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 6mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 6mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 6mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura bambusowe 5mm",
@@ -306,13 +306,13 @@
                             "description_short": "Wysokiej jakości druty bambusowe firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "5mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 5mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura bambusowe 8mm",
@@ -322,13 +322,13 @@
                             "description_short": "Wysokiej jakości druty bambusowe firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "7mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 8mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 8mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 8mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 8mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura bambusowe 7mm",
@@ -338,13 +338,13 @@
                             "description_short": "Wysokiej jakości druty bambusowe firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "7mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 7mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 7mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 7mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 7mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura Aluminiowe 10mm",
@@ -359,8 +359,8 @@
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 10mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 10mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 10mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 10mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura Aluminiowe 9mm",
@@ -370,13 +370,13 @@
                             "description_short": "Wysokiej jakości druty aluminiowe powlekane firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "9mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 9mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 9mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 9mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 9mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura bambusowe 10mm",
@@ -386,13 +386,13 @@
                             "description_short": "Wysokiej jakości druty bambusowe firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "10mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 10mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 10mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 10mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 10mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura bambusowe 9mm",
@@ -402,13 +402,13 @@
                             "description_short": "Wysokiej jakości druty bambusowe firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "9mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 9mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura bambusowe 9mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 9mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura bambusowe 9mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura Aluminiowe 12mm",
@@ -418,13 +418,13 @@
                             "description_short": "Wysokiej jakości druty aluminiowe powlekane firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "12mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 12mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 12mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 12mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 12mm_large.jpg"
                         },
                         {
                             "name": "Druty proste Opus Natura Aluminiowe 15mm",
@@ -434,13 +434,13 @@
                             "description_short": "Wysokiej jakości druty aluminiowe powlekane firmy Opus Natura",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "15mm",
                             "weight": "",
                             "length": "35cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 15mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty proste Opus Natura Aluminiowe 15mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 15mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty proste Opus Natura Aluminiowe 15mm_large.jpg"
                         }
                     ]
                 },
@@ -457,13 +457,13 @@
                             "description_short": "",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "3,5mm",
                             "weight": "",
                             "length": "20cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty do skarpet Opus Natura Aluminiowe 3.5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty do skarpet Opus Natura Aluminiowe 3.5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty do skarpet Opus Natura Aluminiowe 3.5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty do skarpet Opus Natura Aluminiowe 3.5mm_large.jpg"
                         },
                         {
                             "name": "Druty do skarpet Opus Natura Aluminiowe 3mm",
@@ -473,13 +473,13 @@
                             "description_short": "",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "3mm",
                             "weight": "",
                             "length": "20cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty do skarpet Opus Natura Aluminiowe 3mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty do skarpet Opus Natura Aluminiowe 3mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty do skarpet Opus Natura Aluminiowe 3mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty do skarpet Opus Natura Aluminiowe 3mm_large.jpg"
                         },
                         {
                             "name": "Druty do skarpet Opus Natura Aluminiowe 2.5mm",
@@ -489,13 +489,13 @@
                             "description_short": "",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "2,5mm",
                             "weight": "",
                             "length": "20cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty do skarpet Opus Natura Aluminiowe 2.5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty do skarpet Opus Natura Aluminiowe 2.5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty do skarpet Opus Natura Aluminiowe 2.5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty do skarpet Opus Natura Aluminiowe 2.5mm_large.jpg"
                         },
                         {
                             "name": "Druty do skarpet Opus Natura Aluminiowe 2mm",
@@ -505,13 +505,13 @@
                             "description_short": "",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "2mm",
                             "weight": "",
                             "length": "20cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty do skarpet Opus Natura Aluminiowe 2mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty do skarpet Opus Natura Aluminiowe 2mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty do skarpet Opus Natura Aluminiowe 2mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty do skarpet Opus Natura Aluminiowe 2mm_large.jpg"
                         },
                         {
                             "name": "Druty do skarpet Opus Natura Aluminiowe 5mm",
@@ -521,13 +521,13 @@
                             "description_short": "",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "5mm",
                             "weight": "",
                             "length": "20cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty do skarpet Opus Natura Aluminiowe 5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty do skarpet Opus Natura Aluminiowe 5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty do skarpet Opus Natura Aluminiowe 5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty do skarpet Opus Natura Aluminiowe 5mm_large.jpg"
                         },
                         {
                             "name": "Druty do skarpet Opus Natura Aluminiowe 4.5mm",
@@ -537,13 +537,13 @@
                             "description_short": "",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "4,5mm",
                             "weight": "",
                             "length": "20cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty do skarpet Opus Natura Aluminiowe 4.5mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty do skarpet Opus Natura Aluminiowe 4.5mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty do skarpet Opus Natura Aluminiowe 4.5mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty do skarpet Opus Natura Aluminiowe 4.5mm_large.jpg"
                         },
                         {
                             "name": "Druty do skarpet Opus Natura Aluminiowe 4mm",
@@ -553,13 +553,13 @@
                             "description_short": "",
                             "description_long": "",
                             "composition": "",
-                            "size": "",
+                            "size": "4mm",
                             "weight": "",
                             "length": "20cm",
                             "crochet_size": "",
                             "needle_size": "",
-                            "medium_image_path": "../scrapper_results/downloaded_images\\Druty do skarpet Opus Natura Aluminiowe 4mm_medium.jpg",
-                            "large_image_path": "../scrapper_results/downloaded_images\\Druty do skarpet Opus Natura Aluminiowe 4mm_large.jpg"
+                            "medium_image_path": "../scrapper_results/downloaded_images/Druty do skarpet Opus Natura Aluminiowe 4mm_medium.jpg",
+                            "large_image_path": "../scrapper_results/downloaded_images/Druty do skarpet Opus Natura Aluminiowe 4mm_large.jpg"
                         }
                     ]
                 }

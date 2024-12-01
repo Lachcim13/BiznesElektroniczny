@@ -5,7 +5,7 @@ import base64
 from pathlib import Path
 import json
 import re
-import xml.etree.ElementTree as ET
+import os
 
 
 API_URL = "http://localhost:8080/api"
@@ -94,7 +94,7 @@ def create_feature_value(feature_name, value):
     return feature_id, feature_value_id
 
 def get_img_path(current_path):
-    if current_path == '':
+    if current_path == '' or current_path is None:
         return None
     current_path = current_path.replace("\\", "/")
     relative_path = Path(f"{current_path}")
@@ -208,40 +208,46 @@ def create_product(name, price, description_short, description_long, composition
 
     temp_feature_id, temp_feature_value_id = None, None
 
-    composition_feature = etree.SubElement(features_elements, "product_feature")
     temp_feature_id, temp_feature_value_id = create_feature_value("Skład:", composition)
-    etree.SubElement(composition_feature, "id").text = str(temp_feature_id)
-    etree.SubElement(composition_feature, "id_feature_value").text = str(temp_feature_value_id)
+    if temp_feature_id != "" and temp_feature_value_id != "":
+        composition_feature = etree.SubElement(features_elements, "product_feature")
+        etree.SubElement(composition_feature, "id").text = str(temp_feature_id)
+        etree.SubElement(composition_feature, "id_feature_value").text = str(temp_feature_value_id)
 
 
-    weight_feature = etree.SubElement(features_elements, "product_feature")
     temp_feature_id, temp_feature_value_id = create_feature_value("Waga motka:", weight)
-    etree.SubElement(weight_feature, "id").text = str(temp_feature_id)
-    etree.SubElement(weight_feature, "id_feature_value").text = str(temp_feature_value_id)
+    if temp_feature_id != "" and temp_feature_value_id != "":
+        weight_feature = etree.SubElement(features_elements, "product_feature")
+        etree.SubElement(weight_feature, "id").text = str(temp_feature_id)
+        etree.SubElement(weight_feature, "id_feature_value").text = str(temp_feature_value_id)
 
 
-    size_feature = etree.SubElement(features_elements, "product_feature")
     temp_feature_id, temp_feature_value_id = create_feature_value("Rozmiar:", size)
-    etree.SubElement(size_feature, "id").text = str(temp_feature_id)
-    etree.SubElement(size_feature, "id_feature_value").text = str(temp_feature_value_id)
+    if temp_feature_id != "" and temp_feature_value_id != "":
+        size_feature = etree.SubElement(features_elements, "product_feature")
+        etree.SubElement(size_feature, "id").text = str(temp_feature_id)
+        etree.SubElement(size_feature, "id_feature_value").text = str(temp_feature_value_id)
 
 
-    crochet_size_feature = etree.SubElement(features_elements, "product_feature")
     temp_feature_id, temp_feature_value_id = create_feature_value("Zalecany rozmiar szydełka:", crochet_size)
-    etree.SubElement(crochet_size_feature, "id").text = str(temp_feature_id)
-    etree.SubElement(crochet_size_feature, "id_feature_value").text = str(temp_feature_value_id)
+    if temp_feature_id != "" and temp_feature_value_id != "":
+        crochet_size_feature = etree.SubElement(features_elements, "product_feature")
+        etree.SubElement(crochet_size_feature, "id").text = str(temp_feature_id)
+        etree.SubElement(crochet_size_feature, "id_feature_value").text = str(temp_feature_value_id)
 
 
-    needle_size_feature = etree.SubElement(features_elements, "product_feature")
     temp_feature_id, temp_feature_value_id = create_feature_value("Zalecany rozmiar drutów:", needle_size)
-    etree.SubElement(needle_size_feature, "id").text = str(temp_feature_id)
-    etree.SubElement(needle_size_feature, "id_feature_value").text = str(temp_feature_value_id)
+    if temp_feature_id != "" and temp_feature_value_id != "":
+        needle_size_feature = etree.SubElement(features_elements, "product_feature")
+        etree.SubElement(needle_size_feature, "id").text = str(temp_feature_id)
+        etree.SubElement(needle_size_feature, "id_feature_value").text = str(temp_feature_value_id)
 
 
-    length_feature = etree.SubElement(features_elements, "product_feature")
     temp_feature_id, temp_feature_value_id = create_feature_value("Długość:", length)
-    etree.SubElement(length_feature, "id").text = str(temp_feature_id)
-    etree.SubElement(length_feature, "id_feature_value").text = str(temp_feature_value_id)
+    if temp_feature_id != "" and temp_feature_value_id != "":
+        length_feature = etree.SubElement(features_elements, "product_feature")
+        etree.SubElement(length_feature, "id").text = str(temp_feature_id)
+        etree.SubElement(length_feature, "id_feature_value").text = str(temp_feature_value_id)
 
     etree.SubElement(product_element, "state").text = "1"
 
@@ -249,7 +255,7 @@ def create_product(name, price, description_short, description_long, composition
     active_element.text = "1"
 
     tree = etree.ElementTree(prestashop)
-    #tree.write("product.xml", pretty_print=True)
+    tree.write("product.xml", pretty_print=True)
     xml_data = etree.tostring(tree.getroot(), pretty_print=True, xml_declaration=True, encoding="UTF-8")
 
     response = requests.post(f"{API_URL}/products", headers=headers, data=xml_data)
@@ -269,21 +275,30 @@ def create_product(name, price, description_short, description_long, composition
             img_headers = {
                 "Authorization": f"Basic {encoded_api_key}"
             }
-            img_files = {
-                'image': open(large_images_text, 'rb')
-            }
 
-            img_response = requests.post(
-                url,
-                files=img_files,
-                headers=img_headers,
-            )
-
-            if img_response.status_code == 201 or img_response.status_code == 200:
-                print(f"Cover image successfully added to product {id}!")
+            img_ok = True
+            img_files = None
+            if os.path.exists(large_images_text):
+                img_files = {
+                    'image': open(large_images_text, 'rb')
+                }
             else:
-                print(f"Error uploading cover image: {img_response.status_code}, {img_response.text}")
+                print(f"File not found: {large_images_text}")
+                img_ok = False
 
+            if img_ok:
+                img_response = requests.post(
+                    url,
+                    files=img_files,
+                    headers=img_headers,
+                )
+
+                if img_response.status_code == 201 or img_response.status_code == 200:
+                    print(f"Cover image successfully added to product {id}!")
+                else:
+                    print(f"Error uploading cover image: {img_response.status_code}, {img_response.text}")
+            else:
+                print(f"Error uploading cover image: {name}, bad image")
         #Stock
         stock_prestashop = etree.Element('prestashop')
         stock_available_element = etree.SubElement(stock_prestashop, 'stock_available')
@@ -302,7 +317,7 @@ def create_product(name, price, description_short, description_long, composition
 
         stock_xml_data = etree.tostring(stock_prestashop, pretty_print=True, encoding="UTF-8", xml_declaration=True)
         stock_response = requests.put(f"{API_URL}/stock_availables/{stock_id}", headers=headers, data=stock_xml_data)
-        print(stock_response.text)
+        #print(stock_response.text)
     else:
         print(f"Error creating product: {response.text}")
 
@@ -310,7 +325,7 @@ def create_product(name, price, description_short, description_long, composition
 
 
 def generate():
-    filename = "Druty.json"
+    filename = "Włóczki.json"
     with open(f"../scrapper_results/{filename}", 'r') as file:
         source_data = json.load(file)
         category_ids = {}
