@@ -23,15 +23,5 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 <a class="banner" href="{$banner_link}">
-  {if isset($banner_img)}
-    <img
-      class="img-fluid"
-      src="{$banner_img}"
-      alt="{$banner_desc}"
-      title="{$banner_desc}"
-      width="{$banner_width}"
-      height="{$banner_height}"
-  {else}
-    <span>{$banner_desc}</span>
-  {/if}
+  <span>{$banner_desc}</span>
 </a>
