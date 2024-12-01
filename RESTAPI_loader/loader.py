@@ -310,7 +310,7 @@ def create_product(name, price, description_short, description_long, composition
 
 
 def generate():
-    filename = "Włóczki.json"
+    filename = "Druty.json"
     with open(f"../scrapper_results/{filename}", 'r') as file:
         source_data = json.load(file)
         category_ids = {}
