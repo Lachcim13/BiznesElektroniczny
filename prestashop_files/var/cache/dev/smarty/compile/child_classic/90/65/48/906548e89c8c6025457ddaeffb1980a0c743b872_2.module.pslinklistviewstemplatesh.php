@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2024-12-01 21:39:11
+/* Smarty version 3.1.48, created on 2024-12-02 12:18:03
   from 'module:pslinklistviewstemplatesh' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_674cc96fdc0f31_90246802',
+  'unifunc' => 'content_674d976b662276_57170995',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '906548e89c8c6025457ddaeffb1980a0c743b872' => 
     array (
       0 => 'module:pslinklistviewstemplatesh',
-      1 => 1733084705,
+      1 => 1733132867,
       2 => 'module',
     ),
   ),
@@ -20,16 +20,19 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_674cc96fdc0f31_90246802 (Smarty_Internal_Template $_smarty_tpl) {
+function content_674d976b662276_57170995 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin /var/www/html/themes/classic/modules/ps_linklist/views/templates/hook/linkblock.tpl --><div class="col-md-6 links">
-  <div class="row">
+  <div class="row custom-row">
   <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['linkBlocks']->value, 'linkBlock');
 $_smarty_tpl->tpl_vars['linkBlock']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['linkBlock']->value) {
 $_smarty_tpl->tpl_vars['linkBlock']->do_else = false;
 ?>
-    <div class="col-md-6 wrapper">
+    <div class="col-md-6 wrapper <?php ob_start();
+echo htmlspecialchars($_smarty_tpl->tpl_vars['linkBlock']->value['id'], ENT_QUOTES, 'UTF-8');
+$_prefixVariable3 = ob_get_clean();
+if ($_prefixVariable3 == 1) {?> custom-margin-class <?php }?>">
       <p class="h3 hidden-sm-down"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['linkBlock']->value['title'], ENT_QUOTES, 'UTF-8');?>
 </p>
       <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu_<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['linkBlock']->value['id'], ENT_QUOTES, 'UTF-8');?>

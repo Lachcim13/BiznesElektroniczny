@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2024-12-01 21:39:08
+/* Smarty version 3.1.48, created on 2024-12-02 11:53:32
   from '/var/www/html/themes/classic/templates/checkout/checkout-process.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_674cc96c156050_79357596',
+  'unifunc' => 'content_674d91aca81f20_32957143',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f66a6661754a0c8cac4d2c7194f7f9ac4f1e6cc6' => 
     array (
       0 => '/var/www/html/themes/classic/templates/checkout/checkout-process.tpl',
-      1 => 1732922128,
+      1 => 1732878096,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_674cc96c156050_79357596 (Smarty_Internal_Template $_smarty_tpl) {
+function content_674d91aca81f20_32957143 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['steps']->value, 'step', false, 'index');
 $_smarty_tpl->tpl_vars['step']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['index']->value => $_smarty_tpl->tpl_vars['step']->value) {

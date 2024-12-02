@@ -23,11 +23,40 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 {if $field.type == 'hidden'}
-
   {block name='form_field_item_hidden'}
     <input type="hidden" name="{$field.name}" value="{$field.value}">
   {/block}
+{elseif $field.name eq "psgdpr"}  
+  <div class="form-group row {if !empty($field.errors)}has-error{/if}">
+    <label class="col-md-3 form-control-label{if $field.required} required{/if}" for="field-{$field.name}">
+      {if $field.type !== 'checkbox'}
+        {$field.label}
+      {/if}
+    </label>
+    <div class="col-md-6{if ($field.type === 'radio-buttons')} form-control-valign{/if}">
+      {block name='form_field_item_checkbox'}
+        <span class="custom-checkbox">
+          <label>
+            <input name="{$field.name}" type="checkbox" value="1" {if $field.value}checked="checked"{/if} {if $field.required}required{/if}>
+            <span><i class="material-icons rtl-no-flip checkbox-checked">&#xE5CA;</i></span>
+            Zgadzam się z warunkami i polityką prywatności <a href="http://localhost:8080/index.php?id_cms=3&controller=cms"> Przeczytaj warunki użytkowania.</a>
+          </label>
+        </span>
+      {/block}
+    {block name='form_field_errors'}
+        {include file='_partials/form-errors.tpl' errors=$field.errors}
+      {/block}
 
+    </div>
+
+    <div class="col-md-3 form-control-comment">
+      {block name='form_field_comment'}
+        {if (!$field.required && !in_array($field.type, ['radio-buttons', 'checkbox']))}
+         {l s='Optional' d='Shop.Forms.Labels'}
+        {/if}
+      {/block}
+    </div>
+  </div>
 {else}
 
   <div class="form-group row {if !empty($field.errors)}has-error{/if}">

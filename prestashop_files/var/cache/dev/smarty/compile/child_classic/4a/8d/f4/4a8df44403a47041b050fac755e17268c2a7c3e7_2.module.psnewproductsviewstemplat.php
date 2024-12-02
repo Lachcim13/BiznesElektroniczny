@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2024-12-01 21:38:13
+/* Smarty version 3.1.48, created on 2024-12-02 11:54:22
   from 'module:psnewproductsviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_674cc935628168_12450834',
+  'unifunc' => 'content_674d91de5328b7_76845777',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4a8df44403a47041b050fac755e17268c2a7c3e7' => 
     array (
       0 => 'module:psnewproductsviewstemplat',
-      1 => 1732922128,
+      1 => 1732878096,
       2 => 'module',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/productlist.tpl' => 1,
   ),
 ),false)) {
-function content_674cc935628168_12450834 (Smarty_Internal_Template $_smarty_tpl) {
+function content_674d91de5328b7_76845777 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin /var/www/html/themes/classic/modules/ps_newproducts/views/templates/hook/ps_newproducts.tpl -->
 <section class="featured-products clearfix mt-3">
   <h2 class="h2 products-section-title text-uppercase">

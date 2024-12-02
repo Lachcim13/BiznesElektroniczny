@@ -9,3 +9,20 @@
         max-width: 100%;
     }
 }
+#custom-img{
+    width: 870px;
+    height: 217px;
+    aspect-ratio: auto 870 / 217;
+}
+/* #footer_sub_menu_1{
+    padding-right: 200px;
+} */
+
+/* .custom-row{
+    width: 1400px;
+}
+
+.contact-custom{
+    position: absolute;
+    right: 0;
+} */

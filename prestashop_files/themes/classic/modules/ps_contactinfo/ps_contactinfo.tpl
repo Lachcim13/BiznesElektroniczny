@@ -23,7 +23,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 
-<div class="block-contact col-md-3 links wrapper">
+<div class="block-contact col-md-3 links wrapper contact-custom">
   <div class="title clearfix hidden-md-up" data-target="#contact-infos" data-toggle="collapse">
     <span class="h3">{l s='Store information' d='Shop.Theme.Global'}</span>
     <span class="float-xs-right">
