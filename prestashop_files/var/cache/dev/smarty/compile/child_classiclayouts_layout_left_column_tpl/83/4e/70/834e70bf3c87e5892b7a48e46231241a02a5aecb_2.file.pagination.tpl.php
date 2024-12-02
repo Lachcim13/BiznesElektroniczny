@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.48, created on 2024-12-02 12:18:03
+/* Smarty version 3.1.48, created on 2024-12-02 15:22:04
   from '/var/www/html/themes/classic/templates/_partials/pagination.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_674d976b5e6058_63902950',
+  'unifunc' => 'content_674dc28caba149_00491827',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,21 +20,21 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_674d976b5e6058_63902950 (Smarty_Internal_Template $_smarty_tpl) {
+function content_674dc28caba149_00491827 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <nav class="pagination">
   <div class="col-md-4">
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_973361713674d976b5df9d4_24106770', 'pagination_summary');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_445487516674dc28ca93024_22252056', 'pagination_summary');
 ?>
 
   </div>
 
   <div class="col-md-6 offset-md-2 pr-0">
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_846168480674d976b5e0cd2_45031177', 'pagination_page_list');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1708865128674dc28ca99070_17758953', 'pagination_page_list');
 ?>
 
   </div>
@@ -42,12 +42,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_846168480674d976b5
 </nav>
 <?php }
 /* {block 'pagination_summary'} */
-class Block_973361713674d976b5df9d4_24106770 extends Smarty_Internal_Block
+class Block_445487516674dc28ca93024_22252056 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'pagination_summary' => 
   array (
-    0 => 'Block_973361713674d976b5df9d4_24106770',
+    0 => 'Block_445487516674dc28ca93024_22252056',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -60,12 +60,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'pagination_summary'} */
 /* {block 'pagination_page_list'} */
-class Block_846168480674d976b5e0cd2_45031177 extends Smarty_Internal_Block
+class Block_1708865128674dc28ca99070_17758953 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'pagination_page_list' => 
   array (
-    0 => 'Block_846168480674d976b5e0cd2_45031177',
+    0 => 'Block_1708865128674dc28ca99070_17758953',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
