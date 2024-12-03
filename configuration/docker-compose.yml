@@ -10,6 +10,7 @@ services:
       - prestashop_network
     volumes:
       - ../mariadb_files:/var/lib/mysql
+      - ./dumb.sql:/docker-entrypoint-initdb.d/dump.sql
   prestashop:
     container_name: prestashop
     image: prestashop/prestashop:1.7.8 

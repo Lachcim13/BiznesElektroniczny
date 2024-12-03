@@ -1,0 +1,3 @@
+docker exec some-mysql mariadb-dump -uroot -padmin prestashop --ignore-table=prestashop.ps_employee_account > dump.sql
+
+docker exec -i some-mysql mariadb -uroot -padmin prestashop < dump.sql
