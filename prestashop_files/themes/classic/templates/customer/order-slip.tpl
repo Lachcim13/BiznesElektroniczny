@@ -25,7 +25,7 @@
 {extends file='customer/page.tpl'}
 
 {block name='page_title'}
-  {l s='Credit slips' d='Shop.Theme.Customeraccount'}
+  {l s='Potwierdzenia zwrotów' d='Shop.Theme.Customeraccount'}
 {/block}
 
 {block name='page_content'}
