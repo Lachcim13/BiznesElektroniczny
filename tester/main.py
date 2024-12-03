@@ -9,9 +9,9 @@ from selenium.webdriver.support.wait import WebDriverWait
 import random
 
 
-def add_products_to_cart(driver, categories):
+def add_products_to_cart(driver, categories, url):
     for category in categories:
-        driver.get(category)
+        driver.get(url + category)
         added_products = 0
         while added_products < 5:
             try:
@@ -38,10 +38,10 @@ def add_products_to_cart(driver, categories):
                 added_products += 1
                 print(f"Product number {added_products} added to cart")
                 time.sleep(2)
-                driver.get(category)
+                driver.get(url + category)
             except Exception as e:
                 print("Product not available, choosing another one...")
-                driver.get(category)
+                driver.get(url + category)
     print("Products added to cart")
 
 def search_and_add_random_product(driver, product_name):
@@ -77,14 +77,14 @@ def register_new_account(driver, url):
     driver.find_element(By.NAME, "password").send_keys("password123")
     driver.find_element(By.NAME, "birthday").send_keys("1990-01-01")
 
-    required_checkboxes = ["customer_privacy", "psgdpr"]
+    required_checkboxes = ["psgdpr"]
     for checkbox in required_checkboxes:
         checkbox_element = driver.find_element(By.NAME, checkbox)
         if not checkbox_element.is_selected():
             checkbox_element.click()
 
 
-    optional_checkboxes = ["optin", "newsletter"]
+    optional_checkboxes = ["newsletter"]
     for checkbox in optional_checkboxes:
         if random.choice([True, False]):
             checkbox_element = driver.find_element(By.NAME, checkbox)
@@ -154,10 +154,14 @@ def generate(url, categories):
     service = Service(executable_path='/usr/bin/chromedriver')
     driver = webdriver.Chrome(service=service, options=options)
     driver.get(url)
+    button1 = driver.find_element(By.ID, "details-button")
+    if button1 is not None:
+        button1.click()
+        driver.find_element(By.ID, "proceed-link").click()
 
     try:
         register_new_account(driver, url)
-        add_products_to_cart(driver, categories)
+        add_products_to_cart(driver, categories, url)
         search_and_add_random_product(driver, "La Passion Freesia 48 różowy")
         remove_products_from_cart(driver, url)
         checkout_order(driver, url)
@@ -169,8 +173,8 @@ def generate(url, categories):
 
 
 if __name__ == "__main__":
-    url = "http://localhost:8080"
-    categories = ["http://localhost:8080/index.php?id_category=274&controller=category", "http://localhost:8080/index.php?id_category=246&controller=category"]
+    url = "https://localhost:8443"
+    categories = ["/index.php?id_category=274&controller=category", "/index.php?id_category=246&controller=category"]
 
     start_time = time.time()
     generate(url, categories)
