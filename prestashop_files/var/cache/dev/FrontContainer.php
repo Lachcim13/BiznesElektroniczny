@@ -5669,11 +5669,6 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'doctrine.orm.auto_generate_proxy_classes' => true,
             'doctrine.orm.proxy_dir' => '/var/www/html/var/cache/dev//doctrine/orm/Proxies',
             'doctrine.orm.proxy_namespace' => 'Proxies',
-            'ps_eventbus.proxy_api_url' => 'https://eventbus-proxy.psessentials.net',
-            'ps_eventbus.sync_api_url' => 'https://eventbus-sync.psessentials.net',
-            'ps_eventbus.live_sync_api_url' => 'https://api.cloudsync.prestashop.com/live-sync/v1',
-            'ps_eventbus.sentry_dsn' => 'https://457f191226df4b8f9a0d7bf6f250bab2@o298402.ingest.sentry.io/6066714',
-            'ps_eventbus.sentry_env' => 'production',
             'ps_accounts.environment' => 'production',
             'ps_accounts.accounts_api_url' => 'https://accounts-api.distribution.prestashop.net/',
             'ps_accounts.accounts_ui_url' => 'https://accounts.distribution.prestashop.net',
@@ -5691,6 +5686,11 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'ps_accounts.svc_accounts_ui_url' => 'https://accounts.psessentials.net',
             'ps_accounts.oauth2_url' => 'https://oauth.prestashop.com',
             'ps_accounts.testimonials_url' => 'https://assets.prestashop3.com/dst/accounts/assets/testimonials.json',
+            'ps_eventbus.proxy_api_url' => 'https://eventbus-proxy.psessentials.net',
+            'ps_eventbus.sync_api_url' => 'https://eventbus-sync.psessentials.net',
+            'ps_eventbus.live_sync_api_url' => 'https://api.cloudsync.prestashop.com/live-sync/v1',
+            'ps_eventbus.sentry_dsn' => 'https://457f191226df4b8f9a0d7bf6f250bab2@o298402.ingest.sentry.io/6066714',
+            'ps_eventbus.sentry_env' => 'production',
         ];
     }
 }
