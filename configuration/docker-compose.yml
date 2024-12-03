@@ -10,6 +10,7 @@ services:
       - prestashop_network
     volumes:
       - ../mariadb_files:/var/lib/mysql
+      - ./dumb.sql:/docker-entrypoint-initdb.d/dump.sql
   prestashop:
     container_name: prestashop
     image: prestashop/prestashop:1.7.8 
@@ -18,6 +19,7 @@ services:
       - mysql
     ports:
       - 8080:80
+      - 8443:443
     environment:
       DB_SERVER: some-mysql
       DB_NAME: prestashop
@@ -31,6 +33,24 @@ services:
     networks:
       - prestashop_network 
     volumes:
-      - ../prestashop_files:/var/www/html   
+      - ../prestashop_files:/var/www/html
+      - ./000-default.conf:/etc/apache2/sites-available/000-default.conf
+      - ./certs:/etc/ssl/certs
+    command: /bin/bash -c "a2enmod ssl && apache2-foreground"
+  
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin/phpmyadmin:5.2.1
+    restart: unless-stopped
+    ports:
+      - 8081:80
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD: admin
+      PMA_PORT: 3306
+    networks:
+      - prestashop_network
+       
 networks:
     prestashop_network:

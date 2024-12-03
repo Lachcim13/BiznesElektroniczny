@@ -9,3 +9,10 @@ __pycache__/
 *.tmp
 .DS_Store
 Thumbs.db
+
+/mariadb_files/
+
+/prestashop_files/var/cache
+/prestashop_files/log
+/prestashop_files/cache
+/prestashop_files/upload

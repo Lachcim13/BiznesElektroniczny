@@ -30,7 +30,13 @@
 {/block}
 
 {block name='head_seo'}
-  <title>{block name='head_seo_title'}{$page.meta.title}{/block}</title>
+  <title>{block name='head_seo_title'}
+    {if $page.meta.title eq "karolinaszydelko.pl"}
+      Sklep z włóczkami: WŁÓCZKI, kordonki, szydełka i więcej
+    {else}
+      {$page.meta.title}
+    {/if}
+  {/block}</title>
   {block name='hook_after_title_tag'}
     {hook h='displayAfterTitleTag'}
   {/block}

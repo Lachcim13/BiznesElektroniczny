@@ -18,9 +18,5 @@
  *}
 
 {if $customer.is_logged}
-  <li>
-    <a href="{$url}" title="{$wishlistsTitlePage}" rel="nofollow">
-      {$blockwishlist|escape:'html':'UTF-8'}
-    </a>
-  </li>
+  
 {/if}

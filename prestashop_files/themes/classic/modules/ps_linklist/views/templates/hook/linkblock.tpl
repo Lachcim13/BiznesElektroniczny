@@ -23,9 +23,9 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 <div class="col-md-6 links">
-  <div class="row">
+  <div class="row custom-row">
   {foreach $linkBlocks as $linkBlock}
-    <div class="col-md-6 wrapper">
+    <div class="col-md-6 wrapper {if {$linkBlock.id} eq 1 } custom-margin-class {/if}">
       <p class="h3 hidden-sm-down">{$linkBlock.title}</p>
       <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu_{$linkBlock.id}" data-toggle="collapse">
         <span class="h3">{$linkBlock.title}</span>
@@ -46,7 +46,11 @@
                 title="{$link.description}"
                 {if !empty($link.target)} target="{$link.target}" {/if}
             >
-              {$link.title}
+              {if $link.title eq 'Kontakt z nami'}
+                Skontaktuj się z nami
+              {else}
+                {$link.title}
+              {/if}
             </a>
           </li>
         {/foreach}

@@ -39,13 +39,52 @@
     </span>
   </div>
   <ul class="account-list collapse" id="footer_account_list">
-    {foreach from=$my_account_urls item=my_account_url}
+    {if $customer.is_logged}
+      {foreach from=$my_account_urls item=my_account_url}
+      {if $my_account_url.title eq "Dane osobowe"}
+        <li>
+          <a href="{$my_account_url.url}" title="{$my_account_url.title}" rel="nofollow">
+            Informacja
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:8080/index.php?controller=address" title="Dodaj pierwszy adres" rel="nofollow">
+            Dodaj pierwszy adres
+          </a>
+        </li>
+      {elseif $my_account_url.title eq "Moje pokwitowania - korekty płatności"}
+        <li>
+          <a href="{$my_account_url.url}" title="Potwierdzenia zwrotów" rel="nofollow">
+            Potwierdzenia zwrotów
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:8080/index.php?mylogout=" title="Wyloguj się" rel="nofollow">
+            Wyloguj się
+          </a>
+        </li>
+      {elseif $my_account_url.title eq "Lista życzeń"}
+      {elseif $my_account_url.title eq "Adresy"}
+      {else}
         <li>
           <a href="{$my_account_url.url}" title="{$my_account_url.title}" rel="nofollow">
             {$my_account_url.title}
           </a>
         </li>
+      {/if}
     {/foreach}
+    {else}
+      <li>
+        <a href="http://localhost:8080/index.php?controller=my-account" title="Zaloguj się" rel="nofollow">
+          Zaloguj się
+        </a>
+      </li>
+      <li>
+        <a href="http://localhost:8080/index.php?controller=authentication&create_account=1" title="Utwórz konto" rel="nofollow">
+          Utwórz konto
+        </a>
+      </li>
+    {/if}
     {hook h='displayMyAccountBlock'}
 	</ul>
 </div>

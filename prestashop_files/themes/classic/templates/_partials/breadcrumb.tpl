@@ -31,7 +31,13 @@
             {if not $smarty.foreach.breadcrumb.last}
               <a href="{$path.url}"><span>{$path.title}</span></a>
             {else}
-              <span>{$path.title}</span>
+              <span>
+                {if $path.title eq "Moje pokwitowania - korekty płatności"}
+                  Potwierdzenia zwrotów
+                {else}
+                  {$path.title}
+                {/if}
+              </span>
             {/if}
           </li>
         {/block}

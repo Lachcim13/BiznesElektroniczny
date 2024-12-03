@@ -29,8 +29,8 @@
       {l
         s='Call us: [1]%phone%[/1]'
         sprintf=[
-          '[1]' => '<span id="custom_phone_number">',
-          '[/1]' => '</span>',
+          '[1]' => '<a id="custom_phone_number" href="tel:509 904 006">',
+          '[/1]' => '</a>',
           '%phone%' => $contact_infos.phone
         ]
         d='Shop.Theme.Global'

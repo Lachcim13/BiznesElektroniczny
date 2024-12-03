@@ -76,6 +76,13 @@
             <i class="material-icons product-unavailable">&#xE14B;</i>
           {/if}
           {$product.availability_message}
+          {if $product.availability == 'available'}
+            <br>
+            <span>Ilość: {$product.quantity} szt.</span>
+          {elseif $product.availability == 'last_remaining_items'}
+            <br>
+            <span>Ilość: {$product.quantity} szt.</span>
+          {/if}
         {/if}
       </span>
     {/block}

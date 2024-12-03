@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2024-12-01 13:15:46
+/* Smarty version 3.1.48, created on 2024-12-03 14:06:19
   from 'module:pscustomeraccountlinkspsc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_674c537265da09_75633186',
+  'unifunc' => 'content_674f024beeea64_09959091',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '42f9461127ce7396a601c2484841253ea5ba658f' => 
     array (
       0 => 'module:pscustomeraccountlinkspsc',
-      1 => 1732917440,
+      1 => 1733135067,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_674c537265da09_75633186 (Smarty_Internal_Template $_smarty_tpl) {
+function content_674f024beeea64_09959091 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin /var/www/html/themes/classic/modules/ps_customeraccountlinks/ps_customeraccountlinks.tpl -->
 <div id="block_myaccount_infos" class="col-md-3 links wrapper">
   <p class="h3 myaccount-title hidden-sm-down">
@@ -41,12 +41,41 @@ function content_674c537265da09_75633186 (Smarty_Internal_Template $_smarty_tpl)
     </span>
   </div>
   <ul class="account-list collapse" id="footer_account_list">
-    <?php
+    <?php if ($_smarty_tpl->tpl_vars['customer']->value['is_logged']) {?>
+      <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['my_account_urls']->value, 'my_account_url');
 $_smarty_tpl->tpl_vars['my_account_url']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['my_account_url']->value) {
 $_smarty_tpl->tpl_vars['my_account_url']->do_else = false;
 ?>
+      <?php if ($_smarty_tpl->tpl_vars['my_account_url']->value['title'] == "Dane osobowe") {?>
+        <li>
+          <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['my_account_url']->value['url'], ENT_QUOTES, 'UTF-8');?>
+" title="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['my_account_url']->value['title'], ENT_QUOTES, 'UTF-8');?>
+" rel="nofollow">
+            Informacja
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:8080/index.php?controller=address" title="Dodaj pierwszy adres" rel="nofollow">
+            Dodaj pierwszy adres
+          </a>
+        </li>
+      <?php } elseif ($_smarty_tpl->tpl_vars['my_account_url']->value['title'] == "Moje pokwitowania - korekty płatności") {?>
+        <li>
+          <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['my_account_url']->value['url'], ENT_QUOTES, 'UTF-8');?>
+" title="Potwierdzenia zwrotów" rel="nofollow">
+            Potwierdzenia zwrotów
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:8080/index.php?mylogout=" title="Wyloguj się" rel="nofollow">
+            Wyloguj się
+          </a>
+        </li>
+      <?php } elseif ($_smarty_tpl->tpl_vars['my_account_url']->value['title'] == "Lista życzeń") {?>
+      <?php } elseif ($_smarty_tpl->tpl_vars['my_account_url']->value['title'] == "Adresy") {?>
+      <?php } else { ?>
         <li>
           <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['my_account_url']->value['url'], ENT_QUOTES, 'UTF-8');?>
 " title="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['my_account_url']->value['title'], ENT_QUOTES, 'UTF-8');?>
@@ -55,9 +84,22 @@ $_smarty_tpl->tpl_vars['my_account_url']->do_else = false;
 
           </a>
         </li>
+      <?php }?>
     <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+    <?php } else { ?>
+      <li>
+        <a href="http://localhost:8080/index.php?controller=my-account" title="Zaloguj się" rel="nofollow">
+          Zaloguj się
+        </a>
+      </li>
+      <li>
+        <a href="http://localhost:8080/index.php?controller=authentication&create_account=1" title="Utwórz konto" rel="nofollow">
+          Utwórz konto
+        </a>
+      </li>
+    <?php }?>
     <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayMyAccountBlock'),$_smarty_tpl ) );?>
 
 	</ul>
