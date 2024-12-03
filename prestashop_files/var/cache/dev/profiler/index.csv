@@ -274,3 +274,8 @@ b09652,172.18.0.1,GET,https://localhost:8443/admin-dev/index.php/_fragment?_path
 de344f,172.18.0.1,GET,https://localhost:8443/admin-dev/index.php/sell/catalog/products?_token=ennToBjiG7Cw0aAl8R6SIuVZ2wfFzGI_A3N0o4RKOFg,1733229474,,200
 fa270e,172.18.0.1,POST,https://localhost:8443/admin-dev/index.php/common/notifications?_token=ennToBjiG7Cw0aAl8R6SIuVZ2wfFzGI_A3N0o4RKOFg,1733229474,,200
 50c092,172.18.0.1,POST,https://localhost:8443/admin-dev/index.php/common/notifications?_token=ennToBjiG7Cw0aAl8R6SIuVZ2wfFzGI_A3N0o4RKOFg&rand=1733229474572,1733229474,,200
+5ece18,172.18.0.1,GET,https://localhost:8443/admin-dev/index.php/modules/metrics/api/getShopData?_token=9pQ8OgInf3jf-WBK8Iy8XErSyZ6Fcj0RchBxVKHlgas,1733230076,,200
+003d15,172.18.0.1,POST,https://localhost:8443/admin-dev/index.php/common/notifications?_token=9pQ8OgInf3jf-WBK8Iy8XErSyZ6Fcj0RchBxVKHlgas&rand=1733230075589,1733230076,,200
+b8f0cb,172.18.0.1,GET,https://localhost:8443/admin-dev/index.php/?_=1733230074772&action=refreshDashboard&ajax=true&controller=AdminDashboard&dashboard_use_push=0&module=dashproducts&token=0389edac485e69d1fd5ded65e3398558,1733230076,,200
+dfe819,172.18.0.1,GET,https://localhost:8443/admin-dev/index.php/?_=1733230074772&action=refreshDashboard&ajax=true&controller=AdminDashboard&dashboard_use_push=0&module=dashproducts&token=0389edac485e69d1fd5ded65e3398558,1733230076,,500
+3c669c,172.18.0.1,POST,https://localhost:8443/admin-dev/index.php/common/notifications?_token=9pQ8OgInf3jf-WBK8Iy8XErSyZ6Fcj0RchBxVKHlgas&rand=1733230075675,1733230077,,200
