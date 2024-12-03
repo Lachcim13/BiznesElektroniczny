@@ -4,3 +4,6 @@ docker exec some-mysql mariadb-dump -uroot -padmin prestashop --ignore-table=pre
 
 #import db
 docker exec -i some-mysql mariadb -uroot -padmin prestashop < dump.sql
+
+#give perm (do it from main directory)
+sudo chmod -R 777 ./
