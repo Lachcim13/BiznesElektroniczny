@@ -5,5 +5,4 @@ qwe123
 ssh hdoop@student-swarm01.maas
 
 qwe123
-
-ssssssss
+XD
