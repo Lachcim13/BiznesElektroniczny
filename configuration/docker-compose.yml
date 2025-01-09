@@ -20,6 +20,16 @@ services:
     ports:
       - 8080:80
       - 8443:443
+    environment:
+      DB_SERVER: some-mysql
+      DB_NAME: prestashop
+      DB_USER: root
+      DB_PASSWD: admin
+      PS_FOLDER_ADMIN: admin-dev
+      PS_FOLDER_INSTALL: install-dev
+      PS_DEV_MODE: 1
+      PS_INSTALL_AUTO: 1
+      PS_DOMAIN: localhost:8080
     networks:
       - prestashop_network
 
