@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2025-01-09 17:56:52
+/* Smarty version 3.1.48, created on 2025-01-09 19:14:38
   from 'module:pscustomeraccountlinkspsc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_677fffd4b3fc25_80229673',
+  'unifunc' => 'content_6780120ecf8870_46823339',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '42f9461127ce7396a601c2484841253ea5ba658f' => 
     array (
       0 => 'module:pscustomeraccountlinkspsc',
-      1 => 1733189607,
+      1 => 1735820353,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_677fffd4b3fc25_80229673 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6780120ecf8870_46823339 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin /var/www/html/themes/classic/modules/ps_customeraccountlinks/ps_customeraccountlinks.tpl -->
 <div id="block_myaccount_infos" class="col-md-3 links wrapper">
   <p class="h3 myaccount-title hidden-sm-down">

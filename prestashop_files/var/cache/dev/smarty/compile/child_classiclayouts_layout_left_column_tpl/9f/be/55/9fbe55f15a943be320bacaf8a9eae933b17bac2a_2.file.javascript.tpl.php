@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2025-01-09 17:56:52
+/* Smarty version 3.1.48, created on 2025-01-09 19:14:38
   from '/var/www/html/themes/classic/templates/_partials/javascript.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_677fffd4a4ec44_56974710',
+  'unifunc' => 'content_6780120ebc5453_23492091',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9fbe55f15a943be320bacaf8a9eae933b17bac2a' => 
     array (
       0 => '/var/www/html/themes/classic/templates/_partials/javascript.tpl',
-      1 => 1732922128,
+      1 => 1735820353,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_677fffd4a4ec44_56974710 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6780120ebc5453_23492091 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['javascript']->value['external'], 'js');
 $_smarty_tpl->tpl_vars['js']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['js']->value) {
