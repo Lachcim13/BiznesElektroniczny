@@ -4,5 +4,7 @@ qwe123
 
 ssh hdoop@student-swarm01.maas
 #password
-qwe123
+qwe123 
+
+sss
 
