@@ -1,9 +1,9 @@
 <prestashop xmlns_xlink="http://www.w3.org/1999/xlink">
   <product>
     <name>
-      <language id="2">Szyde&#322;ko Tulip 1,5mm</language>
+      <language id="2">Druty do skarpet Opus Natura Aluminiowe 4mm</language>
     </name>
-    <price>2.2</price>
+    <price>6.22</price>
     <weight>0.0</weight>
     <show_price>1</show_price>
     <additional_delivery_times>1</additional_delivery_times>
@@ -17,10 +17,10 @@
     <associations>
       <categories>
         <category>
-          <id>326</id>
+          <id>329</id>
         </category>
         <category>
-          <id>328</id>
+          <id>331</id>
         </category>
         <category>
           <id>2</id>
@@ -29,7 +29,11 @@
       <product_features>
         <product_feature>
           <id>5</id>
-          <id_feature_value>220</id_feature_value>
+          <id_feature_value>190</id_feature_value>
+        </product_feature>
+        <product_feature>
+          <id>7</id>
+          <id_feature_value>184</id_feature_value>
         </product_feature>
       </product_features>
     </associations>

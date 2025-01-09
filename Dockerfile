@@ -16,7 +16,9 @@ COPY ./prestashop_files /var/www/html
 
 RUN rm -rf /var/www/html/install
 
-RUN a2enmod ssl
+RUN a2enmod ssl && \
+    chown -R www-data:www-data /var/www/html && \
+    chmod -R 755 /var/www/html
 
 EXPOSE 80 443
 
