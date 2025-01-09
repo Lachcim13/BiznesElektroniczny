@@ -8,10 +8,10 @@ import re
 import os
 
 
-API_URL = "http://localhost:8080/api"
+API_URL = "https://localhost:8443/api"
 API_KEY = "L7SW4H4NYKZB1D8EB6MK3B1XFQH5XNKZ"
 
-lang_id_str = str("2")
+lang_id_str = "2"
 
 encoded_api_key = base64.b64encode(f"{API_KEY}:".encode()).decode()
 
@@ -51,7 +51,7 @@ def check_feature_value(feature_id, search_value):
         "filter[value]": search_value
     }
 
-    response = requests.get(endpoint, params=params, headers=headers)
+    response = requests.get(endpoint, params=params, headers=headers, verify=False)
     if response.status_code == 200 or response.status_code == 201 or response.status_code == 204:
         data = json.loads(response.text)
         if data == [] or data is None:
@@ -83,7 +83,7 @@ def create_feature_value(feature_name, value):
     tree = etree.ElementTree(prestashop)
     xml_data = etree.tostring(tree.getroot(), pretty_print=True, xml_declaration=True, encoding="UTF-8")
 
-    response = requests.post(f"{API_URL}/product_feature_values", headers=headers, data=xml_data)
+    response = requests.post(f"{API_URL}/product_feature_values", headers=headers, data=xml_data, verify=False)
     if response.status_code != 200 and response.status_code != 201:
         print(response.status_code)
         print(response.text)
@@ -128,7 +128,7 @@ def create_category(name, description, cover_img_path, parent_id=2):
 
     tree = etree.ElementTree(prestashop)
     xml_data = etree.tostring(tree.getroot(), pretty_print=True, xml_declaration=True, encoding="UTF-8")
-    response = requests.post(f"{API_URL}/categories", headers=headers, data=xml_data)
+    response = requests.post(f"{API_URL}/categories", headers=headers, data=xml_data, verify=False)
 
     if response.status_code == 201:
         print(f"Category '{name}' created successfully.")
@@ -149,6 +149,7 @@ def create_category(name, description, cover_img_path, parent_id=2):
             url,
             files=img_files,
             headers=img_headers,
+            verify=False
         )
 
         if img_response.status_code == 201 or img_response.status_code == 200:
@@ -173,7 +174,7 @@ def create_product(name, price, description_short, description_long, composition
     etree.SubElement(name_element, "language", id=lang_id_str).text = name
 
     price_element = etree.SubElement(product_element, "price")
-    price_element.text = str(price)
+    price_element.text = str(round(float(price) / 1.23, 2))
 
     etree.SubElement(product_element, "weight").text = get_weight_str(weight)
 
@@ -254,11 +255,13 @@ def create_product(name, price, description_short, description_long, composition
     active_element = etree.SubElement(product_element, "active")
     active_element.text = "1"
 
+    etree.SubElement(product_element, 'id_tax_rules_group').text = "1"
+
     tree = etree.ElementTree(prestashop)
     tree.write("product.xml", pretty_print=True)
     xml_data = etree.tostring(tree.getroot(), pretty_print=True, xml_declaration=True, encoding="UTF-8")
 
-    response = requests.post(f"{API_URL}/products", headers=headers, data=xml_data)
+    response = requests.post(f"{API_URL}/products", headers=headers, data=xml_data, verify=False)
 
     if response.status_code == 201:
         print(f"Product '{name}' created successfully.")
@@ -291,6 +294,7 @@ def create_product(name, price, description_short, description_long, composition
                     url,
                     files=img_files,
                     headers=img_headers,
+                    verify=False
                 )
 
                 if img_response.status_code == 201 or img_response.status_code == 200:
@@ -304,7 +308,7 @@ def create_product(name, price, description_short, description_long, composition
         stock_available_element = etree.SubElement(stock_prestashop, 'stock_available')
 
         quantity = random.randint(0, 10)
-        stock_id_response = requests.get(f"{API_URL}/stock_availables?filter[id_product]={id}", headers=headers)
+        stock_id_response = requests.get(f"{API_URL}/stock_availables?filter[id_product]={id}", headers=headers, verify=False)
         stock_id = json.loads(stock_id_response.text)["stock_availables"][0]["id"]
 
         etree.SubElement(stock_available_element, 'id').text = str(stock_id)
@@ -316,12 +320,12 @@ def create_product(name, price, description_short, description_long, composition
         etree.SubElement(stock_available_element, 'out_of_stock').text = "0"
 
         stock_xml_data = etree.tostring(stock_prestashop, pretty_print=True, encoding="UTF-8", xml_declaration=True)
-        stock_response = requests.put(f"{API_URL}/stock_availables/{stock_id}", headers=headers, data=stock_xml_data)
+        stock_response = requests.put(f"{API_URL}/stock_availables/{stock_id}", headers=headers, data=stock_xml_data, verify=False)
         #print(stock_response.text)
     else:
         print(f"Error creating product: {response.text}")
 
-    #requests.put(f"{API_URL}/products/{response.json()["product"]["id"]}", headers=headers, data=xml_data)
+    #requests.put(f"{API_URL}/products/{response.json()["product"]["id"]}", headers=headers, data=xml_data, verify=False)
 
 
 def generate():
@@ -354,6 +358,36 @@ def generate():
                                 product["large_image_path"]
                             )
 
+def update_products():
+    response = requests.get(f"{API_URL}/products", headers=headers, verify=False)
+    data = json.loads(response.content)
+    for product in data["products"]:
+        id = product["id"]
+        product_response = requests.get(f"{API_URL}/products/{id}", headers=headers, verify=False)
+        print(product_response.content)
+        price = json.loads(product_response.content)["product"]["price"]
+        product_name = json.loads(product_response.content)["product"]["name"]
+        prestashop = etree.Element('prestashop')
+        product_element = etree.SubElement(prestashop, 'product')
+
+
+        price = float(price) / 1.23
+        price = round(price, 2)
+
+        etree.SubElement(product_element, 'id').text = str(id)
+        etree.SubElement(product_element, 'name').text = str(product_name)
+        etree.SubElement(product_element, 'state').text = "1"
+        etree.SubElement(product_element, 'active').text = "1"
+        etree.SubElement(product_element, 'id_default_category').text = "2"
+        etree.SubElement(product_element, 'id_tax_rules_group').text = "1"
+        etree.SubElement(product_element, 'price').text = str(price)
+        xml_data = etree.tostring(prestashop, pretty_print=True, encoding="UTF-8", xml_declaration=True)
+        response = requests.put(f"{API_URL}/products/{id}", headers=headers, data=xml_data, verify=False)
+        print(response.content)
+        print("")
+
+
+#update_products()
 print("Zaczynam wstawianie")
 generate()
 print("Zakonczylem wstawianie")

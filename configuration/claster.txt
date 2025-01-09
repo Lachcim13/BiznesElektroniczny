@@ -1,0 +1,7 @@
+ssh rsww@172.20.83.101
+
+qwe123
+
+ssh hdoop@student-swarm01.maas
+
+qwe123

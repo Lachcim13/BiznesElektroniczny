@@ -3,7 +3,7 @@
     <name>
       <language id="2">MAXI Ombre Madame Tricote 0199</language>
     </name>
-    <price>22.95</price>
+    <price>18.66</price>
     <weight>0.1</weight>
     <show_price>1</show_price>
     <additional_delivery_times>1</additional_delivery_times>
@@ -17,10 +17,10 @@
     <associations>
       <categories>
         <category>
-          <id>274</id>
+          <id>301</id>
         </category>
         <category>
-          <id>277</id>
+          <id>304</id>
         </category>
         <category>
           <id>2</id>
@@ -53,5 +53,6 @@
     <id_category_default>2</id_category_default>
     <state>1</state>
     <active>1</active>
+    <id_tax_rules_group>1</id_tax_rules_group>
   </product>
 </prestashop>

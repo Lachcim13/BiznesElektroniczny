@@ -2,7 +2,7 @@ services:
   mysql:
     container_name: some-mysql
     image: mariadb:11.5.2
-    restart: unless-stopped
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: admin
       MYSQL_DATABASE: prestashop
@@ -10,38 +10,23 @@ services:
       - prestashop_network
     volumes:
       - ../mariadb_files:/var/lib/mysql
-      - ./dumb.sql:/docker-entrypoint-initdb.d/dump.sql
+
   prestashop:
     container_name: prestashop
-    image: prestashop/prestashop:1.7.8 
-    restart: unless-stopped
+    image: test_image
+    restart: always
     depends_on:
       - mysql
     ports:
       - 8080:80
       - 8443:443
-    environment:
-      DB_SERVER: some-mysql
-      DB_NAME: prestashop
-      DB_USER: root
-      DB_PASSWD: admin
-      PS_FOLDER_ADMIN: admin-dev
-      PS_FOLDER_INSTALL: install-dev
-      PS_DEV_MODE: 1
-      PS_INSTALL_AUTO: 1
-      PS_DOMAIN: localhost:8080
     networks:
-      - prestashop_network 
-    volumes:
-      - ../prestashop_files:/var/www/html
-      - ./000-default.conf:/etc/apache2/sites-available/000-default.conf
-      - ./certs:/etc/ssl/certs
-    command: /bin/bash -c "a2enmod ssl && apache2-foreground"
-  
+      - prestashop_network
+
   phpmyadmin:
     container_name: phpmyadmin
     image: phpmyadmin/phpmyadmin:5.2.1
-    restart: unless-stopped
+    restart: always
     ports:
       - 8081:80
     environment:
