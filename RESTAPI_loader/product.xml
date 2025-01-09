@@ -1,26 +1,26 @@
 <prestashop xmlns_xlink="http://www.w3.org/1999/xlink">
   <product>
     <name>
-      <language id="2">Druty do skarpet Opus Natura Aluminiowe 4mm</language>
+      <language id="2">MAXI Ombre Madame Tricote 0199</language>
     </name>
-    <price>6.22</price>
-    <weight>0.0</weight>
+    <price>18.66</price>
+    <weight>0.1</weight>
     <show_price>1</show_price>
     <additional_delivery_times>1</additional_delivery_times>
     <available_for_order>1</available_for_order>
     <description_short>
-      <language id="2"></language>
+      <language id="2">Wysokiej jako&#347;ci bawe&#322;niany kordonek tureckiej firmy Madame Tricote. Kordonek Maxi Ombre jest bardzo dobrze znany w&#347;r&#243;d dziewiarek i ceniony ze wzgl&#281;du na jego &#322;adny i solidny skr&#281;t. Kordonek Maxi Ombre w 100 gramach ma 565 metr&#243;w. Maxi Ombre to bawe&#322;na merceryzowana z pi&#281;knymi kr&#243;tkimi przej&#347;ciami kolor&#243;w.</language>
     </description_short>
     <description>
-      <language id="2"></language>
+      <language id="2">Kordonek Maxi Ombre Madame Tricote moim zdaniem pasuje do grupy rozmiarowej o grubo&#347;ci 10. Ze wzgl&#281;du na solidny skr&#281;t i wysok&#261; jako&#347;&#263; doskonale si&#281; nadaje na serwety, bie&#380;niki, obrusy, zazdrostki i inne dekoracje domowe. Polecam go r&#243;wnie&#380; do szyde&#322;kowania letnich ubra&#324;: top&#243;w, bluzeczek, delikatnych sukienek czy a&#380;urowych poncz na lato. Nitka jest do&#347;&#263; mocno skr&#281;cona, dzi&#281;ki czemu nie rozwarstwia si&#281; w trakcie szyde&#322;kowania i nie mechaci si&#281;. Kordonek ten jest bardzo wytrzyma&#322;y co sprawia, &#380;e bez problemu mo&#380;na go naci&#261;ga&#263; szpilkami( blokowa&#263;) bez obaw, &#380;e rob&#243;tka si&#281; przerwie. Doskonale nadaj&#281; si&#281; do usztywniania i krochmalenia. Zalet&#261; kordonka Maxi Ombre s&#261; pasuj&#261;ce do siebie kr&#243;tkie przej&#347;cia kolor&#243;w daj&#261;ce &#322;adny melan&#380;owy efekt.</language>
     </description>
     <associations>
       <categories>
         <category>
-          <id>335</id>
+          <id>349</id>
         </category>
         <category>
-          <id>337</id>
+          <id>352</id>
         </category>
         <category>
           <id>2</id>
@@ -28,12 +28,24 @@
       </categories>
       <product_features>
         <product_feature>
-          <id>5</id>
-          <id_feature_value>190</id_feature_value>
+          <id>4</id>
+          <id_feature_value>200</id_feature_value>
+        </product_feature>
+        <product_feature>
+          <id>6</id>
+          <id_feature_value>175</id_feature_value>
+        </product_feature>
+        <product_feature>
+          <id>8</id>
+          <id_feature_value>243</id_feature_value>
+        </product_feature>
+        <product_feature>
+          <id>10</id>
+          <id_feature_value>319</id_feature_value>
         </product_feature>
         <product_feature>
           <id>7</id>
-          <id_feature_value>184</id_feature_value>
+          <id_feature_value>332</id_feature_value>
         </product_feature>
       </product_features>
     </associations>
