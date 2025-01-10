@@ -24,7 +24,12 @@ services:
     networks:
       - be_193192_network
       - admin-mysql_default
-    command: /bin/bash -c "mysql -u"$DB_USER" -p"$DB_PASSWD" -h"$DB_SERVER" "$DB_NAME" < /tmp/sql/dump.sql"
+    command: >
+      /bin/bash -c "
+      mysql -u\"$DB_USER\" -p\"$DB_PASSWD\" -h\"$DB_SERVER\" \"$DB_NAME\" < /tmp/sql/dump.sql &&
+      mysql -u\"$DB_USER\" -p\"$DB_PASSWD\" -h\"$DB_SERVER\" -e \"UPDATE ps_configuration SET value = '$PS_DOMAIN' WHERE name LIKE '%SHOP_DOMAIN%'\" \"$DB_NAME\" &&
+      mysql -u\"$DB_USER\" -p\"$DB_PASSWD\" -h\"$DB_SERVER\" -e \"UPDATE ps_shop_url SET domain = '$PS_DOMAIN', domain_ssl = '$PS_DOMAIN' WHERE id_shop = 1\" \"$DB_NAME\"
+      "
     
   caching:
     container_name: caching_service
