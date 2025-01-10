@@ -24,6 +24,7 @@ services:
     networks:
       - be_193192_network
       - admin-mysql_default
+    command: /bin/bash -c "mysql -u"$DB_USER" -p"$DB_PASSWD" -h"$DB_SERVER" "$DB_NAME" < /tmp/sql/dump.sql"
     
   caching:
     container_name: caching_service
