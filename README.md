@@ -19,13 +19,10 @@ Aby uruchomić projekt lokalnie, postępuj zgodnie z poniższymi krokami:
 1. Upewnij się, że masz odpowiednie uprawnienia do plików:
 sudo chmod -R 777 ./
 
-2. Włącz dockera oraz załaduj
+2. Włącz skrypt uruchamiania
 cd configuration
-docker compose up -d
-
-3. Jeżeli chcesz wgrać bazę danych
-docker exec -i some-mysql mariadb -uroot -padmin prestashop < dump.sql
-
+./build.sh
+baza danych wgra się automatycznie
 
 ## Jak Zapisać Zmiany W Bazie
 docker exec some-mysql mariadb-dump -uroot -padmin prestashop --ignore-table=prestashop.ps_employee_account > dump.sql
