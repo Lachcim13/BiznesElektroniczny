@@ -1,13 +1,8 @@
 #!/bin/bash
-docker-compose up -d
-
-echo "Waiting for MySQL container to be ready..."
-until docker exec some-mysql mariadb -uroot -padmin --silent -e "SELECT 1"; do
-  echo "Waiting for MySQL to be ready..."
-  sleep 5
-done
+#docker-compose up -d
+docker stack deploy -c docker-compose.yml BE_193192 --withregistry-auth
 
 echo "Running SQL dump..."
-docker exec -i some-mysql mariadb -uroot -padmin BE_193192 < dump.sql
+docker exec -i admin-mysql_db mysql -uroot -pstudent BE_193192 < dump.sql
 
 echo "Services are up and SQL dump has been applied."
