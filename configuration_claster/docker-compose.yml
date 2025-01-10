@@ -16,6 +16,11 @@ services:
       PS_DEV_MODE: 1
       PS_INSTALL_AUTO: 1
       PS_DOMAIN: localhost:19319
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
     networks:
       - be_193192_network
       - admin-mysql_default
@@ -23,6 +28,11 @@ services:
   caching:
     container_name: caching_service
     image: memcached
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
     networks:
       - be_193192_network
        
