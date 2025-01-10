@@ -8,8 +8,6 @@ services:
       MYSQL_DATABASE: prestashop
     networks:
       - prestashop_network
-    volumes:
-      - ../mariadb_files:/var/lib/mysql
 
   prestashop:
     container_name: prestashop
