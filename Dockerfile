@@ -10,9 +10,14 @@ ENV DB_SERVER=some-mysql \
     PS_INSTALL_AUTO=1 \
     PS_DOMAIN=localhost:8080
 
+RUN apt-get update && apt-get install -y libmemcached-dev \
+    && pecl install memcached \
+    && docker-php-ext-enable memcached
+
 COPY ./configuration/000-default.conf /etc/apache2/sites-available/000-default.conf
 COPY ./configuration/certs /etc/ssl/certs
 COPY ./prestashop_files /var/www/html
+RUN ls -l /var/www/html/img/p
 
 RUN rm -rf /var/www/html/install
 

@@ -32,6 +32,14 @@ services:
       PS_DOMAIN: localhost:8080
     networks:
       - prestashop_network
+    
+  caching:
+    container_name: caching_service
+    image: memcached
+    ports:
+      - 11211:11211
+    networks:
+      - prestashop_network
 
   phpmyadmin:
     container_name: phpmyadmin
