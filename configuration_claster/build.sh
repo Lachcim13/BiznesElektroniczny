@@ -1,5 +1,4 @@
 #!/bin/bash
-#docker-compose up -d
 docker stack deploy -c docker-compose.yml BE_193192 --withregistry-auth
 
 echo "Running SQL dump..."
