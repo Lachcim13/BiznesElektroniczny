@@ -1,0 +1,32 @@
+services:
+  prestashop:
+    container_name: prestashop
+    image: karolinaszydelko/wloczki:main
+    restart: always
+    ports:
+      #- 19319:80
+      - 19319:443
+    environment:
+      DB_SERVER: admin-mysql_db
+      DB_NAME: BE_193192
+      DB_USER: root
+      DB_PASSWD: student
+      PS_FOLDER_ADMIN: admin-dev
+      PS_FOLDER_INSTALL: install-dev
+      PS_DEV_MODE: 1
+      PS_INSTALL_AUTO: 1
+      PS_DOMAIN: localhost:19319
+    networks:
+      - be_193192_network
+      - admin-mysql_default
+    
+  caching:
+    container_name: caching_service
+    image: memcached
+    networks:
+      - be_193192_network
+       
+networks:
+    be_193192_network:
+    admin-mysql_default:
+      external: true

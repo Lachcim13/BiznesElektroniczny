@@ -33,7 +33,8 @@
     <ul class="carousel-inner" role="listbox" aria-label="{l s='Carousel container' d='Shop.Theme.Global'}">
       {foreach from=$homeslider.slides item=slide name='homeslider'}
         <li class="carousel-item {if $smarty.foreach.homeslider.first}active{/if}" role="option" aria-hidden="{if $smarty.foreach.homeslider.first}false{else}true{/if}">
-          <a href="{$slide.url}">
+          <a href="{$slide.url}" onClick = "gtag('event', 'banner_or_discount', {
+              'type':'banner'}); console.log('Xddd')">
             <figure>
               <img src="{$slide.image_url}" alt="{$slide.legend|escape}" loading="lazy" width="1110" height="340">
               {if $slide.title || $slide.description}
