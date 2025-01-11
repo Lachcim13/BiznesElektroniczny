@@ -18,15 +18,13 @@ COPY ./configuration/000-default.conf /etc/apache2/sites-available/000-default.c
 COPY ./configuration/certs /etc/ssl/certs
 COPY ./prestashop_files /var/www/html
 
-COPY ./configuration/dump.sql /tmp/sql/dump.sql
-
 RUN rm -rf /var/www/html/install
 
 RUN a2enmod ssl && \
     chown -R www-data:www-data /var/www/html && \
     chmod -R 755 /var/www/html && \
-    chmod -R 777 /etc/ssl/certs && chmod -R 777 /etc/apache2/sites-available/000-default.conf && \
-    chmod -R 777 /tmp/sql/dump.sql
+    chmod -R 777 /etc/ssl/certs && \
+    chmod -R 777 /etc/apache2/sites-available/000-default.conf 
 
 EXPOSE 80 443
 

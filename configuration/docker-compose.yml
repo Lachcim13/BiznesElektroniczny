@@ -11,7 +11,7 @@ services:
 
   prestashop:
     container_name: prestashop
-    image: karolinaszydelko/wloczki:development
+    image: karolinaszydelko/wloczki:main
     restart: always
     depends_on:
       - mysql
