@@ -4,8 +4,8 @@ services:
     image: mariadb:11.5.2
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: admin
-      MYSQL_DATABASE: prestashop
+      MYSQL_ROOT_PASSWORD: student
+      MYSQL_DATABASE: BE_193192
     networks:
       - prestashop_network
 
@@ -20,14 +20,16 @@ services:
       - 8443:443
     environment:
       DB_SERVER: admin-mysql_db
-      DB_NAME: prestashop
+      DB_NAME: BE_193192
       DB_USER: root
-      DB_PASSWD: admin
+      DB_PASSWD: student
       PS_FOLDER_ADMIN: admin-dev
       PS_FOLDER_INSTALL: install-dev
       PS_DEV_MODE: 1
       PS_INSTALL_AUTO: 1
       PS_DOMAIN: localhost:8080
+    volumes:
+      - ../prestashop_files:/var/www/html
     networks:
       - prestashop_network
     
