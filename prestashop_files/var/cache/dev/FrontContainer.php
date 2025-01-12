@@ -5555,6 +5555,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
                 62 => 'ps_eventbus',
                 63 => 'ps_cashondelivery',
                 64 => 'ps_newproducts',
+                65 => 'ps_googleanalytics',
             ],
             'ps_cache_dir' => '/var/www/html/var/cache/dev/',
             'mail_themes_uri' => '/mails/themes',

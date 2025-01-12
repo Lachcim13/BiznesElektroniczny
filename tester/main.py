@@ -173,8 +173,8 @@ def generate(url, categories):
 
 
 if __name__ == "__main__":
-    url = "https://localhost:8443"
-    categories = ["/index.php?id_category=274&controller=category", "/index.php?id_category=246&controller=category"]
+    url = "https://localhost:19319"
+    categories = ["/index.php?id_category=349&controller=category", "/index.php?id_category=340&controller=category"]
 
     start_time = time.time()
     generate(url, categories)
