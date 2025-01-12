@@ -1,6 +1,6 @@
 services:
   mysql:
-    container_name: some-mysql
+    container_name: admin-mysql_db
     image: mariadb:11.5.2
     restart: always
     environment:
@@ -19,7 +19,7 @@ services:
       - 8080:80
       - 8443:443
     environment:
-      DB_SERVER: some-mysql
+      DB_SERVER: admin-mysql_db
       DB_NAME: prestashop
       DB_USER: root
       DB_PASSWD: admin

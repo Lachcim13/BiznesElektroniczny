@@ -25,4 +25,4 @@ cd configuration
 baza danych wgra się automatycznie
 
 ## Jak Zapisać Zmiany W Bazie
-docker exec some-mysql mariadb-dump -uroot -padmin prestashop --ignore-table=prestashop.ps_employee_account > dump.sql
+docker exec admin-mysql_db mariadb-dump -uroot -padmin prestashop --ignore-table=prestashop.ps_employee_account > dump.sql
