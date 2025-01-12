@@ -1,6 +1,6 @@
 FROM prestashop/prestashop:1.7.8
 
-ENV DB_SERVER=some-mysql \
+ENV DB_SERVER=admin-mysql_db \
     DB_NAME=prestashop \
     DB_USER=root \
     DB_PASSWD=admin \
