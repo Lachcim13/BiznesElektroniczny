@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.48, created on 2025-01-12 23:02:29
+/* Smarty version 3.1.48, created on 2025-01-12 23:25:25
   from 'module:pslinklistviewstemplatesh' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_67843bf58c1563_09346646',
+  'unifunc' => 'content_6784415579abc0_85882640',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_67843bf58c1563_09346646 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6784415579abc0_85882640 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin /var/www/html/themes/classic/modules/ps_linklist/views/templates/hook/linkblock.tpl --><div class="col-md-6 links">
   <div class="row custom-row">
   <?php
@@ -31,8 +31,8 @@ $_smarty_tpl->tpl_vars['linkBlock']->do_else = false;
 ?>
     <div class="col-md-6 wrapper <?php ob_start();
 echo htmlspecialchars($_smarty_tpl->tpl_vars['linkBlock']->value['id'], ENT_QUOTES, 'UTF-8');
-$_prefixVariable13 = ob_get_clean();
-if ($_prefixVariable13 == 1) {?> custom-margin-class <?php }?>">
+$_prefixVariable3 = ob_get_clean();
+if ($_prefixVariable3 == 1) {?> custom-margin-class <?php }?>">
       <p class="h3 hidden-sm-down"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['linkBlock']->value['title'], ENT_QUOTES, 'UTF-8');?>
 </p>
       <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu_<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['linkBlock']->value['id'], ENT_QUOTES, 'UTF-8');?>

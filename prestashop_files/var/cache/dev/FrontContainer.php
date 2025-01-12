@@ -5471,15 +5471,15 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'mailer_user' => NULL,
             'mailer_password' => NULL,
             'secret' => 'Mviqjj6n5LfZUdbHzfoSkL1fsjLsTYUpfYiqrFCV146dLx5VQVQRdd9zb8yG3ovd',
-            'ps_caching' => 'CacheMemcache',
-            'ps_cache_enable' => false,
+            'ps_caching' => 'CacheMemcached',
+            'ps_cache_enable' => true,
             'ps_creation_date' => '2024-11-25',
             'locale' => 'en-US',
             'use_debug_toolbar' => true,
             'cookie_key' => '0vKw3T5c99SRoOS2VO3vh3wyYmJrM739KFMZcqHAwH6wNzfnDB1v9hSShApHQPZn',
             'cookie_iv' => 'iu5oNxiLTZrPAY1BLmCVtraRmVogFIwe',
             'new_cookie_key' => 'def00000127d0e108068529d365fd156102cf395a0e4e7de50028c1d02c33f3fe800b2b1bb19bcc933ad613caaa710503986716ab2cad46754642b7dc5b8c01da337f195',
-            'cache.driver' => 'array',
+            'cache.driver' => 'memcached',
             'kernel.bundles' => [
 
             ],

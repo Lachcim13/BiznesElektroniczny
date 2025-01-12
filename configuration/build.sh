@@ -8,6 +8,6 @@ until docker exec admin-mysql_db mariadb -uroot -pstudent --silent -e "SELECT 1"
 done
 
 echo "Running SQL dump..."
-docker exec -i admin-mysql_db mariadb -uroot -pastudent BE_193192 < dump.sql
+docker exec -i admin-mysql_db mariadb -uroot -pstudent BE_193192 < dump.sql
 
 echo "Services are up and SQL dump has been applied."
