@@ -1,9 +1,9 @@
 FROM prestashop/prestashop:1.7.8
 
 ENV DB_SERVER=admin-mysql_db \
-    DB_NAME=prestashop \
+    DB_NAME=BE_193192 \
     DB_USER=root \
-    DB_PASSWD=admin \
+    DB_PASSWD=student \
     PS_FOLDER_ADMIN=admin-dev \
     PS_FOLDER_INSTALL=install-dev \
     PS_DEV_MODE=1 \
